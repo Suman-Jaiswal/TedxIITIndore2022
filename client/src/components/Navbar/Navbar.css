@@ -7,15 +7,22 @@
 .button{
     color:white !important;
     font-family: 'Inconsolata', monospace;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    outline: none;
+    padding-right: 0px;
+    padding-left: 15px;
 }
 
 .button:hover{
-    color:#e62b1e !important;
+    color:rgb(230, 43, 30) !important;
+}
+
+.button:focus{
+   box-shadow: none !important;
 }
 
 .logo{
-    height:6.5rem;
+    height:4.5rem;
 }
 
 .d-flex{

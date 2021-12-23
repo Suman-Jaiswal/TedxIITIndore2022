@@ -1,23 +1,32 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./Navbar.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome, faImages, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 
-function Navbar(){ 
-    
-        return(
+function Navbar() {
+
+    return (
         <nav class="navbar navbar-light nav">
-        <div class="container-fluid">
-          <img class="navbar-brand logo" src="./logo.png"></img>
-        <div class="d-flex">
-            <button class="btn button" type="submit">SPEAKERS</button>
-            <button class="btn button" type="submit">GALLERY</button>
-            <button class="btn button" type="submit">SPEAKERS</button>
-            <button class="btn button" type="submit">TALKS</button>
+            <div class="container-fluid">
+                <div className="d-flex align-items-center">
+                    <img class="navbar-brand logo" alt="" src="./logo.png"></img>
+                    <Link to='/'><button class="btn button"><FontAwesomeIcon icon={faHome} size="2x"  /></button></Link>
+                </div>
+
+                <div class="d-flex">
+                    <Link to='/about' ><button class="btn button"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
+                    <Link to='/speakers' ><button class="btn button"><FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS</button></Link>
+                    <Link to='/talks' ><button class="btn button"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
+                    <Link to='/gallery' ><button class="btn button"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link>
+                    <Link to='/team' ><button class="btn button"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
+                </div>
             </div>
-        </div>
-      </nav>
+        </nav>
     )
-    
-    
+
+
 }
 
 export default Navbar
