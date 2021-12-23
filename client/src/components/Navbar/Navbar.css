@@ -1,0 +1,23 @@
+.nav{
+    background-color: black !important;
+    height:auto;
+    width: 100% !important;
+}
+
+.button{
+    color:white !important;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+}
+
+.button:hover{
+    color:#e62b1e !important;
+}
+
+.logo{
+    height:6.5rem;
+}
+
+.d-flex{
+    margin-right:5rem;
+}

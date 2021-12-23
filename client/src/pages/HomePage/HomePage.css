@@ -1,0 +1,7 @@
+.bg{
+    height:50rem;
+    background-image: url('../../../public/X-3.png');
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

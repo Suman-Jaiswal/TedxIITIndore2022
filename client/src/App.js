@@ -1,8 +1,8 @@
+import HomePage from "./pages/HomePage/HomePage";
+
 function App() {
   return (
-    <div>
-        Welcome to TEDxIITIndore
-    </div>
+<HomePage/>
   );
 }
 
