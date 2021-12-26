@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 
 const TalksCard = ({talk}) => {
 
-    const {title, link, speaker, description} = talk
+    const {title, link, speaker, description, date} = talk
 
     return (
         <Card style={{ padding: '1em', margin: '0.75em' }}>
@@ -20,7 +20,10 @@ const TalksCard = ({talk}) => {
                     <Typography gutterBottom variant="h5" component="div" style={{ color: "Black", fontWeight: "bold" }}>
                         {title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" color="#e62b1e" mt={1} fontWeight={'bold'}>
+                      by {speaker} {' ('}{date.substr(6, 4)}{')'}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary" mt={2}>
                         {description}
                     </Typography>
                 </CardContent>
