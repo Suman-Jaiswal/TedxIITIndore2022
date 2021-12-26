@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid } from "@mui/material";
-import './TalksPage.css'
+// import './TalksPage.css'
 import TalksCard from './../../components/TalksCard/TalksCard';
 
 export default function TalksPage() {
@@ -8,7 +8,7 @@ export default function TalksPage() {
     <>
       <Grid container spacing={1}>
         <Grid item xs={12} className='header'>
-          <h1 style={{ textAlign: "center", color: "red", margin: "1.25em", fontFamily: "typeface" }}>TALKS</h1>
+          <h1 style={{ textAlign: "center", color: "#e62b1e", margin: "40px" }}>TALKS</h1>
         </Grid>
       </Grid>
       <Grid container spacing={4}>
