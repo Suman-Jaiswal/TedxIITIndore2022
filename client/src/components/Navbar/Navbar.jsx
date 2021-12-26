@@ -8,8 +8,8 @@ import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 function Navbar() {
 
     return (
-        <nav class="navbar navbar-light nav">
-            <div class="container-fluid">
+        <nav className="navbar navbar-light nav">
+            <div class="container-fluid w-100">
                 <div className="d-flex align-items-center">
                     <img class="navbar-brand logo" alt="" src="./logo.png"></img>
                     <Link to='/'><button class="btn button"><FontAwesomeIcon icon={faHome} size="2x"  /></button></Link>
