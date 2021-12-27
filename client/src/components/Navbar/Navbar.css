@@ -2,20 +2,30 @@
     background-color: black !important;
     height:auto;
     width: 100% !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 10 ;
 }
 
 .button{
     color:white !important;
-    font-family: 'Inconsolata', monospace;
-    font-size: 1.2rem;
+    font-family: 'Inconsolata', monospace !important;
+    font-size: 1rem !important;
+    outline: none;
+    padding-right: 0px !important;
+    padding-left: 15px !important;
 }
 
 .button:hover{
     color:#e62b1e !important;
 }
 
+.button:focus{
+   box-shadow: none !important;
+}
+
 .logo{
-    height:6.5rem;
+    height:4.5rem;
 }
 
 .d-flex{
