@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import SpeakersPage from "./pages/SpeakersPage/SpeakersPage";
 import TalksPage from "./pages/TalksPage/TalksPage";
 import TeamPage from "./pages/TeamPage/TeamPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path='/team' element={<TeamPage />} />
                 
             </Routes>
+            <Footer />
         </>
     );
 }
