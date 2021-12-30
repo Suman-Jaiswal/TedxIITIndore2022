@@ -1,5 +1,6 @@
 {
-    "speakers": [
+
+   "speakers": [
         {
             "sno": "1",
             "name": "Dr. Prasun Chatterjee",
@@ -139,4 +140,5 @@
             "description": "Dr. Prasun Chatterjee, Specialist and Assistant Professor of Geriatrics Department, AIIMS New Delhi. In this talk, Dr. Chatterjee shares the intrinsic details on a highly sensitive topic - “Euthanasia”. With references from many real-life cases, like that of Aruna Shaunbag, Dr. Chatterjee's talk revolves around safeguarding the patients and taking care of compassionate death with respect and proper protection. Dr. Prasun Chatterjee is one of the very few qualified Geriatrician (specialization in elderly care medicine ) in India. He is currently faculty in AIIMS, New Delhi, Deptt. Of Geriatric Medicine. He has started N.G.O “Healthy Aging India” and is heading it to make it an NGO of International reputation. He is the founder of an intergenerational learning center at Noida Purva Madhyamik Vidyalaya, where educated elderly are mentoring less privileged school children - a 1st of its kind initiative in India. He was given Best Paper Award in National conference in Kolkata 2009 for working on Frailty in elderly, awarded CSIR fellowship to work on Sarcopenia, awarded by Padma Shri Professor V S Natarajan for serving elderly in the community and also \"Bharat Jyoti \"Award 2018 for selfless service to the community. This talk was given at a TEDx event using the TED conference format but independently organized by a local community. Learn more at https://www.ted.com/tedx"
         }
     ]
+    
 }

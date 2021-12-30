@@ -1,7 +1,7 @@
 import React from 'react'
 import SpeakersCard from '../../components/SpeakersCard/SpeakersCard';
 import { useState, useEffect } from 'react';
-import data from '../../data/data.json'
+import data from '../../data/data'
 export default function SpeakersPage() {
 
     const [speakers, setSpeakers] = useState([])
