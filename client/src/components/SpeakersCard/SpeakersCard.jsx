@@ -36,7 +36,7 @@ export default function SpeakersCard({ speaker }) {
 
     return (
         <>
-            <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-3 p-0 d-flex justify-content-center'>
+            <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'>
                 <Card sx={{width: '300px' }}  onClick={() => handleOpen({name, post, description})} >
                     <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <CardMedia
