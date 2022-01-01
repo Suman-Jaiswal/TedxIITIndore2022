@@ -10,7 +10,7 @@ export default function AboutPage() {
     return (
         <>
                 <div className='parent'>
-                    <div className='image' >
+                    <div className='about-bg' >
                     </div>
                 </div>
         <Grid container sx={{ justifyContent: 'center' }} spacing={2}>

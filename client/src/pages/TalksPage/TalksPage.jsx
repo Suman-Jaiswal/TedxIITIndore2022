@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 // import './TalksPage.css'
 import TalksCard from './../../components/TalksCard/TalksCard';
 import data from '../../data/data'
+import Heading from '../../components/Heading';
 
 export default function TalksPage() {
 
@@ -14,7 +15,7 @@ export default function TalksPage() {
 
     return (
         <>
-            <h1 style={{ textAlign: "center", color: "#e62b1e", margin: '40px 0' }}>TALKS</h1>
+            <Heading heading={'TALKS'} />
             <Grid container sx={{justifyContent: 'center'}} spacing={4}>
                 {
                     talks.map(talk =>

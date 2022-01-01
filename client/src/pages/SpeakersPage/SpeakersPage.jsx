@@ -2,6 +2,7 @@ import React from 'react'
 import SpeakersCard from '../../components/SpeakersCard/SpeakersCard';
 import { useState, useEffect } from 'react';
 import data from '../../data/data'
+import Heading from '../../components/Heading';
 export default function SpeakersPage() {
 
     const [speakers, setSpeakers] = useState([])
@@ -12,7 +13,7 @@ export default function SpeakersPage() {
 
     return (
         <div >
-            <h1 style={{ textAlign: "center", color: "#e62b1e", margin: '40px 0' }}>SPEAKERS</h1>
+            <Heading heading={'SPEAKERS'}/>
             <div className='container' >
                 <div className="row p-0">
                     {

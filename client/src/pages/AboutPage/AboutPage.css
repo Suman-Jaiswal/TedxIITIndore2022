@@ -1,8 +1,7 @@
-.image{
+.about-bg{
     position: absolute;
     height:50rem;
     background-image: url('./../../../public/about.jpg');
-    width:100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black; 
