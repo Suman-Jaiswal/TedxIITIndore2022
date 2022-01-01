@@ -1,8 +1,7 @@
 import React from 'react'
-import { Button, Card } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Link } from 'react-router-dom';
 import './Deck.css'
 
 export default function Deck(props) {
@@ -36,10 +35,10 @@ export default function Deck(props) {
 
                 >
                     {props.items.map((item) =>
-                        <Card className='gradient-card' style={{ width: '18rem', height: '360px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }} key={item._id} >
+                        <Card key={item.sno} className='gradient-card' style={{ width: '18rem', height: '360px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }} key={item._id} >
                             <Card.Img className='image m-auto my-2' src={'/3.jpg'} alt="item-img" style={{ cursor: "pointer",width: '16rem', height: '16rem', borderRadius: '50%' }} />
                             <Card.Body>
-                                <Card.Title className='text-center' >{item.name}</Card.Title>
+                                <Card.Title className='text-center' >{item.name.toUpperCase()}</Card.Title>
                                 <Card.Text className='text-center'>
                                  {item.title}
                                 </Card.Text>

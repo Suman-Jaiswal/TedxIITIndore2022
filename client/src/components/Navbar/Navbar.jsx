@@ -9,18 +9,18 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-light nav">
-            <div class="container-fluid w-100">
+            <div className="container-fluid w-100">
                 <div className="d-flex align-items-center">
-                    <img class="navbar-brand logo" alt="" src="./logo.png"></img>
-                    <Link to='/'><button class="btn button"><FontAwesomeIcon icon={faHome} size="2x"  /></button></Link>
+                    <img className="navbar-brand logo" alt="" src="/logo.png"></img>
+                    <Link to='/'><button className="btn button"><FontAwesomeIcon icon={faHome} size="2x"  /></button></Link>
                 </div>
 
-                <div class="d-flex">
-                    <Link to='/about' ><button class="btn button"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
-                    <Link to='/speakers' ><button class="btn button"><FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS</button></Link>
-                    <Link to='/talks' ><button class="btn button"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
-                    <Link to='/gallery' ><button class="btn button"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link>
-                    <Link to='/team' ><button class="btn button"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
+                <div className="d-flex">
+                    <Link to='/about' ><button className="btn button"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
+                    <Link to='/speakers' ><button className="btn button"><FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS</button></Link>
+                    <Link to='/talks' ><button className="btn button"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
+                    <Link to='/gallery' ><button className="btn button"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link>
+                    <Link to='/team' ><button className="btn button"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
                 </div>
             </div>
         </nav>

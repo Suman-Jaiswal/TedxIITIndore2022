@@ -1,7 +1,5 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Modal, Typography } from '@mui/material'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Card } from 'react-bootstrap';
 
 const style = {
     position: 'absolute',
@@ -20,7 +18,7 @@ const style = {
 };
 
 export default function TeamCard({ person }) {
-  
+
     const { name, title, description } = person
     const [open, setOpen] = React.useState(false);
     const [modalobj, setObj] = React.useState({});
@@ -36,50 +34,15 @@ export default function TeamCard({ person }) {
 
     return (
         <>
-            <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'>
-                <Card sx={{ backgroundColor: "#666", width: '300px' }}  onClick={() => handleOpen({name, title, description})} >
-                    <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <CardMedia
-                            component="img"
-                            height="250"
-                            width="250"
-                            image={'/3.jpg'}
-                            alt="green iguana"
-                            style={{  borderRadius: '100%', width: '250px', textAlign: 'center' }}
-                        />
-                        <CardContent style={{  height: 'auto' }}>
-                            <Typography gutterBottom variant="h6" component="div" style={{ fontWeight: "bold" }}>
-                                {name}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                {title}
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </div>
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={style}>
-                <div className="d-flex m-0 mb-2 flex-direction-flex-end" style={{flexDirection: 'row-reverse', right: '10px'}}>
-                    <FontAwesomeIcon icon={faTimes} cursor={'pointer'}  onClick={handleClose}/>
-                </div>
-                    <img alt='' src={'./3.jpg'} width={265} height={265}></img>
-                    <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
-                        {modalobj.name}
-                    </Typography>
-                    <Typography id="modal-modal-description" variant='p' component="h6" color={'#e62b1e'} sx={{ mb: 2 }} >
-                        {modalobj.post}
-                    </Typography>
-                    <Typography id="modal-modal-description" variant='p' sx={{ mt: 2 }}>
-                        {modalobj.description}
-                    </Typography>
-                </Box>
-            </Modal>
+            <Card style={{ width: '18rem', height: '360px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }} >
+                <Card.Img className='image m-auto my-2' src={'/3.jpg'} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
+                <Card.Body>
+                    <Card.Title className='text-center' >{name.toUpperCase()}</Card.Title>
+                    <Card.Text className='text-center'>
+                        {title}
+                    </Card.Text>
+                </Card.Body>
+            </Card>
         </>
     )
 }

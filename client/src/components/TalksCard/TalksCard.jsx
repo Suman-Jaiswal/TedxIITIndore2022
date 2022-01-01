@@ -4,7 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import "./TalksCard.css";
-import PropTypes from "prop-types";
 
 const TalksCard = ({talk}) => {
 
@@ -17,7 +16,7 @@ const TalksCard = ({talk}) => {
     ]
 
     return (
-        <Card style={{ padding: '1em', margin: '0.75em', backgroundColor: color[talk.sno%4] }}>
+        <Card elevation={5} style={{ padding: '1em', margin: '0.75em', backgroundColor: color[talk.sno%4] }}>
             <CardActionArea>
                 <div className='video-responsive'>
                     <iframe width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -36,12 +35,6 @@ const TalksCard = ({talk}) => {
             </CardActionArea>
         </Card>
     )
-};
-
-TalksCard.propTypes = {
-    embedId: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired
 };
 
 export default TalksCard;

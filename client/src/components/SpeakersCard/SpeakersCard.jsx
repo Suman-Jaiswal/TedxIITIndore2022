@@ -20,8 +20,8 @@ const style = {
 };
 
 export default function SpeakersCard({ speaker }) {
-  
-    const { name, post, description } = speaker
+
+    const { name, post, description, img } = speaker
     const [open, setOpen] = React.useState(false);
     const [modalobj, setObj] = React.useState({});
     const handleOpen = (obj) => {
@@ -36,28 +36,28 @@ export default function SpeakersCard({ speaker }) {
 
     const color=[
         '#4285f4',
-        '#34a853',
+        '#ea4335',
         '#fbbc05',
-        '#ea4335'
+        '#34a853',
     ]
 
     return (
         <>
             <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'>
-                <Card sx={{width: '300px', backgroundColor: color[speaker.sno %4] }}  onClick={() => handleOpen({name, post, description})} >
+                <Card elevation={5} sx={{width: '400px', backgroundColor: color[speaker.sno %4] }}  onClick={() => handleOpen({name, post, description})} >
                     <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <CardMedia
                             component="img"
                             height="250"
                             width="250"
-                            image={'/3.jpg'}
+                            image={img}
                             alt="green iguana"
                             style={{  borderRadius: '100%', width: '250px', textAlign: 'center' }}
-                            className='my-2'
+                            className='my-3'
                         />
-                        <CardContent style={{  height: 'auto' }}>
+                        <CardContent style={{ height: 'auto' }}>
                             <Typography gutterBottom variant="h6" component="div" style={{ fontWeight: "bold" }}>
-                                {name}
+                                {name.toUpperCase()}
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                                 {post}
@@ -73,10 +73,10 @@ export default function SpeakersCard({ speaker }) {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={style}>
-                <div className="d-flex m-0 mb-2 flex-direction-flex-end" style={{flexDirection: 'row-reverse', right: '10px'}}>
-                    <FontAwesomeIcon icon={faTimes} cursor={'pointer'}  onClick={handleClose}/>
-                </div>
-                    <img alt='' src={'./3.jpg'} width={265} height={265}></img>
+                    <div className="d-flex m-0 mb-2 flex-direction-flex-end" style={{ flexDirection: 'row-reverse', right: '10px' }}>
+                        <FontAwesomeIcon icon={faTimes} cursor={'pointer'} onClick={handleClose} />
+                    </div>
+                    <img alt='' src={img} width={265} height={265}></img>
                     <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
                         {modalobj.name}
                     </Typography>
