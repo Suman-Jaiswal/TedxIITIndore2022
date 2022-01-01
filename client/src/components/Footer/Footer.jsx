@@ -1,6 +1,5 @@
 import React from "react"
 import './Footer.css'
-import { library } from '@fortawesome/fontawesome-svg-core' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
 import { Link } from "react-router-dom"
@@ -59,10 +58,10 @@ function Footer()
 
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className="social-icons">
-              <li><a className="facebook" href="#"><i><FontAwesomeIcon icon={faFacebookF} /></i></a></li>
-              <li><a className="twitter" href="#"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>
-              <li><a className="instagram" href="#"><i><FontAwesomeIcon icon={faInstagram} /></i></a></li>
-              <li><a className="linkedin" href="#"><i><FontAwesomeIcon icon={faLinkedin} /></i></a></li>   
+              <li><a className="facebook" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faFacebookF} /></i></a></li>
+              <li><a className="twitter" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>
+              <li><a className="instagram" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></a></li>
+              <li><a className="linkedin" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></a></li>   
             </ul>
           </div>
         </div>
