@@ -9,9 +9,15 @@ import PropTypes from "prop-types";
 const TalksCard = ({talk}) => {
 
     const {title, link, speaker, description, date} = talk
+    const color=[
+        '#4285f4',
+        '#34a853',
+        '#fbbc05',
+        '#ea4335'
+    ]
 
     return (
-        <Card style={{ padding: '1em', margin: '0.75em' }}>
+        <Card style={{ padding: '1em', margin: '0.75em', backgroundColor: color[talk.sno%4] }}>
             <CardActionArea>
                 <div className='video-responsive'>
                     <iframe width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -20,7 +26,7 @@ const TalksCard = ({talk}) => {
                     <Typography gutterBottom variant="h5" component="div" style={{ color: "Black", fontWeight: "bold" }}>
                         {title}
                     </Typography>
-                    <Typography variant="body2" color="#e62b1e" mt={1} fontWeight={'bold'}>
+                    <Typography variant="body2" mt={1} fontWeight={'bold'}>
                       by {speaker} {' ('}{date.substr(6, 4)}{')'}
                     </Typography>
                     <Typography variant="body2" color="text.secondary" mt={2}>

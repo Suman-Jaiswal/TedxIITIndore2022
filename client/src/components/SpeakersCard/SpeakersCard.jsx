@@ -34,10 +34,17 @@ export default function SpeakersCard({ speaker }) {
     };
     console.log(modalobj)
 
+    const color=[
+        '#4285f4',
+        '#34a853',
+        '#fbbc05',
+        '#ea4335'
+    ]
+
     return (
         <>
             <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'>
-                <Card sx={{width: '300px' }}  onClick={() => handleOpen({name, post, description})} >
+                <Card sx={{width: '300px', backgroundColor: color[speaker.sno %4] }}  onClick={() => handleOpen({name, post, description})} >
                     <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <CardMedia
                             component="img"
@@ -46,6 +53,7 @@ export default function SpeakersCard({ speaker }) {
                             image={'/3.jpg'}
                             alt="green iguana"
                             style={{  borderRadius: '100%', width: '250px', textAlign: 'center' }}
+                            className='my-2'
                         />
                         <CardContent style={{  height: 'auto' }}>
                             <Typography gutterBottom variant="h6" component="div" style={{ fontWeight: "bold" }}>
