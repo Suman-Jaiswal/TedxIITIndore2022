@@ -1,36 +1,9 @@
 import React from 'react'
 import { Card } from 'react-bootstrap';
 
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '60vw',
-    minWidth: '320px',
-    height: '90vh',
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 3,
-    overflowY: 'scroll',
-    borderRadius: '10px'
-};
-
 export default function TeamCard({ person }) {
 
-    const { name, title, description } = person
-    const [open, setOpen] = React.useState(false);
-    const [modalobj, setObj] = React.useState({});
-    const handleOpen = (obj) => {
-        setObj(obj);
-        setOpen(true);
-    };
-    const handleClose = () => {
-        setOpen(false)
-        setObj({});
-    };
-    console.log(modalobj)
+    const { name, title } = person
 
     return (
         <>

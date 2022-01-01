@@ -1,6 +1,6 @@
 import React from 'react'
 import './Gallery.css'
-import { Box, Card, CardActionArea, CardContent, CardMedia, Modal, Typography } from '@mui/material'
+import {  Modal } from '@mui/material'
 
 function Gallery(gallery) {
   const { link } = gallery.gallery
@@ -26,7 +26,7 @@ function Gallery(gallery) {
       <Modal open={open}>
         <div id="image-viewer">
           <span class="close" onClick={handleClose}>&times;</span>
-          <img class="modal-content" id="full-image" src={modalobj.link} />
+          <img class="modal-content" alt='' id="full-image" src={modalobj.link} />
         </div>
       </Modal>
     </>
