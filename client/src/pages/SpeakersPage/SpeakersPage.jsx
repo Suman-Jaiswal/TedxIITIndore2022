@@ -1,19 +1,19 @@
 import React from 'react'
 import SpeakersCard from '../../components/SpeakersCard/SpeakersCard';
 import { useState, useEffect } from 'react';
-import data from '../../data/data'
+import Data from '../../data/Data'
 import Heading from '../../components/Heading';
 export default function SpeakersPage() {
 
     const [speakers, setSpeakers] = useState([])
-
+    console.log(Data().speakers)
     useEffect(() => {
-        setSpeakers(data.speakers)
+        setSpeakers(Data().speakers)
     }, [])
 
     return (
         <div >
-            <Heading heading={'SPEAKERS'}/>
+            <Heading heading={'SPEAKERS'} />
             <div className='container' >
                 <div className="row p-0">
                     {

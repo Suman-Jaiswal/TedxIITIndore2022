@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Grid } from "@mui/material";
 // import './TalksPage.css'
 import TalksCard from './../../components/TalksCard/TalksCard';
-import data from '../../data/data'
+import Data from '../../data/Data'
 import Heading from '../../components/Heading';
 
 export default function TalksPage() {
@@ -10,13 +10,13 @@ export default function TalksPage() {
     const [talks, setTalks] = useState([])
 
     useEffect(() => {
-        setTalks(data.talks)
+        setTalks(Data().talks)
     }, [])
 
     return (
         <>
             <Heading heading={'TALKS'} />
-            <Grid container sx={{justifyContent: 'center'}} spacing={4}>
+            <Grid container sx={{ justifyContent: 'center' }} spacing={4}>
                 {
                     talks.map(talk =>
                         <>
