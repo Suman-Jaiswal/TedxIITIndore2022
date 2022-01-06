@@ -17,25 +17,25 @@ export default function TeamPage() {
             <Heading heading={'TEAM'} />
             <Deck items={team.filter(x => x.head)} />
             {
-                <div className="container justify-content-center">
+                // <div className="container justify-content-center">
 
-                    <div className="row">
-                        {
-                            teamNames.map((x, i) =>
-                                <div className='col-12 col-md-6' key={i}>
-                                    <Heading heading={x + "Team"} fs={"20px"} />
-                                    <div className="row justify-content-evenly p-0">
-                                        {
-                                            team.filter(p => p.title === x).map(person => <TeamCard person={person} key={person.sno} />)
-                                        }
-                                    </div>
-                                    <br />
-                                </div>
-                            )
-                        }
+                //     <div className="row">
+                //         {
+                //             teamNames.map((x, i) =>
+                //                 <div className='col-12 col-md-6' key={i}>
+                //                     <Heading heading={x + "Team"} fs={"20px"} />
+                //                     <div className="row justify-content-evenly p-0">
+                //                         {
+                //                             team.filter(p => p.title === x).map(person => <TeamCard person={person} key={person.sno} />)
+                //                         }
+                //                     </div>
+                //                     <br />
+                //                 </div>
+                //             )
+                //         }
 
-                    </div>
-                </div>
+                //     </div>
+                // </div>
 
             }
 

@@ -1,3 +1,6 @@
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Card } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
@@ -37,13 +40,17 @@ export default function Deck(props) {
 
                     >
                         {props.items.map((item) =>
-                            <Card key={item.sno} className='gradient-card' style={{ mixWidth: "18rem",maxWidth: '19rem', height: '360px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }}  >
+                            <Card key={item.sno} className='gradient-card' style={{ mixWidth: "18rem", maxWidth: '19rem', height: '380px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }}  >
                                 <Card.Img className='image m-auto my-2' src={'/3.jpg'} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
-                                <Card.Body>
+                                <Card.Body className='py-1' >
                                     <Card.Title className='text-center' >{item.name.toUpperCase()}</Card.Title>
-                                    <Card.Text className='text-center'>
+                                    <Card.Text className='text-center mb-0'>
                                         {item.title}
                                     </Card.Text>
+                                    <div className='text-center mt-2' >
+                                        <a className="text-dark px-2" href={`mailto:`}><FontAwesomeIcon size='lg' icon={faEnvelope} /></a>
+                                        <a className="text-dark px-2" href={`https://www.linkedin.com/in/skj9436/`}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>
+                                    </div>
                                 </Card.Body>
                             </Card>
                         )}

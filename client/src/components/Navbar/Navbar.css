@@ -4,7 +4,7 @@
     width: 100% !important;
     position: sticky !important;
     top: 0;
-    z-index: 10 ;
+    z-index: 1001 ;
 }
 
 .button{
@@ -25,7 +25,8 @@
 }
 
 .logo{
-    height:4.5rem;
+    height:3.5rem;
+    margin: 10px 0;
 }
 
 .d-flex{

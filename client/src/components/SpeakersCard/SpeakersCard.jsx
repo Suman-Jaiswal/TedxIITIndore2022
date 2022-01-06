@@ -16,7 +16,8 @@ const style = {
     boxShadow: 24,
     p: 3,
     overflowY: 'scroll',
-    borderRadius: '10px'
+    borderRadius: '10px',
+    zIndex: '3000'
 };
 
 export default function SpeakersCard({ speaker }) {
@@ -34,32 +35,26 @@ export default function SpeakersCard({ speaker }) {
     };
     console.log(modalobj)
 
-    const color=[
-        '#4285f4',
-        '#ea4335',
-        '#fbbc05',
-        '#34a853',
-    ]
-
     return (
         <>
-            <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-4 p-0 d-flex justify-content-center'>
-                <Card elevation={5} sx={{width: '400px', backgroundColor: color[speaker.sno %4] }}  onClick={() => handleOpen({name, post, description})} >
-                    <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'>
+                <Card className='gradient-border bg-dark text-light' sx={{width: '300px', overflow: 'visible' }}  onClick={() => handleOpen({name, post, description})} >
+                    <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
                         <CardMedia
                             component="img"
                             height="250"
                             width="250"
                             image={img}
                             alt="green iguana"
-                            style={{  borderRadius: '100%', width: '250px', textAlign: 'center' }}
-                            className='my-3'
+                            elevation={2}
+                            style={{  borderRadius: '100%', width: '250px', textAlign: 'center', margin: '-50px auto auto auto',position: 'relative' }}
+                            
                         />
-                        <CardContent style={{ height: 'auto' }}>
-                            <Typography gutterBottom variant="h6" component="div" style={{ fontWeight: "bold" }}>
+                        <CardContent style={{ margin: 'auto' }}>
+                            <Typography gutterBottom variant="h6" component="div">
                                 {name.toUpperCase()}
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body2" className='text-secondary'>
                                 {post}
                             </Typography>
                         </CardContent>
@@ -83,7 +78,7 @@ export default function SpeakersCard({ speaker }) {
                     <Typography id="modal-modal-description" variant='p' component="h6" color={'#e62b1e'} sx={{ mb: 2 }} >
                         {modalobj.post}
                     </Typography>
-                    <Typography id="modal-modal-description" variant='p' sx={{ mt: 2 }}>
+                    <Typography id="modal-modal-description" variant='body1' sx={{ mt: 2 }}>
                         {modalobj.description}
                     </Typography>
                 </Box>

@@ -16,7 +16,7 @@ const TalksCard = ({talk}) => {
     ]
 
     return (
-        <Card elevation={5} style={{ padding: '1em', margin: '0.75em', backgroundColor: color[talk.sno%4] }}>
+        <Card elevation={3} style={{ padding: '1em', margin: '0.75em', backgroundColor: color[talk.sno%4] }}>
             <CardActionArea>
                 <div className='video-responsive'>
                     <iframe width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
