@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import Deck from '../../components/Deck/Deck';
 import Heading from '../../components/Heading';
 import { teams } from '../../data/teams'
-import TeamCard from './../../components/TeamCard/TeamCard';
+// import TeamCard from './../../components/TeamCard/TeamCard';
 
 export default function TeamPage() {
     const [team, setTeam] = useState([])
 
-    const teamNames = ["web", "b", "c", "d", "e"]
+    // const teamNames = ["web", "b", "c", "d", "e"]
 
     useEffect(() => {
         setTeam(teams)
