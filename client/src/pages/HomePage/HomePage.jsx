@@ -25,7 +25,7 @@ function Home() {
             </div> */}
                 <div className="bg"></div>
                 <div className="bg-img"></div>
-                <div className="text-box"></div>
+                {/* <div className="text-box"></div> */}
             </div>
 
             <div className="container py-4">

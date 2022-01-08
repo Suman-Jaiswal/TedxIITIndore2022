@@ -34,22 +34,22 @@ export default function Deck(props) {
                 {
                     <Carousel
                         responsive={responsive}
-                        autoPlaySpeed={2000}
+                        autoPlaySpeed={3000}
                         autoPlay={true}
                         infinite={true}
 
                     >
                         {props.items.map((item) =>
                             <Card key={item.sno} className='gradient-card' style={{ mixWidth: "18rem", maxWidth: '19rem', height: '380px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }}  >
-                                <Card.Img className='image m-auto my-2' src={'/3.jpg'} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
-                                <Card.Body className='py-1' >
-                                    <Card.Title className='text-center' >{item.name.toUpperCase()}</Card.Title>
-                                    <Card.Text className='text-center mb-0'>
+                                <Card.Img className='image m-auto my-2' src={item.img} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
+                                <Card.Body className='py-1 bg-dark' >
+                                    <Card.Title className='text-center text-light' >{item.name.toUpperCase()}</Card.Title>
+                                    <Card.Text className='text-center text-secondary mb-0'>
                                         {item.title}
                                     </Card.Text>
-                                    <div className='text-center mt-2' >
-                                        <a className="text-dark px-2" href={`mailto:`}><FontAwesomeIcon size='lg' icon={faEnvelope} /></a>
-                                        <a className="text-dark px-2" href={`https://www.linkedin.com/in/skj9436/`}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>
+                                    <div className='text-center text-secondary mt-2' >
+                                        <a className="text-secondary  px-2" href={`mailto:${item.emailId}`}><FontAwesomeIcon size='lg' icon={faEnvelope} /></a>
+                                        <a className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>
                                     </div>
                                 </Card.Body>
                             </Card>

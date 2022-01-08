@@ -84,6 +84,7 @@ function SwipeableTextMobileStepper({images}) {
                     height: 50,
                     pl: 2,
                     bgcolor: 'background.default',
+                    borderRadius: '5px'
                 }}
             >
                 <Typography>{images[activeStep].label}</Typography>
@@ -104,7 +105,8 @@ function SwipeableTextMobileStepper({images}) {
                                     display: 'block',
                                     maxWidth: 400,
                                     overflow: 'hidden',
-                                    width: '100%',
+                                    // width: '100%',
+                                    margin:'auto'
                                 }}
                                 src={step.imgPath}
                                 alt={step.label}
