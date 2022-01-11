@@ -74,7 +74,7 @@ function SwipeableTextMobileStepper({images}) {
     };
 
     return (
-        <Box sx={{ maxWidth: 400, flexGrow: 1}}>
+        <div  sx={{ maxWidth: 400, width: 'inherit', flexGrow: 1}}>
             <Paper
                 square
                 elevation={0}
@@ -96,7 +96,7 @@ function SwipeableTextMobileStepper({images}) {
                 enableMouseEvents
             >
                 {images.map((step, index) => (
-                    <div key={step.label}>
+                    <div style={{overflow: 'hidden'}} key={step.label}>
                         {Math.abs(activeStep - index) <= 2 ? (
                             <Box
                                 component="img"
@@ -145,7 +145,8 @@ function SwipeableTextMobileStepper({images}) {
                     </Button>
                 }
             />
-        </Box>
+            <hr />
+        </div>
     );
 }
 

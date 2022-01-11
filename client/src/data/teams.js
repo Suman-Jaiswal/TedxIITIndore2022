@@ -8,7 +8,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/niraj-saini-4b5596195",
             emailId: "organizer.tedx@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 2,
@@ -18,7 +18,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/devendra-ahirwar",
             emailId: "me190003021@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 6,
@@ -28,7 +28,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/skj9436/",
             emailId: "ee200002072@iiti.ac.in",
             head: true,
-            img: "/teams/Suman-Jaiswal.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 3,
@@ -38,7 +38,7 @@ export const teams =
             linkedIn: "",
             emailId: "ce200004025@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 4,
@@ -48,7 +48,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/sujal-patel-375660229",
             emailId: "mems200005047@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 5,
@@ -58,7 +58,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/aditi-thakur99",
             emailId: "me200003005@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 7,
@@ -68,7 +68,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/vasuagarwal182",
             emailId: "me190003068@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 8,
@@ -78,7 +78,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/ishika-budhiraja-190312197",
             emailId: "me190003030@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 9,
@@ -88,7 +88,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/bhavishya-tiwari-0905bb205/",
             emailId: "me200003019@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 10,
@@ -98,16 +98,26 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/preetham-valsa-3b2502201/",
             emailId: "ee200002076@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
             sno: 11,
+            teamSno: 7,
+            name: "Aryan Yadav",
+            title: "Video Production",
+            linkedIn: "https://www.linkedin.com/in/aryan-yadav-703112169/",
+            emailId: "cse200001010@iiti.ac.in",
+            head: true,
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
+        },
+        {
+            sno: 12,
             teamSno: 8,
             name: "Maniratnn Parakh",
             title: "Hospitality",
             linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
             emailId: "mems200005019@iiti.ac.in",
             head: true,
-            img: "/teams/3.jpg"
+            get img() { return '/teams/' + this.name.replace(' ', '-') + '.jpg'}
         }
     ]

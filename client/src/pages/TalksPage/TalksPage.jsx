@@ -12,6 +12,10 @@ export default function TalksPage() {
     useEffect(() => {
         setTalks(Data().talks)
     }, [])
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>

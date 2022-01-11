@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Grid} from '@mui/material'
 import { Card } from "@mui/material";
 import CardContent from '@mui/material/CardContent';
@@ -7,6 +7,11 @@ import { CardActionArea } from '@mui/material';
 import './AboutPage.css'
 
 export default function AboutPage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
                 <div className='parent'>

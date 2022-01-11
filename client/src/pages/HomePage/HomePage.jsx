@@ -1,5 +1,5 @@
 import React from "react"
-import TextMobileStepper from "../../components/Carousel"
+import TextMobileStepper from "../../components/Slide"
 import Heading from "../../components/Heading"
 import './HomePage.css'
 import { speakers } from '../../data/speakers';
@@ -19,7 +19,8 @@ function Home() {
 
     return (
         <>
-            <div className="hero bg-dark" >
+            <div 
+             className="hero" >
                 {/* <div className="video-container">
                 <video muted disablePictureInPicture autoPlay loop controlsList={'noDownload'} src="bgvideo4.mp4" type='video/mp4' id='vid'> </video>
             </div> */}
@@ -52,18 +53,18 @@ function Home() {
                 <div className="container mb-4 gradient-border">
                     <Heading heading={'Speakers'} />
                     <hr />
-                    <div className="container text-secondary  d-flex flex-wrap gap-3">
-                        <div className="text-center">
-                            <Typography paddingBottom={2} variant="body1">2022</Typography>
+                    <div className="text-secondary justify-content-center px-3 row">
+                        <div className="text-center col-12 col-md-4">
+                            <Typography marginBottom={2} variant="body1">2022</Typography>
                             <TextMobileStepper images={S2018} />
                         </div>
-                        <div className="text-center">
-                            <Typography paddingBottom={2} variant="body1">2018</Typography>
+                        <div className="text-center col-12 col-md-4">
+                            <Typography marginBottom={2} variant="body1">2018</Typography>
                             <TextMobileStepper images={S2018} />
                         </div>
-                        <div className="text-center">
-                            <Typography paddingBottom={2} variant="body1">2017</Typography>
-                            <TextMobileStepper images={S2018} />
+                        <div className="text-center col-12 col-md-4">
+                            <Typography marginBottom={2} variant="body1">2017</Typography>
+                            <TextMobileStepper images={S2017} />
                         </div>
                     </div>
                     <br />

@@ -12,6 +12,13 @@ export default function TeamPage() {
     useEffect(() => {
         setTeam(teams)
     }, [])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    console.log(team.length>0? team.img: null)
+    
     return (
         <div >
             <Heading heading={'TEAM'} />
