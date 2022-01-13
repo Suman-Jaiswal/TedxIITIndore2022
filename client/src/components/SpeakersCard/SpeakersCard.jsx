@@ -3,7 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const style = { 
+const style = {
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -22,7 +22,7 @@ const style = {
 
 export default function SpeakersCard({ speaker }) {
 
-    const { name, post, description, img } = speaker
+    const { name, post, description, imgPath } = speaker
     const [open, setOpen] = React.useState(false);
     const [modalobj, setObj] = React.useState({});
     const handleOpen = (obj) => {
@@ -37,18 +37,22 @@ export default function SpeakersCard({ speaker }) {
 
     return (
         <>
-            <div  className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'>
-                <Card className='gradient-border bg-dark text-light' sx={{width: '300px', overflow: 'visible' }}  onClick={() => handleOpen({name, post, description})} >
+            <div
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+                className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'
+            >
+                <Card className='gradient-border bg-dark text-light' sx={{ width: '300px', overflow: 'visible' }} onClick={() => handleOpen({ name, post, description })} >
                     <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
                         <CardMedia
                             component="img"
                             height="250"
                             width="250"
-                            image={img}
-                            alt="green iguana"
+                            image={imgPath}
+                            alt={name}
                             elevation={2}
-                            style={{  borderRadius: '100%', width: '250px', textAlign: 'center', margin: '-50px auto auto auto',position: 'relative' }}
-                            
+                            style={{ borderRadius: '100%', width: '250px', textAlign: 'center', margin: '-50px auto auto auto', position: 'relative' }}
+
                         />
                         <CardContent style={{ margin: 'auto' }}>
                             <Typography gutterBottom variant="h6" component="div">
@@ -71,7 +75,7 @@ export default function SpeakersCard({ speaker }) {
                     <div className="d-flex m-0 mb-2 flex-direction-flex-end" style={{ flexDirection: 'row-reverse', right: '10px' }}>
                         <FontAwesomeIcon icon={faTimes} cursor={'pointer'} onClick={handleClose} />
                     </div>
-                    <img alt='' src={img} width={265} height={265}></img>
+                    <img alt={name} src={imgPath} width={265} height={265}></img>
                     <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
                         {modalobj.name}
                     </Typography>

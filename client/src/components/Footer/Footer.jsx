@@ -1,7 +1,7 @@
 import React from "react"
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons' 
+import { faTwitter, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons' 
 import { Link } from "react-router-dom"
 
 
@@ -58,10 +58,10 @@ function Footer()
 
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className="social-icons">
-              <li><a className="facebook" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faFacebookF} /></i></a></li>
-              <li><a className="twitter" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>
-              <li><a className="instagram" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faInstagram} /></i></a></li>
-              <li><a className="linkedin" href="https://gaurangadas.com/"><i><FontAwesomeIcon icon={faLinkedin} /></i></a></li>   
+              <li><a className="facebook" href="https://www.youtube.com/user/TEDxTalks/videos"><i><FontAwesomeIcon icon={faYoutube} /></i></a></li>
+              <li><a className="twitter" href="https://twitter.com/tedxiitindore"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>
+              <li><a className="instagram" href="https://www.instagram.com/tedxiiti/"><i><FontAwesomeIcon icon={faInstagram} /></i></a></li>
+              <li><a className="linkedin" href="https://www.linkedin.com/company/tedx-iitindore/"><i><FontAwesomeIcon icon={faLinkedin} /></i></a></li>   
             </ul>
           </div>
         </div>

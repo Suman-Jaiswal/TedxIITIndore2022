@@ -13,7 +13,7 @@ export default function TeamCard({ person }) {
 
 
     return (
-        <>
+        <div data-aos={person.sno %2 ===0 ? 'flip-left': 'flip-right'} data-aos-duration="1000">
             <Card style={{ width: "10rem", backgroundColor: color[person.sno % 4], height: '220px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '10px 5px' }}  >
                 <Card.Img className='image m-auto my-2' src={'/3.jpg'} alt="item-img" style={{ cursor: "pointer", width: '8rem', height: '8rem', borderRadius: '50%' }} />
                 <Card.Body className='my-0'>
@@ -23,6 +23,6 @@ export default function TeamCard({ person }) {
                     </Card.Text>
                 </Card.Body>
             </Card>
-        </>
+        </div>
     )
 }
