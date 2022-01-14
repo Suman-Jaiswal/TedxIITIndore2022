@@ -7,8 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #161616 !important;
   scroll-behavior: smooth;
+  width: 100vw;
 }
-
+*{
+    box-sizing: border-box; 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -17,7 +20,6 @@ h1, h2, h3, h4, h5, h6, .lead, .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Inconsolata', monospace !important;
     color: black;
 }
-
 .gradient-border {
     --borderWidth: 2px;
     background: #161616;
@@ -50,4 +52,4 @@ h1, h2, h3, h4, h5, h6, .lead, .h1, .h2, .h3, .h4, .h5, .h6{
           background-position: 0% 50%;
       }
   }
-  
+

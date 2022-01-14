@@ -6,7 +6,16 @@
     top: 0;
     z-index: 1001 ;
 }
-
+.nav-div{
+    width: 95%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.menu-only{
+    display: flex;
+    align-items: center;
+}
 .button{
     color:white !important;
     font-family: 'Inconsolata', monospace !important;
@@ -25,10 +34,24 @@
 }
 
 .logo{
-    height:3.5rem;
+    height:3.8rem;
     margin: 10px 0;
 }
 
-.d-flex{
-    margin-right:5rem;
+.menu-drawer{
+    display: none;
+    align-items: center;
+}
+
+@media screen and (max-width: 750px) {
+    .menu-drawer {
+        display: flex;
+    }
+    .menu-only{
+        display: none;
+    }
+    .logo{
+        height: 3rem;
+        margin: 7px 0;
+    }
 }

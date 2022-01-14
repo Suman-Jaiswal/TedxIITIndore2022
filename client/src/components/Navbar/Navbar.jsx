@@ -2,10 +2,11 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faImages, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faImages, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import MenuDrawer from "../MenuDrawer"
 
 function Navbar() {
 
@@ -20,13 +21,14 @@ function Navbar() {
 
     return (
         <nav className="navbar navbar-light nav">
-            <div className="container-fluid w-100">
+            <div className="nav-div">
                 <div className="d-flex align-items-center">
-                    <img className="navbar-brand logo" alt="" src="/logo.png"></img>
-                    <Link to='/'><button className="btn button"><FontAwesomeIcon icon={faHome} size="2x" /></button></Link>
+                    <Link to='/'>
+                        <img className="navbar-brand logo" alt="" src="https://res.cloudinary.com/tedxiiti/image/upload/w_300,c_fill/v1642099561/images/logos/removed_black_bg.png"></img>
+                    </Link>
                 </div>
 
-                <div className="d-flex">
+                <div className="menu-only">
                     <Link to='/about' ><button className="btn button"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
 
                     <div>
@@ -48,15 +50,15 @@ function Navbar() {
                             MenuListProps={{
                                 'aria-labelledby': 'basic-button',
                             }}
-                            
+
                         >
-                            <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none'}} className="text-secondary px-3" to="/speakers/2022" >
+                            <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} className="text-secondary px-3" to="/speakers/2022" >
                                 2022
                             </Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none'}} className="text-secondary px-3" to="/speakers/2018" >
+                            <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} className="text-secondary px-3" to="/speakers/2018" >
                                 2018
                             </Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link style={{textDecoration: 'none'}} className="text-secondary px-3" to="/speakers/2017" >
+                            <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} className="text-secondary px-3" to="/speakers/2017" >
                                 2017
                             </Link></MenuItem>
 
@@ -66,7 +68,12 @@ function Navbar() {
                     <Link to='/talks' ><button className="btn button"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
                     <Link to='/gallery' ><button className="btn button"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link>
                     <Link to='/team' ><button className="btn button"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
+
                 </div>
+                <div className="menu-drawer">
+                    <MenuDrawer />
+                </div>
+
             </div>
         </nav>
     )

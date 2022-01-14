@@ -12,50 +12,7 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-// const images = [
-//     {
-//         label: 'San Francisco – Oakland Bay Bridge, United States',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
-//     },
-//     {
-//         label: 'Bird',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-//     },
-//     {
-//         label: 'Bali, Indonesia',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
-//     },
-//     {
-//         label: 'Goč, Serbia',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-//     },
-//     {
-//         label: 'Goč, Serbia',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-//     },
-//     {
-//         label: 'Goč, Serbia',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-//     },
-//     {
-//         label: 'Goč, Serbia',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-//     },
-//     {
-//         label: 'Goč, Serbia',
-//         imgPath:
-//             'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-//     },
-// ];
-
-function SwipeableTextMobileStepper({images}) {
+function SwipeableTextMobileStepper({ images }) {
 
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
@@ -74,7 +31,7 @@ function SwipeableTextMobileStepper({images}) {
     };
 
     return (
-        <div  sx={{ maxWidth: 400, width: 'inherit', flexGrow: 1}}>
+        <div sx={{ maxWidth: 400, width: 'inherit', flexGrow: 1 }}>
             <Paper
                 square
                 elevation={0}
@@ -83,8 +40,9 @@ function SwipeableTextMobileStepper({images}) {
                     alignItems: 'center',
                     height: 50,
                     pl: 2,
-                    bgcolor: 'background.default',
-                    borderRadius: '5px'
+                    bgcolor: '#33353d;',
+                    borderRadius: '5px',
+                    color: '#c8ced3'
                 }}
             >
                 <Typography>{images[activeStep].label}</Typography>
@@ -96,7 +54,7 @@ function SwipeableTextMobileStepper({images}) {
                 enableMouseEvents
             >
                 {images.map((step, index) => (
-                    <div style={{overflow: 'hidden'}} key={step.label}>
+                    <div style={{ overflow: 'hidden' }} key={step.label}>
                         {Math.abs(activeStep - index) <= 2 ? (
                             <Box
                                 component="img"
@@ -106,7 +64,7 @@ function SwipeableTextMobileStepper({images}) {
                                     maxWidth: 400,
                                     overflow: 'hidden',
                                     // width: '100%',
-                                    margin:'auto'
+                                    margin: 'auto'
                                 }}
                                 src={step.imgPath}
                                 alt={step.label}
@@ -116,11 +74,15 @@ function SwipeableTextMobileStepper({images}) {
                 ))}
             </AutoPlaySwipeableViews>
             <MobileStepper
+                sx={{
+                    bgcolor: '#33353d;'
+                }}
                 steps={maxSteps}
                 position="static"
                 activeStep={activeStep}
                 nextButton={
                     <Button
+                        className={activeStep === 0 ? 'text-secondary' : null}
                         size="small"
                         onClick={handleNext}
                         disabled={activeStep === maxSteps - 1}
@@ -134,7 +96,10 @@ function SwipeableTextMobileStepper({images}) {
                     </Button>
                 }
                 backButton={
-                    <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+                    <Button
+                        size="small" onClick={handleBack}
+                        disabled={activeStep === 0}
+                        className={activeStep === 0 ? 'text-secondary' : null}>
                         {theme.direction === 'rtl' ? (
                             <KeyboardArrowRight />
                         ) : (

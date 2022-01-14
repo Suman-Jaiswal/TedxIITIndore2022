@@ -126,7 +126,7 @@
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
-  color:#fff;
+  color:#fff !important;
   background-color:rgb(230, 43, 30) !important
 }
 .social-icons.size-sm a
