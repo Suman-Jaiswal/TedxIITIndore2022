@@ -93,7 +93,7 @@ export const teams =
         {
             sno: 10,
             teamSno: 7,
-            name: "Preetham Valsa",
+            name: "Valsa Preetham",
             title: "Video Production",
             linkedIn: "https://www.linkedin.com/in/preetham-valsa-3b2502201/",
             emailId: "ee200002076@iiti.ac.in",

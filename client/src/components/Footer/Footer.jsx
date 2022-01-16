@@ -35,14 +35,25 @@ function Footer() {
                         </div>
 
                         <div className="col-xs-6 col-md-3">
-                            <h6>Speakers</h6>
-                            <ul className="footer-links">
+                            <h6>Organizer</h6>
+                            {/* <ul className="footer-links">
                                 <li><a href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
                                 <li><a href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
                                 <li><a href="https://gaurangadas.com/">Gauranga Das</a></li>
                                 <li><a href="https://gaurangadas.com/">Gauranga Das</a></li>
-                            </ul>
+                            </ul> */}
+                            <img
+                                src="https://res.cloudinary.com/tedxiiti/image/upload/w_80,h_80,c_fill/v1641996495/images/team/Niraj-Saini.jpg"
+                                alt="" 
+                                style={{
+                                    borderRadius: '50%',
+                                    marginTop: "10px"
+                                }}
+                                />
+                         
+                              <p className="ms-2 mt-2" >Niraj Saini</p>
+                           
                         </div>
 
                         <div className="col-xs-6 col-md-3">
@@ -54,7 +65,7 @@ function Footer() {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8 col-sm-6 col-xs-12">           
+                        <div className="col-md-8 col-sm-6 col-xs-12">
                             <p className="copyright-text">Copyright &copy; 2021 All Rights Reserved TEDx IIT Indore
                             </p>
                         </div>
