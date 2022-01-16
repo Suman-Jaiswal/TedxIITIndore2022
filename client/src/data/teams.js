@@ -21,7 +21,7 @@ export const teams =
             get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
-            sno: 6,
+            sno: 3,
             teamSno: 3,
             name: "Suman Jaiswal",
             title: "Web Developer",
@@ -31,7 +31,7 @@ export const teams =
             get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
-            sno: 3,
+            sno: 4,
             teamSno: 4,
             name: "K Madhumitha",
             title: "Curator",
@@ -41,7 +41,7 @@ export const teams =
             get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
-            sno: 4,
+            sno: 5,
             teamSno: 4,
             name: "Sujal Patel",
             title: "Curator",
@@ -51,7 +51,7 @@ export const teams =
             get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
         },
         {
-            sno: 5,
+            sno: 6,
             teamSno: 4,
             name: "Aditi Thakur",
             title: "Curator",

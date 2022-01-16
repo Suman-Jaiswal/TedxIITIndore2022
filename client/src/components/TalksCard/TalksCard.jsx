@@ -7,18 +7,12 @@ import "./TalksCard.css";
 
 const TalksCard = ({talk}) => {
 
-    const {title, link, speaker, description, date} = talk
-    const color=[
-        '#4285f4',
-        '#34a853',
-        '#fbbc05',
-        '#ea4335'
-    ]
+    const {title, link, speaker, description, date, sno} = talk
 
     return (
-        <Card elevation={3} style={{ padding: '1em', margin: '0.75em', backgroundColor: color[talk.sno%4] }}>
+        <Card className='gradient-card' elevation={3} style={{ padding: '1em', margin: '0.75em'}}>
             <CardActionArea>
-                <div className='video-responsive'>
+                <div className='video-responsive' data-aos={sno % 3 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000">
                     <iframe width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <CardContent>
