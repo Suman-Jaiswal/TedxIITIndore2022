@@ -14,7 +14,9 @@ import { useEffect } from "react";
 function App() {
 
     useEffect(() => {
-        Aos.init()
+        Aos.init({
+            once: true
+        })
      }, [])
 
     return (
