@@ -48,7 +48,7 @@ function Home() {
                             </Typography>
                         </div>
 
-                        <iframe data-aos-duration="700" data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-5" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe data-aos-duration="700" poster data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-4" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@ function Home() {
 
                         <div className="px-4 py-2 col-12 col-md-7 text-light">
                             <Heading heading={'What is TEDx?'} />
-                            <Typography data-aos-duration="700" data-aos="fade-right" variant="body1" >
+                            <Typography data-aos-duration="700" data-aos="fade-right" variant="body1"  textAlign={'center'}>
                                 In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxIITIndore, where x = independently organized TED event. At our TEDxIITIndore event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
                             </Typography>
                         </div>
