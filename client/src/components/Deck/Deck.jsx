@@ -48,8 +48,8 @@ export default function Deck(props) {
                                         {item.title}
                                     </Card.Text>
                                     <div className='text-center text-secondary mt-2' >
-                                        <a target={'_blank'} className="text-secondary  px-2" href={`mailto:${item.emailId}`}><FontAwesomeIcon size='lg' icon={faEnvelope} /></a>
-                                        <a target={'_blank'} className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>
+                                        <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={`mailto:${item.emailId}`}><FontAwesomeIcon size='lg' icon={faEnvelope} /></a>
+                                        <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>
                                     </div>
                                 </Card.Body>
                             </Card>

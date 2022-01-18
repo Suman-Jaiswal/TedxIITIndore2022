@@ -16,9 +16,9 @@ function Footer() {
                         <div className="col-xs-6 col-md-3">
                             <h6>Useful Links</h6>
                             <ul className="footer-links">
-                                <li><a target={'_blank'} href="https://tedx.com/">TEDx</a></li>
-                                <li><a target={'_blank'} href="https://iiti.ac.in/">IIT Indore</a></li>
-                                <li><a target={'_blank'} href="http://gymkhana.iiti.ac.in/">IIT Indore Students Gymkhana</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="https://tedx.com/">TEDx</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="https://iiti.ac.in/">IIT Indore</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="http://gymkhana.iiti.ac.in/">IIT Indore Students Gymkhana</a></li>
 
                             </ul>
                         </div>
@@ -37,11 +37,11 @@ function Footer() {
                         <div className="col-xs-6 col-md-3">
                             <h6>Organizer</h6>
                             {/* <ul className="footer-links">
-                                <li><a target={'_blank'} href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
-                                <li><a target={'_blank'} href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
-                                <li><a target={'_blank'} href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
-                                <li><a target={'_blank'} href="https://gaurangadas.com/">Gauranga Das</a></li>
-                                <li><a target={'_blank'} href="https://gaurangadas.com/">Gauranga Das</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="https://gaurangadas.com/">Gauranga Das</a></li>
+                                <li><a target={'_blank'} rel='noreferrer' href="https://gaurangadas.com/">Gauranga Das</a></li>
                             </ul> */}
                             <img
                                 src="https://res.cloudinary.com/tedxiiti/image/upload/w_80,h_80,c_fill/v1641996495/images/team/Niraj-Saini.jpg"
@@ -53,7 +53,7 @@ function Footer() {
                                 />
                             <div className=" mt-2">
                               <span >Niraj Saini </span>
-                              <span><a target={'_blank'} className="linkedin" href="https://www.linkedin.com/in/niraj-kumar-4b5596195"><i> <FontAwesomeIcon icon={faLinkedin} /></i></a></span>
+                              <span><a target={'_blank'} rel='noreferrer' className="linkedin" href="https://www.linkedin.com/in/niraj-kumar-4b5596195"><i> <FontAwesomeIcon icon={faLinkedin} /></i></a></span>
                             </div>
                            
                         </div>
@@ -74,10 +74,10 @@ function Footer() {
 
                         <div className="col-md-4 col-sm-6 col-xs-12">
                             <ul className="social-icons">
-                                <li><a target={'_blank'} className="facebook" href="https://www.youtube.com/user/TEDxTalks/videos"><i><FontAwesomeIcon icon={faYoutube} /></i></a></li>
-                                <li><a target={'_blank'} className="twitter" href="https://twitter.com/tedxiitindore"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>
-                                <li><a target={'_blank'} className="instagram" href="https://www.instagram.com/tedxiiti/"><i><FontAwesomeIcon icon={faInstagram} /></i></a></li>
-                                <li><a target={'_blank'} className="linkedin" href="https://www.linkedin.com/company/tedx-iitindore/"><i><FontAwesomeIcon icon={faLinkedin} /></i></a></li>
+                                <li><a target={'_blank'} rel='noreferrer' className="facebook" href="https://www.youtube.com/user/TEDxTalks/videos"><i><FontAwesomeIcon icon={faYoutube} /></i></a></li>
+                                <li><a target={'_blank'} rel='noreferrer' className="twitter" href="https://twitter.com/tedxiitindore"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>
+                                <li><a target={'_blank'} rel='noreferrer' className="instagram" href="https://www.instagram.com/tedxiiti/"><i><FontAwesomeIcon icon={faInstagram} /></i></a></li>
+                                <li><a target={'_blank'} rel='noreferrer' className="linkedin" href="https://www.linkedin.com/company/tedx-iitindore/"><i><FontAwesomeIcon icon={faLinkedin} /></i></a></li>
                             </ul>
                         </div>
                     </div>
