@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Maintenance() {
     return (
-        <section className="container">
+        <section className="container-maint">
             <div className="content">
                 <div className="message">
                     <h1>Coming Soon...!</h1>
