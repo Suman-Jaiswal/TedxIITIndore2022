@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import TextMobileStepper from "../../components/Slide"
 import Heading from "../../components/Heading"
 import './HomePage.css'
@@ -17,6 +17,10 @@ function Home() {
     const S2017 = speakers.filter(s => s.date.includes('2017'))
     S2017.forEach(obj => { obj.label = obj.name })
     console.log(S2022)
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [input])
 
     return (
         <>
@@ -47,7 +51,7 @@ function Home() {
                         <iframe data-aos-duration="700" data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-5" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
-       
+
                 <div className="my-5 gradient-border p-1 sections">
                     <div className="row justify-content-evenly">
                         <iframe data-aos-duration="700" data-aos="fade-right" className="px-4 py-3 pb-4 col-12 col-md-4" width="520" height="280" src="https://www.youtube.com/embed/d0NHOpeczUU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
@@ -62,7 +66,7 @@ function Home() {
 
                     </div>
                 </div>
-              
+
                 <div className="container mb-5 gradient-border p-1">
                     <Heading heading={'Speakers'} />
                     <hr />
