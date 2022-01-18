@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import Data from '../../data/Data'
 import Gallery from 'react-photo-gallery'
+import Maintenance from '../../components/Maintenance/Maintenance'
 
 export default function GalleryPage() {
 
@@ -17,7 +18,8 @@ export default function GalleryPage() {
 
     return (
         <div className="container">
-            <Gallery photos={gallery} />
+            {/* <Gallery photos={gallery} /> */}
+            <Maintenance />
         </div>
     )
 }
