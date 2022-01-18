@@ -19,13 +19,18 @@ export default function TeamPage() {
     console.log(team.length > 0 ? team.img : null)
 
     return (<>
-            <Heading heading={'TEAM'} />
         <div className='deck-container'>
+        <Heading heading={'TEAM'} />
             <Deck items={team.filter(x => x.head)} />
+        </div>
+        <br />
+        <div className='deck-container'>
+        <Heading heading={'ADVISORY COMMITTEE'} />
+            <Deck items={team.filter(x => x.head === false)} />
         </div>
 
         <div className="container justify-content-center small-card">
-
+        <Heading heading={'TEAM'} />
             <div className="row">
                 {
                     <div className='col-12 col-md-6'>
@@ -40,6 +45,21 @@ export default function TeamPage() {
             </div>
         </div>
         <br />
+        {/* <div className="container justify-content-center small-card">
+        <Heading heading={'ADVISORY COMMITTEE'} />
+            <div className="row">
+                {
+                    <div className='col-12 col-md-6'>
+                        <div className="row justify-content-evenly p-0">
+                            {
+                                team.map(person => <TeamCard person={person} key={person.sno} />)
+                            }
+                        </div>
+                        <br />
+                    </div>
+                }
+            </div>
+        </div> */}
     </>
 
     );

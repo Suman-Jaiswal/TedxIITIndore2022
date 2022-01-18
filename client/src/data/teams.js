@@ -109,5 +109,45 @@ export const teams =
             emailId: "mems200005019@iiti.ac.in",
             head: true,
             get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
-        }
+        },
+        {
+            sno: 12,
+            teamSno: 9,
+            name: "Dheeraj Bansal",
+            title: "Advisory Committee",
+            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            emailId: "ce180004009@iiti.ac.in",
+            head: false,
+            get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
+        },
+        {
+            sno: 13,
+            teamSno: 9,
+            name: "Ismail Malekji",
+            title: "Advisory Committee",
+            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            emailId: "mems180005015@iiti.ac.in",
+            head: false,
+            get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
+        },
+        {
+            sno: 14,
+            teamSno: 9,
+            name: "Mohit Munot",
+            title: "Advisory Committee",
+            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            emailId: "mems180005017@iiti.ac.in",
+            head: false,
+            get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
+        },
+        {
+            sno: 15,
+            teamSno: 9,
+            name: "Vineet Ostwal",
+            title: "Advisory Committee",
+            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            emailId: "me180003063@iiti.ac.in",
+            head: false,
+            get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
+        },
     ]
