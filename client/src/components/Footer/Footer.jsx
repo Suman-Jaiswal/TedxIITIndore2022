@@ -44,11 +44,13 @@ function Footer() {
                                 <li><a target={'_blank'} rel='noreferrer' href="https://gaurangadas.com/">Gauranga Das</a></li>
                             </ul> */}
                             <img
-                                src="https://res.cloudinary.com/tedxiiti/image/upload/w_80,h_80,c_fill/v1641996495/images/team/Niraj-Saini.jpg"
+                                src="https://res.cloudinary.com/tedxiiti/image/upload/w_250,h_250,c_fill/v1641996495/images/team/Niraj-Saini.jpg"
                                 alt="" 
                                 style={{
                                     borderRadius: '50%',
-                                    marginTop: "10px"
+                                    marginTop: "10px",
+                                    width: 80,
+                                    height: 80
                                 }}
                                 />
                             <div className=" mt-2">
