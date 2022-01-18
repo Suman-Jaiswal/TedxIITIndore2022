@@ -48,13 +48,14 @@ function Home() {
                             </Typography>
                         </div>
 
-                        <iframe data-aos-duration="700" poster data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-4" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        {/* <iframe data-aos-duration="700" autoPlay muted data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-4" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                        <video className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" controls poster="https://res.cloudinary.com/tedxiiti/image/upload/w_480,h_270,c_fill/v1642529540/images/banners/video-poster.png" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4"></video>
                     </div>
                 </div>
 
                 <div className="my-5 gradient-border p-1 sections">
                     <div className="row justify-content-evenly">
-                        <iframe data-aos-duration="700" data-aos="fade-right" className="px-4 py-3 pb-4 col-12 col-md-4" width="520" height="280" src="https://www.youtube.com/embed/d0NHOpeczUU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                        <iframe data-aos-duration="700" data-aos="fade-right" className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" width="520" height="280" src="https://www.youtube.com/embed/d0NHOpeczUU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                         </iframe>
 
                         <div className="px-4 py-2 col-12 col-md-7 text-light">
