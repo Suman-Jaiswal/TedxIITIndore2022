@@ -49,7 +49,7 @@ function Home() {
                         </div>
 
                         {/* <iframe data-aos-duration="700" autoPlay muted data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-4" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
-                        <video className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" controls poster="https://res.cloudinary.com/tedxiiti/image/upload/w_480,h_270,c_fill/v1642529540/images/banners/video-poster.png" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4"></video>
+                        <video data-aos-duration="700" data-aos="fade-left" className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" controls poster="https://res.cloudinary.com/tedxiiti/image/upload/w_480,h_270,c_fill/v1642529540/images/banners/video-poster.png" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4"></video>
                     </div>
                 </div>
 
