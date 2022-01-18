@@ -5,7 +5,7 @@ export const teams =
             teamSno: 1,
             name: "Niraj Saini",
             title: "Organizer",
-            linkedIn: "https://www.linkedin.com/in/niraj-saini-4b5596195",
+            linkedIn: "https://www.linkedin.com/in/niraj-kumar-4b5596195",
             emailId: "organizer.tedx@iiti.ac.in",
             head: true,
             get img() { return 'https://res.cloudinary.com/tedxiiti/image/upload/w_375,h_375,c_fill/v1641996495/images/team/' + this.name.replace(' ', '-') + '.jpg'}
