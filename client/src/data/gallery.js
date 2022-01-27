@@ -1,86 +1,82 @@
 export const gallery = [
     {
-        src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273691/images/gallery/9K6A0126.jpg" ,
         width: 4,
         height: 3
     },
     {
-        src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273689/images/gallery/9K6A0300.jpg",
         width: 1,
         height: 1
     },
     {
-        src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273687/images/gallery/9K6A0219.jpg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273685/images/gallery/9K6A0284.jpg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273663/images/gallery/9K6A0320.jpg",
+        width: 1,
+        height: 1
+    },
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273662/images/gallery/9K6A0344.jpg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273662/images/gallery/9K6A0163.jpg",
         width: 3,
-        height: 4
+        height: 3
     },
     {
-        src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273660/images/gallery/9K6A0063.jpg",
+        width: 4,
+        height: 3
+    },
+
+
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273655/images/gallery/9K6A0254.jpg",
+        width: 4,
+        height: 3
+    },
+   
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273688/images/gallery/9K6A0058.jpg",
+        width: 1,
+        height: 1
+    },
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273643/images/gallery/9K6A0228.jpg",
+        width: 4,
+        height: 3
+    },
+    {
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273689/images/gallery/9K6A0300.jpg",
         width: 3,
-        height: 4
+        height: 3
     },
+    
+
     {
-        src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-        width: 3,
-        height: 4
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273719/images/gallery/9K6A0363.jpg",
+        width: 4,
+        height: 3
     },
+
     {
-        src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273720/images/gallery/9K6A0362.jpg",
         width: 4,
         height: 3
     },
     {
-        src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://source.unsplash.com/PpOHJezOalU/800x599",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
-        width: 3,
-        height: 4
-    },
-    {
-        src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/u9cG4cuJ6bU/4927x1000",
-        width: 4927,
-        height: 1000
-    },
-    {
-        src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
-        width: 4,
-        height: 3
-    },
-    {
-        src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
+        src: "https://res.cloudinary.com/tedxiiti/image/upload/v1643273691/images/gallery/9K6A0258.jpg",
         width: 4,
         height: 3
     }

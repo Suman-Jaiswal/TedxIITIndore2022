@@ -32,8 +32,9 @@ export default function GalleryPage() {
 
   return (
     <div className="gallery">
-        <Heading heading={'GALLERY'} /> 
-      <Gallery photos={gallery} onClick={openLightbox} />
+        <Heading  heading={'GALLERY'} /> 
+        <div className="photos">
+      <Gallery photos={gallery} onClick={openLightbox}  />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -48,6 +49,7 @@ export default function GalleryPage() {
           </Modal>
         ) : null}
       </ModalGateway>
+      </div>
     </div>
   );
 }
