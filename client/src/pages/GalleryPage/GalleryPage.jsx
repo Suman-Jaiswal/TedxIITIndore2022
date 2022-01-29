@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import Data from '../../data/Data'
-import Gallery from 'react-photo-gallery'
 import Maintenance from '../../components/Maintenance/Maintenance'
 
 export default function GalleryPage() {
