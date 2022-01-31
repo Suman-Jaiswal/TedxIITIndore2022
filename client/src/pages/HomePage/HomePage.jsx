@@ -35,6 +35,7 @@ function Home() {
                 <div className="bg-img">
                     <img src="https://res.cloudinary.com/tedxiiti/image/upload/w_600,h_350/v1642364734/images/banners/bg.png" alt="" />
                 </div>
+                <button class="buy" href="#">Buy Tickets</button>
             </div>
 
             <div className="container">
