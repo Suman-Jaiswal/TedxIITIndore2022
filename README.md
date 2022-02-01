@@ -1,3 +1,3 @@
-# TEDxIITIndore-1
+# TEDxIITIndore
 TEDx website for IITI
-### Link - [TEDXIITIndore](https://www.tedxiitindore.in)
+### Link - [www.tedxiitindore.in](https://www.tedxiitindore.in)
