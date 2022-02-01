@@ -25,6 +25,7 @@ function Navbar() {
                 <div className="d-flex align-items-center">
                     <Link to='/'>
                         <img className="navbar-brand logo" alt="" src="https://res.cloudinary.com/tedxiiti/image/upload/w_300,c_fill/v1642099561/images/logos/removed_black_bg.png"></img>
+                        <button className="buy-btn" href="#">Buy Tickets</button>
                     </Link>
                 </div>
 
