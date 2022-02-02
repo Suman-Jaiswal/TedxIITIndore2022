@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <App />
+            <h1 className='text-center'> Under Maintenance...</h1>
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
