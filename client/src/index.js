@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Maintenance from './components/Maintenance/Maintenance';
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <App />
+            {
+                process.env.REACT_APP_MODE === 'maintenance' ? <Maintenance heading={'Under Maintenance'} /> : <App />
+            }
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
