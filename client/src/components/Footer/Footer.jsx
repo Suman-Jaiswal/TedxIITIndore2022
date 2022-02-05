@@ -44,24 +44,26 @@ function Footer() {
                                 <li><a target={'_blank'} rel='noreferrer' href="https://gaurangadas.com/">Gauranga Das</a></li>
                             </ul> */}
                             <img
-                                src="https://res.cloudinary.com/tedxiiti/image/upload/w_250,h_250,c_fill/v1641996495/images/team/Niraj-Saini.jpg"
-                                alt="" 
+                                src="/images/team/Niraj-Saini.jpg"
+                                alt=""
                                 style={{
                                     borderRadius: '50%',
                                     marginTop: "10px",
                                     width: 80,
                                     height: 80
                                 }}
-                                />
+                                height={300}
+                                width={300}
+                            />
                             <div className=" mt-2">
-                              <span >Niraj Saini </span>
-                              <span><a target={'_blank'} rel='noreferrer' className="linkedin" href="https://www.linkedin.com/in/niraj-kumar-4b5596195"><i> <FontAwesomeIcon icon={faLinkedin} /></i></a></span>
+                                <span >Niraj Saini </span>
+                                <span><a target={'_blank'} rel='noreferrer' className="linkedin" href="https://www.linkedin.com/in/niraj-kumar-4b5596195"><i> <FontAwesomeIcon icon={faLinkedin} /></i></a></span>
                             </div>
-                           
+
                         </div>
 
                         <div className="col-xs-6 col-md-3">
-                            <img src="https://res.cloudinary.com/tedxiiti/image/upload/w_210,h_50,c_fill/v1642099561/images/logos/removed_black_bg.png" alt="" />
+                            <img width={200} src="/images/logos/removed-black-bg.png" alt="" />
                         </div>
 
                     </div>

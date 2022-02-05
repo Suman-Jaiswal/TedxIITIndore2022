@@ -24,16 +24,16 @@ function Home() {
 
     return (
         <>
-            <div
-                className="hero" >
+            <div className="hero" >
                 <div className="video-container">
-                    <div className="wings">
+                    {/* <div className="wings">
                         <img src="wings.png" alt="" />
-                    </div>
-                    <video muted playsInline disablePictureInPicture autoPlay controlsList={'noDownload'} src="https://res.cloudinary.com/tedxiiti/video/upload/du_11.8,q_100,so_0/v1642094821/videos/intro/intro-2022.mp4" type='video/mp4' id='vid'> </video>
+                    </div> */}
+                    <img id="vid" src="/images/hero-bg.webp" alt="" width={'100%'} />
+                    {/* <video muted playsInline disablePictureInPicture autoPlay controlsList={'noDownload'} src="https://drive.google.com/file/d/1UYct9nO7pJdXdUhGhfGon4WpYCb9UH-3/preview" type='video/mp4' id='vid'> </video> */}
                 </div>
                 <div className="bg-img">
-                    <img src="https://res.cloudinary.com/tedxiiti/image/upload/w_600,h_350/v1642364734/images/banners/bg.png" alt="" />
+                    <img src="/images/hero-bg.webp" alt="" />
                 </div>
             </div>
 
@@ -49,7 +49,8 @@ function Home() {
                         </div>
 
                         {/* <iframe data-aos-duration="700" autoPlay muted data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-4" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
-                        <video data-aos-duration="700" data-aos="fade-left" className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" controls poster="https://res.cloudinary.com/tedxiiti/image/upload/w_480,h_270,c_fill/v1642529540/images/banners/video-poster.png" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4"></video>
+                        {/* <video data-aos-duration="700" data-aos="fade-left" className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" controls poster="https://res.cloudinary.com/tedxiiti/image/upload/w_480,h_270,c_fill/v1642529540/images/banners/video-poster.png" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4"></video> */}
+                        <img src="/about.jpg" className="px-4 py-3 pb-4 mt-2 col-12 col-md-3" alt="" />
                     </div>
                 </div>
 

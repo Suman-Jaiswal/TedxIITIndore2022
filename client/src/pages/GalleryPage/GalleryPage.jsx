@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect, useCallback } from 'react'
 import Data from '../../data/Data'
-import Gallery  from 'react-photo-gallery'
+import Gallery from 'react-photo-gallery'
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Heading from '../../components/Heading';
 import "./GalleryPage.css"
@@ -31,8 +31,8 @@ export default function GalleryPage() {
 
     return (
         <div className="gallery">
-            <Heading heading={'GALLERY'} />
-            <div className="photos">
+            <Heading heading={'coming soon...'} />
+            {/* <div className="photos">
                 <Gallery photos={gallery} onClick={openLightbox} />
                 <ModalGateway>
                     {viewerIsOpen ? (
@@ -48,7 +48,7 @@ export default function GalleryPage() {
                         </Modal>
                     ) : null}
                 </ModalGateway>
-            </div>
+            </div> */}
         </div>
     );
 }
