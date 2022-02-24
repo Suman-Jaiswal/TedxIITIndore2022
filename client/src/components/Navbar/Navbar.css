@@ -24,11 +24,6 @@
   padding-right: 0px !important;
   padding-left: 15px !important;
 }
-
-.button:hover {
-  color: #e62b1e !important;
-}
-
 .button:focus {
   box-shadow: none !important;
 }

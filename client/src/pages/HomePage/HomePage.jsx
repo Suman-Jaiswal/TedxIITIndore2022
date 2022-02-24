@@ -16,7 +16,6 @@ function Home() {
 
     const S2017 = speakers.filter(s => s.date.includes('2017'))
     S2017.forEach(obj => { obj.label = obj.name })
-    console.log(S2022)
 
     useEffect(() => {
         window.scrollTo(0, 0)

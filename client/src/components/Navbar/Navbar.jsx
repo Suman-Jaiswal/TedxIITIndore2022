@@ -2,13 +2,14 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faImages, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faImages, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuDrawer from "../MenuDrawer"
+import { useEffect } from "react"
 
-function Navbar() {
+function Navbar({ currentPage }) {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -18,6 +19,21 @@ function Navbar() {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
+    useEffect(() => {
+        if (currentPage === '/') {
+            return
+        }
+        const dot = '.' + currentPage
+        const el = document.querySelector(dot)
+        const allEl = document.querySelectorAll('.btn')
+        for (let index = 0; index < allEl.length; index++) {
+            const element = allEl[index];
+            console.log(element)
+            element.classList.remove('btn-danger')
+        }
+        el.classList.add('btn-danger')
+    }, [currentPage])
 
     return (
         <nav className="navbar navbar-light nav">
@@ -30,7 +46,8 @@ function Navbar() {
                 </div>
 
                 <div className="menu-only">
-                    <Link to='/about' ><button className="btn button"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
+                    <Link to='/home' ><button className="btn button px-2 py-1 mx-1 home"><FontAwesomeIcon icon={faHome} /> HOME</button></Link>
+                    <Link to='/about' ><button className="btn button px-2 py-1 mx-1 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
 
                     <div>
                         <button
@@ -39,7 +56,7 @@ function Navbar() {
                             aria-haspopup="true"
                             aria-expanded={open ? 'true' : undefined}
                             onClick={handleClick}
-                            className="btn button"
+                            className="btn button px-2 py-1 mx-1 speakers"
                         >
                             <FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS
                         </button>
@@ -66,9 +83,9 @@ function Navbar() {
                         </Menu>
                     </div>
 
-                    <Link to='/talks' ><button className="btn button"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
-                    <Link to='/gallery' ><button className="btn button"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link>
-                    <Link to='/team' ><button className="btn button"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
+                    <Link to='/talks' ><button className="btn button px-2 py-1 mx-1 talks"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
+                    {/* <Link to='/gallery' ><button className="btn button px-2 py-1 mx-1 gallery"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link> */}
+                    <Link to='/team' ><button className="btn button px-2 py-1 mx-1 team"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
 
                 </div>
                 <div className="menu-drawer">

@@ -7,9 +7,8 @@ import { useParams } from 'react-router-dom';
 export default function SpeakersPage() {
 
     const { year } = useParams()
-    console.log(year)
     const [speakers, setSpeakers] = useState([])
-    console.log(Data().speakers)
+
     useEffect(() => {
         setSpeakers(Data().speakers.filter(x => x.date.includes(year)))
     }, [year])
@@ -22,16 +21,16 @@ export default function SpeakersPage() {
         <div >
             <Heading heading={`SPEAKERS (${year})`} />
             {
-                year === '2022' ? <h2 className='text-light text-center' >Coming soon...</h2>:
-                <div className='container' >
-                <div className="row p-0">
-                    {
-                        speakers.map(speaker => <SpeakersCard speaker={speaker} key={speaker.sno} />)
-                    }
-                </div>
-            </div>
+                year === '2022' ? <h2 className='text-light text-center' >Coming soon...</h2> :
+                    <div className='container' >
+                        <div className="row p-0">
+                            {
+                                speakers.map(speaker => <SpeakersCard speaker={speaker} key={speaker.sno} />)
+                            }
+                        </div>
+                    </div>
             }
-            
+
             <br />
         </div>
     );
