@@ -20,7 +20,7 @@ function App() {
         Aos.init({
             once: true
         })
-        setPage(location.pathname.substring(1, location.pathname.length).split('/')[0])
+        // setPage(location.pathname.substring(1, location.pathname.length).split('/')[0])
     }, [location.pathname])
 
 
