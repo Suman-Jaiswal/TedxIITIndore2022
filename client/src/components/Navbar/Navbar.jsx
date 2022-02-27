@@ -29,7 +29,6 @@ function Navbar({ currentPage }) {
         const allEl = document.querySelectorAll('.btn')
         for (let index = 0; index < allEl.length; index++) {
             const element = allEl[index];
-            console.log(element)
             element.classList.remove('btn-danger')
         }
         el.classList.add('btn-danger')

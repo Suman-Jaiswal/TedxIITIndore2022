@@ -12,7 +12,7 @@ export default function TalksPage() {
     useEffect(() => {
         setTalks(Data().talks)
     }, [])
-    
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -23,11 +23,9 @@ export default function TalksPage() {
             <Grid container sx={{ justifyContent: 'center' }} spacing={4}>
                 {
                     talks.map(talk =>
-                        <>
-                            <Grid key={talk.sno} item xs={12} md={5}>
-                                <TalksCard talk={talk} />
-                            </Grid>
-                        </>
+                        <Grid key={talk.sno} item xs={12} md={5}>
+                            <TalksCard talk={talk} />
+                        </Grid>
                     )
                 }
             </Grid>

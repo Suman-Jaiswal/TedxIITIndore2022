@@ -33,12 +33,11 @@ export default function SpeakersCard({ speaker }) {
         setOpen(false)
         setObj({});
     };
-    console.log(modalobj)
 
     return (
         <>
             <div
-               data-aos={sno % 2 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000"
+                data-aos={sno % 2 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000"
                 className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'
             >
                 <Card className='gradient-border bg-dark text-light' sx={{ width: '300px', overflow: 'visible' }} onClick={() => handleOpen({ name, post, description })} >

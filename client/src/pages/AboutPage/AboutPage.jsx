@@ -13,10 +13,10 @@ export default function AboutPage() {
 
     return (
         <>
-                <br />
-        <div className='container' style={{ justifyContent: 'center' }} spacing={2}>
-                <div item xs={12} md={5}>
-                    <Card  className='bg-dark my-4' style={{ padding: '1em', margin: '0.75em' }}>
+            <br />
+            <div className='container' style={{ justifyContent: 'center' }} spacing={2}>
+                <div xs={12} md={5}>
+                    <Card className='bg-dark my-4' style={{ padding: '1em', margin: '0.75em' }}>
                         <CardActionArea>
                             <CardContent>
                                 <Typography gutterBottom variant="h4" component="div" className='text-center text-md-start' style={{ color: "#e62b1e", fontWeight: "bold" }}>
@@ -31,15 +31,15 @@ export default function AboutPage() {
                         </CardActionArea>
                     </Card>
                 </div>
-                <div item xs={12} md={5}>
-                    <Card   className='bg-dark my-4' style={{ padding: '1em', margin: '0.75em' }}>
+                <div xs={12} md={5}>
+                    <Card className='bg-dark my-4' style={{ padding: '1em', margin: '0.75em' }}>
                         <CardActionArea>
                             <CardContent>
                                 <Typography gutterBottom variant="h4" className='text-center text-md-start' component="div" style={{ color: "#e62b1e", fontWeight: "bold" }}>
                                     About TEDx
                                 </Typography>
-                                
-                                <Typography variant='h5' style={{color:"#e62b1e"}}>
+
+                                <Typography variant='h5' style={{ color: "#e62b1e" }}>
                                     x=Independently organised event.
                                 </Typography>
                                 <Typography variant="body1" className='text-light text-center text-md-start' mt={2}>
