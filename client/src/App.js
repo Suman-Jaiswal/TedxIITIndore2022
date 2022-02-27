@@ -14,13 +14,13 @@ import { useEffect, useState } from "react";
 function App() {
 
     const location = useLocation()
-    const [page, setPage] = useState('home');
+    const [page, setPage] = useState('');
 
     useEffect(() => {
         Aos.init({
             once: true
         })
-        // setPage(location.pathname.substring(1, location.pathname.length).split('/')[0])
+        setPage(location.pathname.substring(1, location.pathname.length).split('/')[0])
     }, [location.pathname])
 
 
@@ -28,7 +28,7 @@ function App() {
         <>
             <Navbar currentPage={page} />
             <Routes>
-                <Route path='/home' element={<HomePage />} />
+                <Route path='/' element={<HomePage />} />
                 <Route path='/about' element={<AboutPage />} />
                 <Route path='/speakers/:year' element={<SpeakersPage />} />
                 <Route path='/talks' element={<TalksPage />} />

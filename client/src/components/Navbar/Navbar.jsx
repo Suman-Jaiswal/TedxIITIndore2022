@@ -21,10 +21,10 @@ function Navbar({ currentPage }) {
     };
 
     useEffect(() => {
-        if (currentPage === '/') {
-            return
-        }
-        const dot = '.' + currentPage
+        var dot = '.'
+        if (currentPage === '') dot += 'home'
+        else dot += currentPage
+
         const el = document.querySelector(dot)
         const allEl = document.querySelectorAll('.btn')
         for (let index = 0; index < allEl.length; index++) {
@@ -33,6 +33,7 @@ function Navbar({ currentPage }) {
             element.classList.remove('btn-danger')
         }
         el.classList.add('btn-danger')
+
     }, [currentPage])
 
     return (
@@ -46,7 +47,7 @@ function Navbar({ currentPage }) {
                 </div>
 
                 <div className="menu-only">
-                    <Link to='/home' ><button className="btn button px-2 py-1 mx-1 home"><FontAwesomeIcon icon={faHome} /> HOME</button></Link>
+                    <Link to='/' ><button className="btn button px-2 py-1 mx-1 home"><FontAwesomeIcon icon={faHome} /> HOME</button></Link>
                     <Link to='/about' ><button className="btn button px-2 py-1 mx-1 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
 
                     <div>
