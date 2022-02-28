@@ -21,7 +21,7 @@ function Home() {
     let tempTalks = []
 
     const rand = Math.abs(Math.floor(Math.random() * 16) - 4);
-    console.log(rand)
+
     for (let i = 0; i < 3; i++) {
         tempTalks.push(talks[rand + i])
     }
