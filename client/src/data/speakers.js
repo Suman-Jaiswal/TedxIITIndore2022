@@ -2,7 +2,7 @@ export const speakers = [
     {
         sno: "0",
         name: "Coming Soon...",
-        post: "Specialist and Assistant Professor of Geriatrics Department, AIIMS New Delhi",
+        post: "Stay tuned :)",
         description: "Dr. Prasun Chatterjee is one of the very few qualified Geriatrician (specialization in elderly care medicine ) in India. He is currently faculty in AIIMS, New Delhi, Deptt. Of Geriatric Medicine. He has started N.G.O “Healthy Aging India” and is heading it to make it an NGO of International reputation. He is the founder of an intergenerational learning center at Noida Purva Madhyamik Vidyalaya, where educated elderly are mentoring less privileged school children - a 1st of its kind initiative in India. He was given Best Paper Award in National conference in Kolkata 2009 for working on Frailty in elderly, awarded CSIR fellowship to work on Sarcopenia, awarded by Padma Shri Professor V S Natarajan for serving elderly in the community and also \"Bharat Jyoti \"Award 2018 for selfless service to the community.",
         date: "10-21-2022",
         imgPath: "/images/speakers/Coming-Soon.jpg"
@@ -18,7 +18,7 @@ export const speakers = [
     {
         sno: "2",
         name: "Lt. Gen. Satish Dua",
-        post: "Lieutenant General Satish Dua, PVSM, UYSM, SM, VSM is the current Chief of Integrated Defence Staff to the Chairman Chiefs of Staff Committee of the Indian Armed Forces",
+        post: "Chairman Chiefs of Staff Committee of the Indian Armed Forces",
         description: "Lt. was commissioned into 8 Jammu and Kashmir Light Infantry (Siachen) in December 1979. He is considered as a counter-terrorism specialist and has held various important command, staff and instructor appointments during his career. He has commanded a battalion and a brigade in counterterrorism operations in Jammu and Kashmir and the XV Corps (Srinagar) (2015-2016). As a Major General of Assam Rifles, he was instrumental in raising a new formation termed IGAR (East) in Northeast India. He has held various staff appointments including Colonel MS (Complaints) in Military Secretary Branch; Brigade Major of Kargil Brigade; Brigadier General Staff (Operations) of XVI Corps (Nagrota); Deputy Director General in Weapon Equipment Directorate; Additional Director General (Procurement) in Master General of Ordnance Branch. During his career, he has been awarded the Vishisht Seva Medal, Sena Medal, the Uttam Yudh Seva Medal (2017) and Param Vishisht Seva Medal (2018) for his service.",
         date: "10-21-2018",
         imgPath: "/images/speakers/Lt-Gen-Satish-Dua.jpg"

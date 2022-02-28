@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faInfoCircle, faMicrophone, faPhoneAlt, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -86,8 +86,8 @@ function Navbar({ currentPage }) {
                     </div>
 
                     <Link to='/talks' ><button className="btn button px-2 py-1 mx-2 talks"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
-                    {/* <Link to='/gallery' ><button className="btn button px-2 py-1 mx-2 gallery"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link> */}
                     <Link to='/team' ><button className="btn button px-2 py-1 mx-2 team"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
+                    {/* <Link to='/contact' ><button className="btn button px-2 py-1 mx-2 team"><FontAwesomeIcon icon={faPhoneAlt} /> CONTACT US</button></Link> */}
 
                 </div>
                 <div className="menu-drawer">

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import TextMobileStepper from "../../components/Slide"
 import './HomePage.css'
 import { speakers } from '../../data/speakers';
@@ -8,15 +8,21 @@ import { talks } from '../../data/talks'
 import TalksCard from "../../components/TalksCard/TalksCard";
 
 function Home() {
-
-    const S2022 = speakers.filter(s => s.date.includes('2022'))
-    S2022.forEach(obj => { obj.label = obj.name })
-
-    const S2018 = speakers.filter(s => s.date.includes('2018'))
-    S2018.forEach(obj => { obj.label = obj.name })
-
-    const S2017 = speakers.filter(s => s.date.includes('2017'))
-    S2017.forEach(obj => { obj.label = obj.name })
+    const [S2022, set2022] = useState([{
+        name: '',
+        imgPath: '',
+        post: ''
+    }])
+    const [S2018, set2018] = useState([{
+        name: '',
+        imgPath: '',
+        post: ''
+    }])
+    const [S2017, set2017] = useState([{
+        name: '',
+        imgPath: '',
+        post: ''
+    }])
 
     let tempTalks = []
 
@@ -28,6 +34,9 @@ function Home() {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        set2022(speakers.filter(s => s.date.includes('2022')))
+        set2018(speakers.filter(s => s.date.includes('2018')))
+        set2017(speakers.filter(s => s.date.includes('2017')))
     }, [])
 
     return (
@@ -76,7 +85,7 @@ function Home() {
                             </p>
                         </div>
                         <div className="col-12 col-md-4 p-3">
-                            <iframe className="w-100 rounded" height={280} src="https://www.youtube.com/embed/d0NHOpeczUU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                            <iframe className="w-100" style={{ borderRadius: '10px', border: '5px solid rgba(255,255,255,0.7)' }} height={280} src="https://www.youtube.com/embed/d0NHOpeczUU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                             </iframe>
                         </div>
                     </div>
@@ -84,10 +93,10 @@ function Home() {
             </section>
             <section className="speakers py-5 bg-light">
                 <div className="container text-dark">
-                    <div className="h2 ps-2 mb-2">Past Speakers </div>
-                    <div className="text-secondary justify-content-center p-3 row">
-                        <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-4">
-                            <Typography marginBottom={2} className="fw-bold" variant="body1">
+                    <div className="h2 ps-2 mb-2">Speakers </div>
+                    <div className="text-secondary justify-content-center row">
+                        <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
+                            <Typography className="fw-bold" variant="body1">
                                 <Link
                                     className="h4 fw-bold years text-danger"
                                     to='/speakers/2022'>
@@ -96,8 +105,8 @@ function Home() {
                             </Typography>
                             <TextMobileStepper images={S2022} />
                         </div>
-                        <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-4">
-                            <Typography marginBottom={2} className="fw-bold" variant="body1">
+                        <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
+                            <Typography className="fw-bold" variant="body1">
                                 <Link
                                     className="h4 fw-bold years text-danger"
                                     to='/speakers/2018'>
@@ -106,8 +115,8 @@ function Home() {
                             </Typography>
                             <TextMobileStepper images={S2018} />
                         </div>
-                        <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-4">
-                            <Typography marginBottom={2} className="fw-bold" variant="body1">
+                        <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
+                            <Typography className="fw-bold" variant="body1">
                                 <Link
                                     className="h4 fw-bold years text-danger"
                                     to='/speakers/2017'>
@@ -124,8 +133,10 @@ function Home() {
             }}>
                 <div className="container text-light">
                     <div className="h2 ps-2 mb-2">Highlights </div>
-                    <div className="row my-3" data-aos="fade-up">
-                        {tempTalks.map((talk, i) => <div key={i} className='col-12 col-md-4'>
+                    <div className="row my-3" style={{
+                        overflowX: 'hidden'
+                    }}>
+                        {tempTalks.map((talk, i) => <div key={i} className='col-12 col-md-4' data-aos='fade-left' data-aos-delay={i * 200 + 200} >
                             <TalksCard talk={talk} />
                         </div>)}
                     </div>

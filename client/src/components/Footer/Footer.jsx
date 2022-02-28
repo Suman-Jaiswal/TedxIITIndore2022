@@ -13,7 +13,7 @@ function Footer() {
                     <div className="row">
 
 
-                        <div className="col-xs-6 col-md-3">
+                        <div className="col-xs-6 col-md-3 text-center text-md-start">
                             <h6>Useful Links</h6>
                             <ul className="footer-links">
                                 <li><a target={'_blank'} rel='noreferrer' href="https://tedx.com/">TEDx</a></li>
@@ -23,17 +23,18 @@ function Footer() {
                             </ul>
                         </div>
 
-                        <div className="col-xs-6 col-md-3">
+                        <div className="col-xs-6 col-md-3 text-center text-md-start">
                             <h6>Quick Links</h6>
                             <ul className="footer-links">
                                 <Link to='/about' ><li>About</li></ Link>
                                 <Link to='/speakers/2022' ><li>Speakers</li></ Link>
                                 <Link to='/talks' ><li>Talks</li></ Link>
                                 <Link to='/team' ><li>Team</li></ Link>
+                                {/* <Link to='/contact' ><li>Contact Us</li></ Link> */}
                             </ul>
                         </div>
 
-                        <div className="col-xs-6 col-md-3">
+                        <div className="col-xs-6 col-md-3 text-center text-md-start">
                             <h6>Organizer</h6>
                             <img
                                 src="/images/team/Niraj-Saini.jpg"
@@ -54,7 +55,7 @@ function Footer() {
 
                         </div>
 
-                        <div className="col-xs-6 col-md-3">
+                        <div className="col-xs-6 col-md-3 text-center text-md-start">
                             <img width={200} src="/images/logos/removed-black-bg.png" alt="" />
                         </div>
 

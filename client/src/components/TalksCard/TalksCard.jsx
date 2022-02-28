@@ -36,14 +36,14 @@ const TalksCard = ({ talk }) => {
     };
     return (
         <div className='py-3' >
-            <Card className='gradient-card py-2 px-1 rounded' >
+            <Card className='bg-light p-2' style={{ borderRadius: '10px' }} >
                 <CardActionArea onClick={handleOpen}>
                     <div className='video-responsive' data-aos={sno % 3 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000">
-                        <iframe width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe style={{ borderRadius: '10px' }} width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className='py-3' >
-                        <div className="h6 px-3">{title}</div>
-                        <div className="p px-3">
+                        <div className="h6 px-2">{title}</div>
+                        <div className="p px-2">
                             by {speaker} {' ('}{date.substr(6, 4)}{')'}
                         </div>
                     </div>
