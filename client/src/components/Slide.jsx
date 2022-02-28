@@ -113,7 +113,7 @@ function SwipeableTextMobileStepper({ images }) {
                     }
                 />
             </Paper>
-            <hr />
+            <br /><br />
         </>
 
     );

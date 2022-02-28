@@ -17,10 +17,12 @@ export default function SpeakersPage() {
     }, [])
 
     return (
-        <section className='talks py-5'>
+        <section className='talks py-5' style={{
+            backgroundColor: '#161616'
+        }}>
             <div className="h1 text-light text-center mb-4">Speakers ({year})</div>
             {
-                year === '2022' ? <h2 className='text-light text-center' >Coming soon...</h2> :
+                year === '2022' ? <h2 className='text-light text-center h-100' >Coming soon... <br /><br /><br /><br /></h2> :
                     <div className='container' >
                         <div className="row p-0">
                             {

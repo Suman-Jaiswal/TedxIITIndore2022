@@ -23,7 +23,7 @@ export default function AboutPage() {
                     </div>
                     <div className="col-12 col-md-7 p-3">
                         <div className="h2 ps-2 mb-2">TED<sup className='text-danger'>x</sup> </div>
-                        <p className='text-danger fw-bold'> x=Independently organised event</p>
+                        <p className='text-danger fw-bold'> x = Independently organised event</p>
                         <p>
                             TEDx was created in 2009 in the spirit of TED's mission, "Ideas worth spreading". It supports independent organizers who want to create TED-like event in their own community.
                         </p>

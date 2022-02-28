@@ -49,7 +49,7 @@ function Navbar({ currentPage }) {
                 </div>
 
                 <div className="menu-only">
-                    <Link to='/' ><button className="btn button px-2 py-1 mx-2 home"><FontAwesomeIcon icon={faHome} /> HOME</button></Link>
+                    <Link to='/' ><button className="btn button px-2 py-1 mx-2 home"><FontAwesomeIcon icon={faHome} /></button></Link>
                     <Link to='/about' ><button className="btn button px-2 py-1 mx-2 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
 
                     <div>

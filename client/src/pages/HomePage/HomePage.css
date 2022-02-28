@@ -1,55 +1,17 @@
-.bg-img {
-  display: none;
-  width: 100%;
-  /* filter: blur(4px); */
-}
-.bg-img img {
-  width: 100%;
-}
 .hero {
-  height: auto;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: baseline;
-  align-items: center;
-}
-.video-container {
-  /* position: absolute; */
-  top: 0;
-  background: url("../../../public/images/hero-bg.webp") no-repeat;
+  width: 100%;
+  background: url(../../../public/images/hero.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: calc(110%);
+  height: 86vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-.video-container {
-  margin-top: -100px;
-  overflow: hidden;
+.text {
   text-align: center;
-  width: 100%;
-  height: inherit;
 }
-#vid {
-  opacity: 0.5;
+.text img {
   width: 100%;
-  height: auto;
-  overflow: hidden;
-  vertical-align: middle;
-  align-self: center;
-  z-index: 10;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
-}
-.wings {
-  position: absolute;
-  width: 100%;
-  top: -10rem;
-  left: 0rem;
-}
-.wings img {
-  width: 90%;
-  filter: saturate(1.8);
-  animation: animate 10s linear;
-  z-index: 0;
 }
 .years {
   text-decoration: none;
@@ -57,15 +19,10 @@
 .years:hover {
   text-decoration: underline;
 }
-@media screen and (max-width: 800px) {
-  .video-container {
-    margin-top: 0px;
-    display: none;
-  }
-  .bg-img {
-    display: block;
-  }
-  .reverse {
-    flex-direction: row-reverse;
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 40vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 }

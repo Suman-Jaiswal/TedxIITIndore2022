@@ -16,7 +16,9 @@ export default function TeamPage() {
     }, [])
 
     return (
-        <section className='team py-5'>
+        <section className='team py-5' style={{
+            backgroundColor: '#161616'
+        }}>
             <div className="container">
 
                 {/* for Desktop  */}

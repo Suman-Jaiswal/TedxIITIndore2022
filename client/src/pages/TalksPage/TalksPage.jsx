@@ -15,7 +15,9 @@ export default function TalksPage() {
     }, [])
 
     return (
-        <section className='talks py-5'>
+        <section className='talks py-5' style={{
+            backgroundColor: '#161616'
+        }}>
             <div className="h1 text-light text-center mb-3">Talks</div>
             <div className="container ">
                 <div className="row justify-content-center d-flex">
@@ -27,7 +29,6 @@ export default function TalksPage() {
                         )
                     }
                 </div>
-
             </div>
             <br />
         </section>

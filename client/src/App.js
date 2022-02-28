@@ -18,7 +18,8 @@ function App() {
 
     useEffect(() => {
         Aos.init({
-            once: true
+            once: true,
+            duration: '1000'
         })
         setPage(location.pathname.substring(1, location.pathname.length).split('/')[0])
     }, [location.pathname])
