@@ -35,10 +35,12 @@ function Home() {
             <section className="hero bg-light" >
                 <div className="container h-100 d-flex align-items-center">
                     <div className="row">
-                        <div className="col-12 col-md-7 my-5 text" data-aos="fade-up">
-                            <img src="/images/logos/removed-black-bg.png" width={500} alt="" />
-                            <br />
-                            <div style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 mx-auto">PHOENI<sup className="text-danger fw-bold">X</sup> IN THE MAKING</div>
+                        <div className="col-12 col-md-7 text" >
+                            <img data-aos="fade-up" src="/images/logos/removed-black-bg.png" width={500} alt="" />
+                            <div data-aos="fade-up" data-aos-delay="200" style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 mx-auto my-3">PHOENI<sup className="text-danger fw-bold">X</sup> IN THE MAKING</div>
+                            <div className="my-4">
+                                <button data-aos="fade-up" data-aos-delay="400" className="buy-btn mt-4">Buy Tickets</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +52,7 @@ function Home() {
 
                         <div className="col-12 p-3" data-aos="fade-up">
                             <div className="h2 ps-2 mb-2">THEME: Phoenix in the making </div>
-                            <p>
+                            <p data-aos-delay="500">
                                 We all love phoenixes, don't we? And why shouldn't we? They are such magnificent and beautiful birds. But it isn't always so glorious. When a phoenix rises from its ashes, it's a tiny, ugly thing. It has to grow up again, survive till adulthood, to regain its lost former glory. That is what our theme is about. At some point in life, everyone fails. But that doesn't mean we give up. We rise back up, more glorious, more magnificent, more successful that before. That is what life is about. And that is what this edition of our TEDx will be about.
                             </p>
                         </div>

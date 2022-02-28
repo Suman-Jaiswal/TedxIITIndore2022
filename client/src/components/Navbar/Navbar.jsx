@@ -45,7 +45,6 @@ function Navbar({ currentPage }) {
                     <Link to='/'>
                         <img className="navbar-brand logo" alt="" src="/images/logos/removed-black-bg.png"></img>
                     </Link>
-                    <a className="buy-btn" href="/#">Buy Tickets</a>
                 </div>
 
                 <div className="menu-only">
