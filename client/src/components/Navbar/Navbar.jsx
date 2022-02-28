@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faImages, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -21,11 +21,14 @@ function Navbar({ currentPage }) {
     };
 
     useEffect(() => {
+
         var dot = '.'
         if (currentPage === '') dot += 'home'
         else dot += currentPage
 
         const el = document.querySelector(dot)
+        if (!el) return
+
         const allEl = document.querySelectorAll('.btn')
         for (let index = 0; index < allEl.length; index++) {
             const element = allEl[index];
@@ -36,7 +39,7 @@ function Navbar({ currentPage }) {
     }, [currentPage])
 
     return (
-        <nav className="navbar navbar-light nav">
+        <nav className="navbar nav">
             <div className="nav-div">
                 <div className="d-flex align-items-center">
                     <Link to='/'>
@@ -46,8 +49,8 @@ function Navbar({ currentPage }) {
                 </div>
 
                 <div className="menu-only">
-                    <Link to='/' ><button className="btn button px-2 py-1 mx-1 home"><FontAwesomeIcon icon={faHome} /> HOME</button></Link>
-                    <Link to='/about' ><button className="btn button px-2 py-1 mx-1 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
+                    <Link to='/' ><button className="btn button px-2 py-1 mx-2 home"><FontAwesomeIcon icon={faHome} /> HOME</button></Link>
+                    <Link to='/about' ><button className="btn button px-2 py-1 mx-2 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
 
                     <div>
                         <button
@@ -56,7 +59,7 @@ function Navbar({ currentPage }) {
                             aria-haspopup="true"
                             aria-expanded={open ? 'true' : undefined}
                             onClick={handleClick}
-                            className="btn button px-2 py-1 mx-1 speakers"
+                            className="btn button px-2 py-1 mx-2 speakers"
                         >
                             <FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS
                         </button>
@@ -83,9 +86,9 @@ function Navbar({ currentPage }) {
                         </Menu>
                     </div>
 
-                    <Link to='/talks' ><button className="btn button px-2 py-1 mx-1 talks"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
-                    {/* <Link to='/gallery' ><button className="btn button px-2 py-1 mx-1 gallery"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link> */}
-                    <Link to='/team' ><button className="btn button px-2 py-1 mx-1 team"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
+                    <Link to='/talks' ><button className="btn button px-2 py-1 mx-2 talks"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
+                    {/* <Link to='/gallery' ><button className="btn button px-2 py-1 mx-2 gallery"><FontAwesomeIcon icon={faImages} /> GALLERY</button></Link> */}
+                    <Link to='/team' ><button className="btn button px-2 py-1 mx-2 team"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
 
                 </div>
                 <div className="menu-drawer">

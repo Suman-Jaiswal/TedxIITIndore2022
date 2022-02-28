@@ -1,13 +1,11 @@
 import React from 'react'
 
-export default function Maintenance() {
+export default function NotFound() {
     return (
         <section className="w-100 bg-light">
             <div className="content">
                 <div className="message text-dark">
-                    <h1>Maintenance Mode</h1>
-                    <img src="maintenance.webp" height={300} width={300} alt="" />
-                    {/* <p>Stay tuned 👌</p> */}
+                    <img src="images/404.jpg" height={300} alt="" />
                 </div>
             </div>
         </section>

@@ -29,20 +29,12 @@ function Footer() {
                                 <Link to='/about' ><li>About</li></ Link>
                                 <Link to='/speakers/2022' ><li>Speakers</li></ Link>
                                 <Link to='/talks' ><li>Talks</li></ Link>
-                                <Link to='/gallery' ><li>Gallery</li></ Link>
                                 <Link to='/team' ><li>Team</li></ Link>
                             </ul>
                         </div>
 
                         <div className="col-xs-6 col-md-3">
                             <h6>Organizer</h6>
-                            {/* <ul className="footer-links">
-                                <li><a target={'_blank'} rel='noreferrer' href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
-                                <li><a target={'_blank'} rel='noreferrer' href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
-                                <li><a target={'_blank'} rel='noreferrer' href="https://en.wikipedia.org/wiki/Mahesh_Bhat">Mahesh Bhatt</a></li>
-                                <li><a target={'_blank'} rel='noreferrer' href="https://gaurangadas.com/">Gauranga Das</a></li>
-                                <li><a target={'_blank'} rel='noreferrer' href="https://gaurangadas.com/">Gauranga Das</a></li>
-                            </ul> */}
                             <img
                                 src="/images/team/Niraj-Saini.jpg"
                                 alt=""
@@ -72,7 +64,7 @@ function Footer() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-8 col-sm-6 col-xs-12">
-                            <p className="copyright-text">Copyright &copy; 2022 All Rights Reserved TEDx IIT Indore
+                            <p className="copyright-text">Copyright &copy; TEDxIITIndore 2022
                             </p>
                         </div>
 

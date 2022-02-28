@@ -73,7 +73,7 @@ export default function SpeakersCard({ speaker }) {
                     <div className="d-flex m-0 mb-2 flex-direction-flex-end" style={{ flexDirection: 'row-reverse', right: '10px' }}>
                         <FontAwesomeIcon icon={faTimes} cursor={'pointer'} onClick={handleClose} />
                     </div>
-                    <img alt={name} src={imgPath} width={265} height={265}></img>
+                    <img alt={name} src={imgPath} height={265}></img>
                     <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
                         {modalobj.name}
                     </Typography>

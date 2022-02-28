@@ -1,5 +1,5 @@
 .nav {
-  background-color: #121212;
+  background-color: #161616;
   height: auto;
   width: 100% !important;
   position: sticky !important;
@@ -23,6 +23,9 @@
   outline: none;
   padding-right: 0px !important;
   padding-left: 15px !important;
+}
+.button:hover {
+  border-bottom: 2px solid #e62b1e;
 }
 .button:focus {
   box-shadow: none !important;

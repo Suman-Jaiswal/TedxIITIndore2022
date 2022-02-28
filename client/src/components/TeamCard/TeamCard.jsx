@@ -1,31 +1,46 @@
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Card } from 'react-bootstrap';
 
-export default function TeamCard({ person }) {
-
-    const { name, title, img } = person
-    const color = [
-        '#4285f4',
-        '#ea4335',
-        '#fbbc05',
-        '#34a853',
-    ]
+export default function TeamCard({ item }) {
 
 
-    return (<>
-        <div className='gradient-card' data-aos={person.sno % 2 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000">
-            <Card style={{ width: "13rem", backgroundColor: color[person.sno % 4], height: '230px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '10px auto' }}  >
-                <Card.Img className='image m-auto my-2' src={img} alt="item-img" style={{ cursor: "pointer", width: '8rem', height: '8rem', borderRadius: '50%' }} />
-                <Card.Body className='my-0'>
-                    <Card.Title className='text-center text-dark fs-6 mb-0' >{name.toUpperCase()}</Card.Title>
-                    <Card.Text className='text-center text-dark'>
-                        {title}
-                    </Card.Text>
-                </Card.Body>
+    return (
+        <>
+            <Card
+                data-aos={item.sno % 2 === 0 ? 'flip-left' : 'flip-right'}
+                data-aos-duration="1000"
+                className='gradient-card'
+                style={{
+                    minWidth: 150,
+                    height: 248,
+                    boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)',
+                    margin: '20px auto'
+                }}  >
+                <Card.Img className='image m-auto my-2' src={item.img} alt="item-img"
+                    style={{
+                        cursor: "pointer",
+                        width: 145,
+                        height: 145,
+                        borderRadius: '50%'
+                    }} />
+
+                <div className='py-2 bg-dark' >
+                    <div className="h6 text-light text-center mb-0">
+                        {item.name}
+                    </div>
+                    <div className="p text-secondary text-center">
+                        {item.title}
+                    </div>
+                    <div className='text-center text-secondary' >
+                        <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={`mailto:${item.emailId}`}><FontAwesomeIcon size='sm' icon={faEnvelope} /></a>
+                        <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='sm' /></a>
+                    </div>
+                </div>
             </Card>
-        </div>
-        <br />
-    </>
+        </>
 
     )
 }

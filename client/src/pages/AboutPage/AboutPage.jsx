@@ -1,8 +1,4 @@
 import React, { useEffect } from 'react'
-import { Card } from "react-bootstrap";
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import './AboutPage.css'
 
 export default function AboutPage() {
@@ -12,46 +8,38 @@ export default function AboutPage() {
     }, [])
 
     return (
-        <>
-            <br />
-            <div className='container' style={{ justifyContent: 'center' }} spacing={2}>
-                <div xs={12} md={5}>
-                    <Card className='bg-dark my-4' style={{ padding: '1em', margin: '0.75em' }}>
-                        <CardActionArea>
-                            <CardContent>
-                                <Typography gutterBottom variant="h4" component="div" className='text-center text-md-start' style={{ color: "#e62b1e", fontWeight: "bold" }}>
-                                    About TED
-                                </Typography>
-                                <Typography variant="body1" className='text-light text-center text-md-start' mt={2}>
-                                    TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.
-                                    <br /> <br />
-                                    The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives include TED.com, where new TED Talks are posted daily; the Open Translation Project, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established the annual TED Prize, where exceptional individuals with a wish to change the world get help translating their wishes into action; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities.
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </div>
-                <div xs={12} md={5}>
-                    <Card className='bg-dark my-4' style={{ padding: '1em', margin: '0.75em' }}>
-                        <CardActionArea>
-                            <CardContent>
-                                <Typography gutterBottom variant="h4" className='text-center text-md-start' component="div" style={{ color: "#e62b1e", fontWeight: "bold" }}>
-                                    About TEDx
-                                </Typography>
+        <section className='about bg-light py-5'>
+            <div className="container text-dark">
+                <div className="h1 text-center mb-3">About Us</div>
+                <div className="row">
+                    <div className="col-12 col-md-5 p-3 pipe">
+                        <div className="h2 ps-2 mb-2">TED</div>
+                        <p>
+                            TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks (18 minutes or less). TED began in 1984 as a conference where Technology, Entertainment and Design converged and today covers almost all topics from Science to Business to Global Issues - in more than 100 languages.
+                        </p>
+                        <p>
+                            TED is owned by a nonprofit, nonpartisan foundation. Their agenda is to make great ideas accesible and spark conversation.
+                        </p>
+                    </div>
+                    <div className="col-12 col-md-7 p-3">
+                        <div className="h2 ps-2 mb-2">TED<sup className='text-danger'>x</sup> </div>
+                        <p className='text-danger fw-bold'> x=Independently organised event</p>
+                        <p>
+                            TEDx was created in 2009 in the spirit of TED's mission, "Ideas worth spreading". It supports independent organizers who want to create TED-like event in their own community.
+                        </p>
+                        <p>
+                            In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized (subject to certain rules and regulations).
+                        </p>
+                    </div>
+                    <div className="col-12 p-3">
+                        <div className="h2 ps-2 mb-2">THEME</div>
+                        <p>
+                            The Phoenix, as we know, is the bird that rose from the ashes. The majestic bird dies in flames and is reborn as a baby which needs to grow. Just like how we are growing back into our former glory after the pandemic. Just like a 'Phoenix in the making'
+                        </p>
 
-                                <Typography variant='h5' style={{ color: "#e62b1e" }}>
-                                    x=Independently organised event.
-                                </Typography>
-                                <Typography variant="body1" className='text-light text-center text-md-start' mt={2}>
-                                    In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized.
-                                    <br />
-                                    (Subject to certain rules and regulations)
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
+                    </div>
                 </div>
-                <br />
-            </div></>
+            </div>
+        </section>
     )
 }

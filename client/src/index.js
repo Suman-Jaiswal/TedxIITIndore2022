@@ -10,7 +10,7 @@ ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             {
-                process.env.REACT_APP_MODE === 'maintenance' ? <Maintenance heading={'Under Maintenance'} /> : <App />
+                process.env.REACT_APP_MODE === 'maintenance' ? <Maintenance /> : <App />
             }
         </BrowserRouter>
     </React.StrictMode>,

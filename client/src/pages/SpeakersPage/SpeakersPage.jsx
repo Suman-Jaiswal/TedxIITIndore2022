@@ -2,7 +2,6 @@ import React from 'react'
 import SpeakersCard from '../../components/SpeakersCard/SpeakersCard';
 import { useState, useEffect } from 'react';
 import Data from '../../data/Data'
-import Heading from '../../components/Heading';
 import { useParams } from 'react-router-dom';
 export default function SpeakersPage() {
 
@@ -18,8 +17,8 @@ export default function SpeakersPage() {
     }, [])
 
     return (
-        <div >
-            <Heading heading={`SPEAKERS (${year})`} />
+        <section className='talks py-5'>
+            <div className="h1 text-light text-center mb-4">Speakers ({year})</div>
             {
                 year === '2022' ? <h2 className='text-light text-center' >Coming soon...</h2> :
                     <div className='container' >
@@ -30,8 +29,7 @@ export default function SpeakersPage() {
                         </div>
                     </div>
             }
-
             <br />
-        </div>
+        </section>
     );
 }

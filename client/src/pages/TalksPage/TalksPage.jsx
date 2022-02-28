@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Grid } from "@mui/material";
-// import './TalksPage.css'
 import TalksCard from './../../components/TalksCard/TalksCard';
 import Data from '../../data/Data'
-import Heading from '../../components/Heading';
 
 export default function TalksPage() {
 
@@ -18,19 +15,22 @@ export default function TalksPage() {
     }, [])
 
     return (
-        <>
-            <Heading heading={'TALKS'} />
-            <Grid container sx={{ justifyContent: 'center' }} spacing={4}>
-                {
-                    talks.map(talk =>
-                        <Grid key={talk.sno} item xs={12} md={5}>
-                            <TalksCard talk={talk} />
-                        </Grid>
-                    )
-                }
-            </Grid>
+        <section className='talks py-5'>
+            <div className="h1 text-light text-center mb-3">Talks</div>
+            <div className="container ">
+                <div className="row justify-content-center d-flex">
+                    {
+                        talks.map(talk =>
+                            <div className='col-12 col-md-4' key={talk.sno} >
+                                <TalksCard talk={talk} />
+                            </div>
+                        )
+                    }
+                </div>
+
+            </div>
             <br />
-        </>
+        </section>
 
     )
 }

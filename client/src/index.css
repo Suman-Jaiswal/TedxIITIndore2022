@@ -11,6 +11,9 @@ body {
 * {
   box-sizing: border-box;
 }
+.h2 {
+  border-left: 3px solid #e62b1e;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -47,22 +50,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.lead,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "Inconsolata", monospace !important;
-  color: black;
 }
 .gradient-border {
   --borderWidth: 2px;

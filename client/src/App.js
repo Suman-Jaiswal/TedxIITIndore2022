@@ -6,10 +6,10 @@ import SpeakersPage from "./pages/SpeakersPage/SpeakersPage";
 import TalksPage from "./pages/TalksPage/TalksPage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import Footer from "./components/Footer/Footer";
-import Gallery from "./pages/GalleryPage/GalleryPage";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect, useState } from "react";
+import NotFound from "./components/NotFound";
 
 function App() {
 
@@ -35,6 +35,7 @@ function App() {
                 <Route path='/team' element={<TeamPage />} />
                 {/* <Route path="/gallery" element={<Gallery />} /> */}
 
+                <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
         </>

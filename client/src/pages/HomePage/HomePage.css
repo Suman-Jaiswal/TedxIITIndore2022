@@ -17,7 +17,7 @@
 .video-container {
   /* position: absolute; */
   top: 0;
-  background: url("../../../public/wings.png") no-repeat;
+  background: url("../../../public/images/hero-bg.webp") no-repeat;
   background-size: cover;
   background-position-y: calc(110%);
 }
@@ -29,13 +29,15 @@
   height: inherit;
 }
 #vid {
-  opacity: 0.7;
-  width: 95%;
+  opacity: 0.5;
+  width: 100%;
   height: auto;
   overflow: hidden;
   vertical-align: middle;
   align-self: center;
   z-index: 10;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 .wings {
   position: absolute;
@@ -49,13 +51,11 @@
   animation: animate 10s linear;
   z-index: 0;
 }
-@keyframes animate {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
+.years {
+  text-decoration: none;
+}
+.years:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 800px) {
   .video-container {
@@ -64,5 +64,8 @@
   }
   .bg-img {
     display: block;
+  }
+  .reverse {
+    flex-direction: row-reverse;
   }
 }

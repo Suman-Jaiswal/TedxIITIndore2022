@@ -1,10 +1,11 @@
 import React, { useEffect } from "react"
 import TextMobileStepper from "../../components/Slide"
-import Heading from "../../components/Heading"
 import './HomePage.css'
 import { speakers } from '../../data/speakers';
 import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { talks } from '../../data/talks'
+import TalksCard from "../../components/TalksCard/TalksCard";
 
 function Home() {
 
@@ -17,79 +18,129 @@ function Home() {
     const S2017 = speakers.filter(s => s.date.includes('2017'))
     S2017.forEach(obj => { obj.label = obj.name })
 
+    let tempTalks = []
+
+    const rand = Math.abs(Math.floor(Math.random() * 16) - 4);
+    console.log(rand)
+    for (let i = 0; i < 3; i++) {
+        tempTalks.push(talks[rand + i])
+    }
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
     return (
         <>
-            <div className="hero" >
+            <section className="hero bg-light" >
                 <div className="video-container">
-                    {/* <div className="wings">
+                    <div className="wings">
                         <img src="wings.png" alt="" />
-                    </div> */}
+                    </div>
                     <img id="vid" src="/images/hero-bg.webp" alt="" width={'100%'} />
-                    {/* <video muted playsInline disablePictureInPicture autoPlay controlsList={'noDownload'} src="https://drive.google.com/file/d/1UYct9nO7pJdXdUhGhfGon4WpYCb9UH-3/preview" type='video/mp4' id='vid'> </video> */}
+
                 </div>
                 <div className="bg-img">
                     <img src="/images/hero-bg.webp" alt="" />
                 </div>
-            </div>
-
-            <div className="container">
-                <div className="my-5 gradient-border p-1 sections">
-
-                    <div className="row justify-content-evenly">
-                        <div className="text-light px-4 py-2  col-12 col-md-7">
-                            <Heading heading={'About the Event'} />
-                            <Typography data-aos-duration="700" data-aos="fade-left" variant="body1" textAlign={'center'} >
-                                The Phoenix, as we know, is the bird that rose from the ashes. The majestic bird dies in flames and is reborn as a baby which needs to grow. Just like how we are growing back into our former glory after the pandemic. Just like a 'Phoenix in the making'
-                            </Typography>
+            </section>
+            <section className='about bg-light py-5' >
+                <div className="container text-dark">
+                    <div className="row gap-4">
+                        <div className="d-md-none col-12 col-md-3 p-3">
+                            <img src="/images/about.png" className="w-100" alt="" />
                         </div>
-
-                        {/* <iframe data-aos-duration="700" autoPlay muted data-aos="fade-left" className="px-4 py-3 pb-4  col-12 col-md-4" width="520" height="280" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4" title="YouTube video player" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
-                        {/* <video data-aos-duration="700" data-aos="fade-left" className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" controls poster="https://res.cloudinary.com/tedxiiti/image/upload/w_480,h_270,c_fill/v1642529540/images/banners/video-poster.png" src="https://res.cloudinary.com/tedxiiti/video/upload/v1642365974/videos/intro/glimpse.mp4"></video> */}
-                        <img src="/about.jpg" className="px-4 py-3 pb-4 mt-2 col-12 col-md-3" alt="" />
+                        <div className="col-12 col-md-8 p-3">
+                            <div className="h2 ps-2 mb-2">THEME: Phoenix in the making </div>
+                            <p>
+                                We all love phoenixes, don't we? And why shouldn't we? They are such magnificent and beautiful birds. But it isn't always so glorious. When a phoenix rises from its ashes, it's a tiny, ugly thing. It has to grow up again, survive till adulthood, to regain its lost former glory. That is what our theme is about. At some point in life, everyone fails. But that doesn't mean we give up. We rise back up, more glorious, more magnificent, more successful that before. That is what life is about. And that is what this edition of our TEDx will be about.
+                            </p>
+                        </div>
+                        <div className="d-none d-md-block col-12 col-md-3 p-3">
+                            <img src="/images/about.png" className="w-100" alt="" />
+                        </div>
                     </div>
                 </div>
-
-                <div className="my-5 gradient-border p-1 sections">
-                    <div className="row justify-content-evenly">
-                        <iframe data-aos-duration="700" data-aos="fade-right" className="px-4 py-3 pb-4 mt-2 col-12 col-md-4" width="520" height="280" src="https://www.youtube.com/embed/d0NHOpeczUU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
-                        </iframe>
-
-                        <div className="px-4 py-2 col-12 col-md-7 text-light">
-                            <Heading heading={'What is TEDx?'} />
-                            <Typography data-aos-duration="700" data-aos="fade-right" variant="body1" textAlign={'center'}>
-                                In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxIITIndore, where x = independently organized TED event. At our TEDxIITIndore event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
-                            </Typography>
+            </section>
+            <section className='about py-5' style={{
+                backgroundColor: '#161616'
+            }}>
+                <div className="container text-light">
+                    <div className="row justify-content-between">
+                        <div className="col-12 col-md-4 p-3">
+                            <iframe data-aos-duration="700" data-aos="fade-right" className="w-100 rounded" height={280} src="https://www.youtube.com/embed/d0NHOpeczUU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+                            </iframe>
                         </div>
-
+                        <div className="col-12 col-md-8 p-3">
+                            <div className="h2 ps-2 mb-2">What is TED<sup className="text-danger">x</sup> </div>
+                            <p className='text-danger fw-bold'> x=Independently organised event</p>
+                            <p>
+                                TEDx was created in 2009 in the spirit of TED's mission, "Ideas worth spreading". It supports independent organizers who want to create TED-like event in their own community.
+                            </p>
+                            <p>
+                                In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized (subject to certain rules and regulations).
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <div className="container mb-5 gradient-border p-1">
-                    <Heading heading={'Speakers'} />
-                    <hr />
-                    <div className="text-secondary justify-content-center px-3 row">
+            </section>
+            <section className="speakers py-5 bg-light">
+                <div className="container text-dark">
+                    <div className="h2 ps-2 mb-2">Past Speakers </div>
+                    <div className="text-secondary justify-content-center p-3 row">
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-4">
-                            <Typography marginBottom={2} className="fw-bold" variant="body1">  <Link to='/speakers/2022'>2022</Link></Typography>
+                            <Typography marginBottom={2} className="fw-bold" variant="body1">
+                                <Link
+                                    className="h4 fw-bold years text-danger"
+                                    to='/speakers/2022'>
+                                    2022
+                                </Link>
+                            </Typography>
                             <TextMobileStepper images={S2022} />
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-4">
-                            <Typography marginBottom={2} className="fw-bold" variant="body1">  <Link to='/speakers/2018'>2018</Link></Typography>
+                            <Typography marginBottom={2} className="fw-bold" variant="body1">
+                                <Link
+                                    className="h4 fw-bold years text-danger"
+                                    to='/speakers/2018'>
+                                    2018
+                                </Link>
+                            </Typography>
                             <TextMobileStepper images={S2018} />
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-4">
-                            <Typography marginBottom={2} className="fw-bold" variant="body1">  <Link to='/speakers/2017'>2017</Link></Typography>
+                            <Typography marginBottom={2} className="fw-bold" variant="body1">
+                                <Link
+                                    className="h4 fw-bold years text-danger"
+                                    to='/speakers/2017'>
+                                    2017
+                                </Link>
+                            </Typography>
                             <TextMobileStepper images={S2017} />
                         </div>
                     </div>
-                    <br />
                 </div>
-            </div>
-
-            <br />
+            </section>
+            <section className="highlights py-5" style={{
+                backgroundColor: '#161616'
+            }}>
+                <div className="container text-light">
+                    <div className="h2 ps-2 mb-2">Highlights </div>
+                    <div className="row my-3">
+                        {tempTalks.map((talk, i) => <div key={i} className='col-12 col-md-4'>
+                            <TalksCard talk={talk} />
+                        </div>)}
+                    </div>
+                </div>
+            </section>
+            <section className="sponsors py-5 bg-light" >
+                <div className="container text-dark">
+                    <div className="h2 ps-2 mb-2">Sponsors </div>
+                    <div className="row my-3">
+                        <div className="h1">Coming Soon...</div>
+                    </div>
+                </div>
+            </section>
         </>
 
     )
