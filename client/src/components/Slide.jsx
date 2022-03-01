@@ -77,7 +77,7 @@ function SwipeableTextMobileStepper({ images }) {
                 </Paper>
                 <br />
                 <br />
-                <hr />
+                <hr className='bg-danger' />
             </Box>
         </>
 

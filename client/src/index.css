@@ -10,8 +10,12 @@ body {
 * {
   box-sizing: border-box;
 }
+.h1 {
+  text-transform: uppercase;
+}
 .h2 {
   border-left: 3px solid #e62b1e;
+  text-transform: uppercase;
 }
 :root {
   --bs-blue: #0d6efd;

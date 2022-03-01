@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import TextMobileStepper from "../../components/Slide"
 import './HomePage.css'
 import { speakers } from '../../data/speakers';
@@ -6,37 +6,21 @@ import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { talks } from '../../data/talks'
 import TalksCard from "../../components/TalksCard/TalksCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
-    const [S2022, set2022] = useState([{
-        name: '',
-        imgPath: '',
-        post: ''
-    }])
-    const [S2018, set2018] = useState([{
-        name: '',
-        imgPath: '',
-        post: ''
-    }])
-    const [S2017, set2017] = useState([{
-        name: '',
-        imgPath: '',
-        post: ''
-    }])
 
-    let tempTalks = []
+    const S2022 = speakers.filter(s => s.date.includes('2022'))
+    const S2018 = speakers.filter(s => s.date.includes('2018'))
+    const S2017 = speakers.filter(s => s.date.includes('2017'))
 
     const rand = Math.abs(Math.floor(Math.random() * 16) - 4);
 
-    for (let i = 0; i < 3; i++) {
-        tempTalks.push(talks[rand + i])
-    }
+    let tempTalks = [...talks].splice(rand, 3)
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        set2022(speakers.filter(s => s.date.includes('2022')))
-        set2018(speakers.filter(s => s.date.includes('2018')))
-        set2017(speakers.filter(s => s.date.includes('2017')))
     }, [])
 
     return (
@@ -140,13 +124,14 @@ function Home() {
                             <TalksCard talk={talk} />
                         </div>)}
                     </div>
+                    <div className="h5"><Link to={'/talks'} className='text-danger years' > See More <FontAwesomeIcon size="sm" icon={faArrowCircleRight} /></Link></div>
                 </div>
             </section>
             <section className="sponsors py-5 bg-light" >
                 <div className="container text-dark">
                     <div className="h2 ps-2 mb-2">Sponsors </div>
                     <div className="row my-3">
-                        <div className="h1">Coming Soon...</div>
+                        <div className="h3 text-center">Coming Soon...</div>
                     </div>
                 </div>
             </section>
