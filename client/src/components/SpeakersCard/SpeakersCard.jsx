@@ -22,7 +22,7 @@ const style = {
 
 export default function SpeakersCard({ speaker }) {
 
-    const { name, post, description, imgPath, sno } = speaker
+    const { name, post, description, imgPath } = speaker
     const [open, setOpen] = React.useState(false);
     const [modalobj, setObj] = React.useState({});
     const handleOpen = (obj) => {
@@ -37,10 +37,10 @@ export default function SpeakersCard({ speaker }) {
     return (
         <>
             <div
-                data-aos={sno % 2 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000"
-                className=' col-12 col-sm-6 col-md-6 col-lg-4 m-0 my-5 p-0 d-flex justify-content-center'
+                data-aos={'fade-up'} data-aos-duration="1000"
+                className=' col-12 col-md-6 col-lg-3 m-0 my-5 p-0 d-flex justify-content-center'
             >
-                <Card className='gradient-border bg-dark text-light' sx={{ width: '300px', overflow: 'visible' }} onClick={() => handleOpen({ name, post, description })} >
+                <Card elevation={3} className='text-dark' sx={{ width: '300px', overflow: 'visible', bgcolor: '#fff', borderRadius: '10px' }} onClick={() => handleOpen({ name, post, description })} >
                     <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
                         <CardMedia
                             component="img"
@@ -53,9 +53,9 @@ export default function SpeakersCard({ speaker }) {
 
                         />
                         <CardContent style={{ margin: 'auto' }}>
-                            <Typography gutterBottom variant="h6" component="div">
+                            <div className='h6 text-center'>
                                 {name.toUpperCase()}
-                            </Typography>
+                            </div>
                             <Typography variant="body2" className='text-secondary'>
                                 {post}
                             </Typography>

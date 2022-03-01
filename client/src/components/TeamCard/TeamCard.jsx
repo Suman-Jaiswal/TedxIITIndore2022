@@ -10,7 +10,7 @@ export default function TeamCard({ item }) {
     return (
         <>
             <Card
-                data-aos={item.sno % 2 === 0 ? 'flip-left' : 'flip-right'}
+                data-aos={'fade-up'}
                 data-aos-duration="1000"
                 className='gradient-card'
                 style={{

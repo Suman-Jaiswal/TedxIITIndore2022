@@ -36,7 +36,7 @@ const TalksCard = ({ talk }) => {
     };
     return (
         <div className='py-3' >
-            <Card className='bg-light p-2' style={{ borderRadius: '10px' }} >
+            <Card elevation={3} className='p-2 text-dark' style={{ borderRadius: '10px', backgroundColor: '#fff' }} >
                 <CardActionArea onClick={handleOpen}>
                     <div className='video-responsive' data-aos={sno % 3 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000">
                         <iframe style={{ borderRadius: '10px' }} width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

@@ -4,21 +4,10 @@ import "./Navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import MenuDrawer from "../MenuDrawer"
 import { useEffect } from "react"
 
 function Navbar({ currentPage }) {
-
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
 
     useEffect(() => {
 
@@ -50,41 +39,7 @@ function Navbar({ currentPage }) {
                 <div className="menu-only">
                     <Link to='/' ><button className="btn button px-2 py-1 mx-2 home"><FontAwesomeIcon icon={faHome} /></button></Link>
                     <Link to='/about' ><button className="btn button px-2 py-1 mx-2 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
-
-                    <div>
-                        <button
-                            id="basic-button"
-                            aria-controls={open ? 'basic-menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleClick}
-                            className="btn button px-2 py-1 mx-2 speakers"
-                        >
-                            <FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS
-                        </button>
-                        <Menu
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
-                            MenuListProps={{
-                                'aria-labelledby': 'basic-button',
-                            }}
-
-                        >
-                            <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} className="text-secondary px-3" to="/speakers/2022" >
-                                2022
-                            </Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} className="text-secondary px-3" to="/speakers/2018" >
-                                2018
-                            </Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link style={{ textDecoration: 'none' }} className="text-secondary px-3" to="/speakers/2017" >
-                                2017
-                            </Link></MenuItem>
-
-                        </Menu>
-                    </div>
-
+                    <Link to='/speakers' ><button className="btn button px-2 py-1 mx-2 speakers"><FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS</button></Link>
                     <Link to='/talks' ><button className="btn button px-2 py-1 mx-2 talks"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
                     <Link to='/team' ><button className="btn button px-2 py-1 mx-2 team"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
                     {/* <Link to='/contact' ><button className="btn button px-2 py-1 mx-2 team"><FontAwesomeIcon icon={faPhone} /> CONTACT US</button></Link> */}

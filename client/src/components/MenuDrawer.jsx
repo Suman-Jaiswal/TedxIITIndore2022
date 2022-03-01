@@ -3,14 +3,12 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
-import { Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 export default function MenuDrawer() {
@@ -21,7 +19,7 @@ export default function MenuDrawer() {
         right: false,
     });
 
-    const icons = [faHome, faInfoCircle, faMicrophone, faUsers, faPhone]
+    const icons = [faHome, faInfoCircle, faTeamspeak, faMicrophone, faUsers, faPhone]
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -39,7 +37,7 @@ export default function MenuDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['', 'About', 'Talks', 'Team', 'Contact'].map((text, index) => (
+                {['', 'About', 'Speakers', 'Talks', 'Team', 'Contact'].map((text, index) => (
                     <ListItem button key={text} className='py-3'>
                         <ListItemIcon sx={{
                             minWidth: 30
@@ -47,20 +45,6 @@ export default function MenuDrawer() {
                             <FontAwesomeIcon className='text-light' icon={icons[index]} />
                         </ListItemIcon>
                         <Link className='text-light w-100 text-decoration-none' to={'/' + text.toLowerCase()}>{text === '' ? 'HOME' : text.toUpperCase()}</Link>
-                    </ListItem>
-                ))}
-            </List>
-            <Typography className='text-light' variant='h6' textAlign={'center'} >SPEAKERS</Typography>
-            <Divider className='text-secondary' />
-            <List>
-                {['2022', '2018', '2017'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon sx={{
-                            minWidth: 30
-                        }}>
-                            <FontAwesomeIcon className='text-light' icon={faTeamspeak} />
-                        </ListItemIcon>
-                        <Link className='text-light w-100 text-decoration-none' to={'/speakers/' + text}>{text}</Link>
                     </ListItem>
                 ))}
             </List>
