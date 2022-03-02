@@ -8,6 +8,13 @@ import "react-multi-carousel/lib/styles.css";
 import './Deck.css'
 
 export default function Deck(props) {
+    function isLinkedInIdPresent(item){
+        console.log(item.linkedIn);
+    if(item.linkedIn===""){
+       return false;
+    }
+    return true;
+  }
     const responsive = {
         largeDesktop: {
             // the naming can be any, depends on you.
@@ -49,7 +56,8 @@ export default function Deck(props) {
                                     </Card.Text>
                                     <div className='text-center text-secondary mt-2' >
                                         <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={`mailto:${item.emailId}`}><FontAwesomeIcon size='lg' icon={faEnvelope} /></a>
-                                        <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>
+                                        {isLinkedInIdPresent(item) ? <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a> : null }
+                                        {/*<a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>  */}
                                     </div>
                                 </Card.Body>
                             </Card>
