@@ -20,7 +20,7 @@ export default function TalksPage() {
             <div className="row p-0">
                 {
                     talks.map(talk =>
-                        <div className='col-12 col-md-4' key={talk.sno} >
+                        <div className='col-12 col-md-6 col-lg-4' key={talk.sno} >
                             <TalksCard talk={talk} />
                         </div>
                     )

@@ -37,7 +37,7 @@ export default function MenuDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['', 'About', 'Speakers', 'Talks', 'Team', 'Contact'].map((text, index) => (
+                {['', 'About', 'Speakers', 'Talks', 'Team'].map((text, index) => (
                     <ListItem button key={text} className='py-3'>
                         <ListItemIcon sx={{
                             minWidth: 30

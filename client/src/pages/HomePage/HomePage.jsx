@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 import TextMobileStepper from "../../components/Slide"
 import './HomePage.css'
 import { speakers } from '../../data/speakers';
-import { Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { talks } from '../../data/talks'
 import TalksCard from "../../components/TalksCard/TalksCard";
@@ -78,38 +77,19 @@ function Home() {
             <section className="speakers py-5 bg-light">
                 <div className="container text-dark">
                     <div className="h2 ps-2 mb-2">Speakers </div>
+                    <br />
                     <div className="text-secondary justify-content-center row">
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
-                            <Typography className="fw-bold" variant="body1">
-                                <Link
-                                    className="h4 fw-bold years text-danger"
-                                    to='/speakers/2022'>
-                                    2022
-                                </Link>
-                            </Typography>
                             <TextMobileStepper images={S2022} />
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
-                            <Typography className="fw-bold" variant="body1">
-                                <Link
-                                    className="h4 fw-bold years text-danger"
-                                    to='/speakers/2018'>
-                                    2018
-                                </Link>
-                            </Typography>
                             <TextMobileStepper images={S2018} />
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
-                            <Typography className="fw-bold" variant="body1">
-                                <Link
-                                    className="h4 fw-bold years text-danger"
-                                    to='/speakers/2017'>
-                                    2017
-                                </Link>
-                            </Typography>
                             <TextMobileStepper images={S2017} />
                         </div>
                     </div>
+                    <div className="h5"><Link to={'/speakers'} className='text-danger years' > See More <FontAwesomeIcon size="sm" icon={faArrowCircleRight} /></Link></div>
                 </div>
             </section>
             <section className="highlights py-5" style={{

@@ -27,7 +27,7 @@ function Footer() {
                             <h6>Quick Links</h6>
                             <ul className="footer-links">
                                 <Link to='/about' ><li>About</li></ Link>
-                                <Link to='/speakers/2022' ><li>Speakers</li></ Link>
+                                <Link to='/speakers' ><li>Speakers</li></ Link>
                                 <Link to='/talks' ><li>Talks</li></ Link>
                                 <Link to='/team' ><li>Team</li></ Link>
                                 {/* <Link to='/contact' ><li>Contact Us</li></ Link> */}

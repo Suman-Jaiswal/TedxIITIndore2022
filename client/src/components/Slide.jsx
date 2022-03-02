@@ -19,7 +19,7 @@ function SwipeableTextMobileStepper({ images }) {
 
     return (
         <>
-            <Box sx={{ maxWidth: 350, flexGrow: 1, bgcolor: '' }}>
+            <Box sx={{ width: '100%' }}>
                 <Paper
                     square
                     elevation={0}
@@ -32,7 +32,7 @@ function SwipeableTextMobileStepper({ images }) {
                         borderRadius: '5px',
                     }}
                 >
-                    <Typography fontWeight={'bold'} margin={'auto'} variant='body1' >{images[activeStep].name}</Typography>
+                    <Typography fontWeight={'bold'} margin={'auto'} variant='body1' >{images[activeStep].name.toUpperCase()}</Typography>
                     <hr />
                 </Paper>
                 <AutoPlaySwipeableViews

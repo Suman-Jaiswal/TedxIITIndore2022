@@ -36,33 +36,30 @@ export default function SpeakersCard({ speaker }) {
 
     return (
         <>
-            <div
-                data-aos={'fade-up'} data-aos-duration="1000"
-                className=' col-12 col-md-6 col-lg-3 m-0 my-5 p-0 d-flex justify-content-center'
-            >
-                <Card elevation={3} className='text-dark' sx={{ width: '300px', overflow: 'visible', bgcolor: '#fff', borderRadius: '10px' }} onClick={() => handleOpen({ name, post, description })} >
-                    <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
-                        <CardMedia
-                            component="img"
-                            height="250"
-                            width="250"
-                            image={imgPath}
-                            alt={name}
-                            elevation={2}
-                            style={{ borderRadius: '100%', width: '250px', textAlign: 'center', margin: '-50px auto auto auto', position: 'relative' }}
 
-                        />
-                        <CardContent style={{ margin: 'auto' }}>
-                            <div className='h6 text-center'>
-                                {name.toUpperCase()}
-                            </div>
-                            <Typography variant="body2" className='text-secondary'>
-                                {post}
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            </div>
+            <Card elevation={3} className='text-dark' sx={{ width: '300px', overflow: 'visible', bgcolor: '#fff', borderRadius: '10px' }} onClick={() => handleOpen({ name, post, description })} >
+                <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
+                    <CardMedia
+                        component="img"
+                        height="250"
+                        width="250"
+                        image={imgPath}
+                        alt={name}
+                        elevation={2}
+                        style={{ borderRadius: '100%', width: '250px', textAlign: 'center', margin: '-50px auto auto auto', position: 'relative' }}
+
+                    />
+                    <CardContent style={{ margin: 'auto' }}>
+                        <div className='h6 text-center'>
+                            {name.toUpperCase()}
+                        </div>
+                        <Typography variant="body2" className='text-secondary'>
+                            {post}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+
             <Modal
                 open={open}
                 onClose={handleClose}
