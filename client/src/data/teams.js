@@ -115,7 +115,7 @@ export const teams =
             teamSno: 9,
             name: "Dheeraj Bansal",
             title: "Advisory Committee",
-            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            linkedIn: "",
             emailId: "ce180004009@iiti.ac.in",
             head: false,
             get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
@@ -125,7 +125,7 @@ export const teams =
             teamSno: 9,
             name: "Ismail Malekji",
             title: "Advisory Committee",
-            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            linkedIn: "",
             emailId: "mems180005015@iiti.ac.in",
             head: false,
             get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
@@ -135,7 +135,7 @@ export const teams =
             teamSno: 9,
             name: "Mohit Munot",
             title: "Advisory Committee",
-            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            linkedIn: "",
             emailId: "mems180005017@iiti.ac.in",
             head: false,
             get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
@@ -145,7 +145,7 @@ export const teams =
             teamSno: 9,
             name: "Vineet Ostwal",
             title: "Advisory Committee",
-            // linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
+            linkedIn: "",
             emailId: "me180003063@iiti.ac.in",
             head: false,
             get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
