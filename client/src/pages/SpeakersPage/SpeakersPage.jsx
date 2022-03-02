@@ -21,7 +21,7 @@ export default function SpeakersPage() {
                 {
                     speakers.map(speaker => <div
                         data-aos={'fade-up'} data-aos-duration="1000"
-                        className=' col-12 col-md-6 col-lg-3 m-0 my-5 p-0 d-flex justify-content-center'
+                        className=' col-12 col-md-6 col-lg-3 py-5 d-flex justify-content-center'
                     > <SpeakersCard speaker={speaker} key={speaker.sno} />
                     </div>)
                 }

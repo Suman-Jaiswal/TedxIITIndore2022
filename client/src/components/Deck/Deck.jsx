@@ -40,7 +40,7 @@ export default function Deck(props) {
 
                     >
                         {props.items.map((item) =>
-                            <Card data-aos={item.sno %2 ===0 ? 'flip-left': 'flip-right'} data-aos-duration="1000" key={item.sno} className='gradient-card' style={{ mixWidth: "18rem", maxWidth: '19rem', height: '380px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }}  >
+                            <Card data-aos={item.sno % 2 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000" key={item.sno} className='gradient-card' style={{ maxWidth: '18rem', height: '380px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }}  >
                                 <Card.Img className='image m-auto my-2' src={item.img} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
                                 <Card.Body className='py-1 bg-dark' >
                                     <Card.Title className='text-center text-light' >{item.name.toUpperCase()}</Card.Title>

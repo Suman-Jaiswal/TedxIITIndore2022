@@ -1,4 +1,4 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Modal, Typography } from '@mui/material'
+import { Box, Modal, Typography } from '@mui/material'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -36,29 +36,28 @@ export default function SpeakersCard({ speaker }) {
 
     return (
         <>
-
-            <Card elevation={3} className='text-dark' sx={{ width: '300px', overflow: 'visible', bgcolor: '#fff', borderRadius: '10px' }} onClick={() => handleOpen({ name, post, description })} >
-                <CardActionArea style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%' }}>
-                    <CardMedia
-                        component="img"
+            <div elevation={3} className='text-dark' sx={{ width: '280px', height: 'auto', overflow: 'visible', bgcolor: '#e62b1e', borderRadius: '10px' }}  >
+                <div className='text-center' >
+                    <img
+                        onClick={() => handleOpen({ name, post, description })}
+                        role={'button'}
                         height="250"
                         width="250"
-                        image={imgPath}
+                        src={imgPath}
                         alt={name}
-                        elevation={2}
-                        style={{ borderRadius: '100%', width: '250px', textAlign: 'center', margin: '-50px auto auto auto', position: 'relative' }}
+                        style={{ borderRadius: '100%', width: '250px', position: 'relative', objectFit: 'cover', border: '4px solid #e62b1e', padding: 2 }}
 
                     />
-                    <CardContent style={{ margin: 'auto' }}>
+                    <div className='mt-2' style={{ padding: 10, borderRadius: '10px', width: '100%' }}>
                         <div className='h6 text-center'>
                             {name.toUpperCase()}
                         </div>
-                        <Typography variant="body2" className='text-secondary'>
+                        <div className='text-secondary'>
                             {post}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <Modal
                 open={open}

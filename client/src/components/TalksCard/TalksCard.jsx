@@ -25,7 +25,7 @@ const TalksCard = ({ talk }) => {
         zIndex: '3000'
     };
 
-    const { title, link, speaker, date, description, sno } = talk
+    const { title, link, speaker, description, sno } = talk
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(true);
@@ -42,9 +42,9 @@ const TalksCard = ({ talk }) => {
                         <iframe style={{ borderRadius: '10px' }} width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className='py-3' >
-                        <div className="h6 px-2">{title}</div>
+                        <div className="h5 px-2">{title.split('|')[0]}</div>
                         <div className="p px-2">
-                            by {speaker} {' ('}{date.substr(6, 4)}{')'}
+                            {speaker}
                         </div>
                     </div>
                 </CardActionArea>

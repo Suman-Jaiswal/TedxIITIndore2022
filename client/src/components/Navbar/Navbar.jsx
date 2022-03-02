@@ -41,7 +41,7 @@ function Navbar({ currentPage }) {
                     <Link to='/about' ><button className="btn button px-2 py-1 mx-2 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</button></Link>
                     <Link to='/speakers' ><button className="btn button px-2 py-1 mx-2 speakers"><FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS</button></Link>
                     <Link to='/talks' ><button className="btn button px-2 py-1 mx-2 talks"><FontAwesomeIcon icon={faMicrophone} /> TALKS</button></Link>
-                    <Link to='/team' ><button className="btn button px-2 py-1 mx-2 team"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
+                    <Link to='/team' ><button className="btn button px-2 py-1 ms-2 team"><FontAwesomeIcon icon={faUsers} /> TEAM</button></Link>
                     {/* <Link to='/contact' ><button className="btn button px-2 py-1 mx-2 team"><FontAwesomeIcon icon={faPhone} /> CONTACT US</button></Link> */}
 
                 </div>

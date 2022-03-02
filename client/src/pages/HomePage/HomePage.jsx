@@ -43,10 +43,12 @@ function Home() {
                     <div className="row gap-4">
 
                         <div className="col-12 p-3" data-aos="fade-up">
-                            <div className="h2 ps-2 mb-2">THEME: Phoenix in the making </div>
-                            <p data-aos-delay="500">
-                                We all love phoenixes, don't we? And why shouldn't we? They are such magnificent and beautiful birds. But it isn't always so glorious. When a phoenix rises from its ashes, it's a tiny, ugly thing. It has to grow up again, survive till adulthood, to regain its lost former glory. That is what our theme is about. At some point in life, everyone fails. But that doesn't mean we give up. We rise back up, more glorious, more magnificent, more successful that before. That is what life is about. And that is what this edition of our TEDx will be about.
+                            <div className="h2 ps-2 mb-2" >THEME: Phoenix in the making </div>
+                            <p >
+                                We all love phoenixes, don't we? And why shouldn't we? They are such magnificent and beautiful birds. But it isn't always so glorious. When a phoenix rises from its ashes, it's a tiny, ugly thing. It has to grow up again, survive till adulthood, to regain its lost former glory. That is the hidden story behind the glorious bird. At some point in life, everyone fails. But that doesn't mean we give up. We rise back up, more glorious, more magnificent, more successful than before. That is what life is about. And that is what this edition of our TEDx will be about.
+                                The majestic bird dies in flames and is reborn as a baby which needs to grow. Just like how we are growing back into our former glory after the pandemic. Just like a <span className='text-danger'>'Phoenix in the making'</span>
                             </p>
+                            <p  >There are many such stories behind the success of most great individuals. They hit rock bottom and, instead of wallowing in their despair, decided that they had nowhere to go but up. Come join us at TEDx IIT Indore and listen to some of these amazing stories. Who knows, you might awaken your inner phoenix too.</p>
                         </div>
 
                     </div>
