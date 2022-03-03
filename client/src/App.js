@@ -21,7 +21,8 @@ function App() {
     useEffect(() => {
         Aos.init({
             once: true,
-            duration: '1000'
+            duration: '1000',
+            anchorPlacement: 'bottom-center'
         })
         setPage(location.pathname.substring(1, location.pathname.length).split('/')[0])
     }, [location.pathname])
