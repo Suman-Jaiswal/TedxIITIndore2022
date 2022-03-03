@@ -76,8 +76,7 @@ function SwipeableTextMobileStepper({ images }) {
                     <Typography margin={'auto'} variant='subtitle2' marginTop={2}>{images[activeStep].post}</Typography>
                 </Paper>
                 <br />
-                <br />
-                <hr className='bg-danger' />
+                <hr />
             </Box>
         </>
 

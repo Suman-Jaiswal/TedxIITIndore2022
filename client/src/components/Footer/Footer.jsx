@@ -71,7 +71,7 @@ function Footer() {
 
                         <div className="col-md-4 col-sm-6 col-xs-12">
                             <ul className="social-icons">
-                                <li><a target={'_blank'} rel='noreferrer' className="facebook" href="https://www.youtube.com/user/TEDxTalks/videos"><i><FontAwesomeIcon icon={faYoutube} /></i></a></li>
+                                <li><a target={'_blank'} rel='noreferrer' className="youtube" href="https://www.youtube.com/user/TEDxTalks/videos"><i><FontAwesomeIcon icon={faYoutube} /></i></a></li>
                                 <li><a target={'_blank'} rel='noreferrer' className="twitter" href="https://twitter.com/tedxiitindore"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>
                                 <li><a target={'_blank'} rel='noreferrer' className="instagram" href="https://www.instagram.com/tedxiiti/"><i><FontAwesomeIcon icon={faInstagram} /></i></a></li>
                                 <li><a target={'_blank'} rel='noreferrer' className="linkedin" href="https://www.linkedin.com/company/tedx-iitindore/"><i><FontAwesomeIcon icon={faLinkedin} /></i></a></li>

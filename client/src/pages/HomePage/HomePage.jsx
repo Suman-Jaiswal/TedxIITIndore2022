@@ -38,7 +38,9 @@ function Home() {
                 </div>
 
             </section>
+
             <section className='about bg-light py-5' >
+                <br />
                 <div className="container text-dark">
                     <div className="row gap-4">
 
@@ -83,12 +85,15 @@ function Home() {
                     <div className="text-secondary justify-content-center row">
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
                             <TextMobileStepper images={S2022} />
+                            <div className="h4">2022</div>
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
                             <TextMobileStepper images={S2018} />
+                            <div className="h4">2018</div>
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="700" className="text-center col-12 col-md-6 col-lg-4 d-flex flex-column align-items-center" >
                             <TextMobileStepper images={S2017} />
+                            <div className="h4">2017</div>
                         </div>
                     </div>
                     <div className="h5"><Link to={'/speakers'} className='text-danger years' > See More <FontAwesomeIcon size="sm" icon={faArrowCircleRight} /></Link></div>
@@ -109,14 +114,14 @@ function Home() {
                     <div className="h5"><Link to={'/talks'} className='text-danger years' > See More <FontAwesomeIcon size="sm" icon={faArrowCircleRight} /></Link></div>
                 </div>
             </section>
-            <section className="sponsors py-5 bg-light" >
+            {/* <section className="sponsors py-5 bg-light" >
                 <div className="container text-dark">
                     <div className="h2 ps-2 mb-2">Partnership </div>
                     <div className="row my-3">
                         <div className="h3 text-center">Coming Soon...</div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
 
     )
