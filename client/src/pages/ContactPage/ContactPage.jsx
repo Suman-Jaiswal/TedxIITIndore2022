@@ -4,7 +4,7 @@ export default function ContactPage() {
     return (
         <section className='contact bg-light py-5'>
             <div className="container text-dark">
-                <div className="h1 text-center mb-3">Contact Us</div>
+                <div data-aos="fade-up" className="h1 text-center mb-3">Contact Us</div>
                 <div className="row">
                     <div className="col-12 col-md-5 p-3 pipe">
 

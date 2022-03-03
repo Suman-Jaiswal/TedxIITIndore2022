@@ -10,7 +10,7 @@ export default function AboutPage() {
     return (
         <section className='about bg-light py-5'>
             <div className="container text-dark">
-                <div className="h1 text-center mb-3">About Us</div>
+                <div data-aos="fade-up" className="h1 text-center mb-3">About Us</div>
                 <div className="row">
                     <div className="col-12 col-md-5 p-3 pipe" data-aos="fade-up">
                         <div className="h2 ps-2 mb-2">TED</div>

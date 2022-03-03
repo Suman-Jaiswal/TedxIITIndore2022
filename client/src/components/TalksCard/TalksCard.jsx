@@ -1,7 +1,6 @@
 import React from 'react'
-import { Card, Modal } from "@mui/material";
+import { Modal } from "@mui/material";
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import "./TalksCard.css";
 import { Box } from '@mui/system';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,7 +24,7 @@ const TalksCard = ({ talk }) => {
         zIndex: '3000'
     };
 
-    const { title, link, speaker, description, sno } = talk
+    const { title, link, speaker, description } = talk
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => {
         setOpen(true);
@@ -36,19 +35,19 @@ const TalksCard = ({ talk }) => {
     };
     return (
         <div className='py-3' >
-            <Card elevation={3} className='p-2 text-dark' style={{ borderRadius: '10px', backgroundColor: '#fff' }} >
-                <CardActionArea onClick={handleOpen}>
-                    <div className='video-responsive' data-aos={sno % 3 === 0 ? 'flip-left' : 'flip-right'} data-aos-duration="1000">
-                        <iframe style={{ borderRadius: '10px' }} width="853" height="480" src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <div role={'button'} className='p-2 scale-on-hover' style={{ background: 'transparent' }} onClick={handleOpen}>
+
+                <div className='video-responsive'>
+                    <iframe style={{ borderRadius: '15px', border: '4px solid rgba(255,255,255,0.7)' }} src={link} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+                <div className='py-3' >
+                    <div className="h5 px-2">{title.split('|')[0]}</div>
+                    <div className="p px-2">
+                        {speaker}
                     </div>
-                    <div className='py-3' >
-                        <div className="h5 px-2">{title.split('|')[0]}</div>
-                        <div className="p px-2">
-                            {speaker}
-                        </div>
-                    </div>
-                </CardActionArea>
-            </Card>
+                </div>
+
+            </div>
             <Modal
                 open={open}
                 onClose={handleClose}
