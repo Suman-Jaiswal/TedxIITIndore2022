@@ -5,8 +5,13 @@ import React from 'react'
 import { Card } from 'react-bootstrap';
 
 export default function TeamCard({ item }) {
-
-
+    function isLinkedInIdPresent(item){
+        console.log(item.linkedIn);
+    if(item.linkedIn===""){
+       return false;
+    }
+    return true;
+  }
     return (
         <>
             <Card
@@ -36,7 +41,8 @@ export default function TeamCard({ item }) {
                     </div>
                     <div className='text-center text-secondary' >
                         <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={`mailto:${item.emailId}`}><FontAwesomeIcon size='sm' icon={faEnvelope} /></a>
-                        <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='sm' /></a>
+                        {isLinkedInIdPresent(item) ?  <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='sm' /></a>  : null }
+                        {/* <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='sm' /></a> */}
                     </div>
                 </div>
             </Card>
