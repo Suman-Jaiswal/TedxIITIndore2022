@@ -98,7 +98,7 @@ function Home() {
                 backgroundColor: '#161616'
             }}>
                 <div className="container text-light">
-                    <div className="h2 ps-2 mb-2">Highlights </div>
+                    <div className="h2 ps-2 mb-2">Event Highlights </div>
                     <div className="row my-3" style={{
                         overflowX: 'hidden'
                     }}>
@@ -111,7 +111,7 @@ function Home() {
             </section>
             <section className="sponsors py-5 bg-light" >
                 <div className="container text-dark">
-                    <div className="h2 ps-2 mb-2">Sponsors </div>
+                    <div className="h2 ps-2 mb-2">Partnership </div>
                     <div className="row my-3">
                         <div className="h3 text-center">Coming Soon...</div>
                     </div>

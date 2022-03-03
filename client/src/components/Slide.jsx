@@ -19,7 +19,7 @@ function SwipeableTextMobileStepper({ images }) {
 
     return (
         <>
-            <Box sx={{ width: '100%' }}>
+            <Box className='scale-on-hover' sx={{ width: '100%' }}>
                 <Paper
                     square
                     elevation={0}
@@ -52,7 +52,7 @@ function SwipeableTextMobileStepper({ images }) {
                                         margin: 'auto',
                                         objectFit: 'cover',
                                         objectPosition: 'center',
-                                        borderRadius: '10px',
+                                        borderRadius: '15px',
                                         overflow: 'hidden'
                                     }}
                                     src={step.imgPath}
