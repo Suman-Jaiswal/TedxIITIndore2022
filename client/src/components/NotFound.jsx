@@ -5,7 +5,7 @@ export default function NotFound() {
         <section className="w-100 bg-light">
             <div className="content">
                 <div className="message text-dark">
-                    <img src="images/404.jpg" height={300} alt="" />
+                    <img src="images/404.webp" height={300} alt="" />
                 </div>
             </div>
         </section>

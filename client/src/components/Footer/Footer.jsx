@@ -37,7 +37,7 @@ function Footer() {
                         <div className="col-xs-6 col-md-3 text-center text-md-start">
                             <h6>Organizer</h6>
                             <img
-                                src="/images/team/Niraj-Saini.jpg"
+                                src="/images/team/Niraj-Saini.webp"
                                 alt=""
                                 style={{
                                     borderRadius: '50%',
@@ -56,7 +56,7 @@ function Footer() {
                         </div>
 
                         <div className="col-xs-6 col-md-3 text-center text-md-start">
-                            <img width={200} src="/images/logos/removed-black-bg.png" alt="" />
+                            <img width={200} src="/images/logos/removed-black-bg.webp" alt="" />
                         </div>
 
                     </div>
