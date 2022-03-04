@@ -126,7 +126,7 @@ function Home() {
                     <div className="row my-3">
                         <div className="h3 col-12 col-md-7 text-center">
                             <div className="text-danger mb-2">VENUE</div>
-                            <div className="lead">
+                            <div className="lead mb-3">
                                 In the campus of IIT Indore, Khandwa road, Simrol
                             </div>
                         </div>

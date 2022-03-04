@@ -65,7 +65,7 @@ function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-sm-6 col-xs-12">
-                        <p className="copyright-text">Copyright &copy; TEDxIITIndore 2022
+                        <p className="copyright-text"> &copy; 2022 TEDxIITIndore
                         </p>
                     </div>
                     <div className="col-md-4 col-sm-6 col-xs-12">
