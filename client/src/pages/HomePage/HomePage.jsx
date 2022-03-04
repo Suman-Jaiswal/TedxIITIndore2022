@@ -28,7 +28,7 @@ function Home() {
                 <div className="container h-100 d-flex align-items-center">
                     <div className="row">
                         <div className="col-12 col-md-7 text" >
-                            <img data-aos="fade-up" src="/images/logos/removed-black-bg.png" width={500} alt="" />
+                            <img data-aos="fade-up" src="/images/logos/removed-black-bg.webp" width={500} alt="" />
                             <div data-aos="fade-up" data-aos-delay="200" style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 mx-auto my-3">PHOENI<sup className="text-danger fw-bold">X</sup> IN THE MAKING</div>
                             <div className="my-4">
                                 <button data-aos="fade-up" data-aos-delay="400" className="buy-btn mt-4">Buy Tickets</button>

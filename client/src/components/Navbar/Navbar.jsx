@@ -39,7 +39,7 @@ function Navbar({ currentPage }) {
             <div className="nav-div">
                 <div className="d-flex align-items-center">
                     <Link to='/'>
-                        <img className="navbar-brand logo" alt="" src="/images/logos/removed-black-bg.png"></img>
+                        <img className="navbar-brand logo" alt="" src="/images/logos/removed-black-bg.webp"></img>
                     </Link>
                 </div>
 
