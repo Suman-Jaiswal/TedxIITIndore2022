@@ -19,7 +19,7 @@ function Home() {
     let tempTalks = [...talks].splice(rand, 3)
 
     useEffect(() => {
-        // window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
     }, [])
 
     return (

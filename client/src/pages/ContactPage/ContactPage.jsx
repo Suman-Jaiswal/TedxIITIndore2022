@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Card, Button } from 'react-bootstrap';
 import "./ContactPage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faHandshake } from '@fortawesome/free-solid-svg-icons'
 
 export default function ContactPage() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <section className='contact bg-light py-5'>
             <div className="container text-dark">
