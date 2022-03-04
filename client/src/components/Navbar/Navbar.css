@@ -1,10 +1,11 @@
 .header {
-  background-color: #161616;
   height: auto;
   width: 100% !important;
-  position: sticky !important;
   top: 0;
   z-index: 1001;
+  transition: 0.2s ease;
+  height: 90px;
+  position: fixed;
 }
 .nav-div {
   width: 95%;
@@ -15,6 +16,7 @@
 .menu-only {
   display: flex;
   align-items: center;
+  text-shadow: 1px 1px 3px #000000;
 }
 .button {
   color: white !important;
@@ -29,7 +31,6 @@
 .button:focus {
   box-shadow: none !important;
 }
-
 .logo {
   height: 3.2rem;
   margin: 10px 0;
@@ -63,8 +64,10 @@
   .menu-only {
     display: none;
   }
+  .header {
+    height: 70px;
+  }
   .logo {
-    height: 2.8rem;
-    margin: 5px 0;
+    margin: 0;
   }
 }

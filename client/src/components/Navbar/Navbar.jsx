@@ -15,6 +15,10 @@ function Navbar({ currentPage }) {
         const allEl = document.querySelectorAll('.navlink')
         if (currentPage === '') {
             dot += 'home'
+            document.querySelector('.header').style.position = 'fixed'
+            document.querySelector('.header').classList.add('bg-transparent')
+            document.querySelector('.header').classList.remove('bg-dark')
+            document.querySelector('.logo').style.display = 'none'
             for (let index = 0; index < allEl.length; index++) {
                 const element = allEl[index];
                 element.classList.remove('bg-danger')
@@ -22,10 +26,35 @@ function Navbar({ currentPage }) {
         }
 
         else dot += currentPage
+        window.addEventListener('scroll', () => {
+            if (currentPage === '') {
+                if (window.scrollY > 200) {
+                    document.querySelector('.header').classList.remove('bg-transparent')
+                    document.querySelector('.header').classList.add('bg-dark')
+                    document.querySelector('.logo').style.display = 'flex'
+
+                }
+                else {
+                    document.querySelector('.header').classList.add('bg-transparent')
+                    document.querySelector('.header').classList.remove('bg-dark')
+                    document.querySelector('.logo').style.display = 'none'
+                }
+            }
+            else {
+                document.querySelector('.header').classList.remove('bg-transparent')
+                document.querySelector('.header').classList.add('bg-dark')
+                document.querySelector('.logo').style.display = 'flex'
+            }
+
+        })
+
 
         const el = document.querySelector(dot)
         if (!el) return
-
+        document.querySelector('.header').classList.remove('bg-transparent')
+        document.querySelector('.header').classList.add('bg-dark')
+        document.querySelector('.header').style.position = 'sticky'
+        document.querySelector('.logo').style.display = 'flex'
         for (let index = 0; index < allEl.length; index++) {
             const element = allEl[index];
             element.classList.remove('bg-danger')
@@ -35,15 +64,15 @@ function Navbar({ currentPage }) {
     }, [currentPage])
 
     return (
-        <header className="navbar header">
+        <header className="navbar header bg-transparent">
             <div className="nav-div">
-                <div className="d-flex align-items-center">
+                <div className="align-items-center">
                     <Link to='/'>
                         <img className="navbar-brand logo" alt="" src="/images/logos/removed-black-bg.webp"></img>
                     </Link>
                 </div>
 
-                <div className="menu-only">
+                <div className="menu-only" >
                     <Link to='/about' className="text-decoration-none"><div className="navlink rounded-pill text-light px-3 py-2 mx-2 about"><FontAwesomeIcon icon={faInfoCircle} /> ABOUT</div></Link>
                     <Link to='/speakers' className="text-decoration-none"><div className="navlink rounded-pill text-light px-3 py-2 mx-2 speakers"><FontAwesomeIcon icon={faTeamspeak} /> SPEAKERS</div></Link>
                     <Link to='/talks' className="text-decoration-none"><div className="navlink rounded-pill text-light px-3 py-2 mx-2 talks"><FontAwesomeIcon icon={faMicrophone} /> TALKS</div></Link>

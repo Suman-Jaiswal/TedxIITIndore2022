@@ -1,3 +1,7 @@
+$danger: #e62b1e;
+$dark: #202020;
+@import "~bootstrap/scss/bootstrap.scss";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,9 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
-* {
-  box-sizing: border-box;
-}
+
 .scale-on-hover:hover {
   transition: 0.5s;
   transform: scale(1.02);
@@ -23,7 +25,6 @@ body {
   text-transform: uppercase;
   font-weight: bold !important;
 }
-
 .container-maint {
   width: 380px;
   padding: 0;
