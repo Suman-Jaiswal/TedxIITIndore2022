@@ -38,7 +38,7 @@ function App() {
                 <Route path='/talks' element={<TalksPage />} />
                 <Route path='/team' element={<TeamPage />} />
                 <Route path='/gallery' element={<GalleryPage />} />
-                {/* <Route path='/contact' element={<ContactPage />} /> */}
+                <Route path='/contact' element={<ContactPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
