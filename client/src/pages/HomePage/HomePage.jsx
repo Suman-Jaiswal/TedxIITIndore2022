@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from 'react'
 import TextMobileStepper from "../../components/Slide"
 import './HomePage.css'
 import { speakers } from '../../data/speakers';
@@ -7,6 +7,9 @@ import { talks } from '../../data/talks'
 import TalksCard from "../../components/TalksCard/TalksCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import AccordionItem from "../../components/Bulletin/AccordionItem";
+import AccordionWrapper from "../../components/Bulletin/AccordionWrapper";
+import { newsdata } from '../../data/news'
 
 function Home() {
 
@@ -18,9 +21,15 @@ function Home() {
 
     let tempTalks = [...talks].splice(rand, 3)
 
+    const [news, setNews] = useState([])
+    useEffect(() => {
+        setNews(newsdata)
+    }, [])
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+
 
     return (
         <>
@@ -39,8 +48,20 @@ function Home() {
                 </div>
 
             </section>
-
-            <section className='about bg-light py-5' data-aos="fade-up">
+            <section className="bulletin bg-light py-5" data-aos="fade-up">
+                <div className="container text-dark">
+                    <br />
+                    <br />
+                    <div className="h2 ps-2 mb-2" >Bulletin </div>
+                    <br />
+                    <AccordionWrapper>
+                        {news.map((item, index) => (
+                            <AccordionItem key={index} index={index} title={item.title} description={item.description} />
+                        ))}
+                    </AccordionWrapper>
+                </div>
+            </section>
+            <section className='about bg-light py-5' data-aos="fade-up" >
                 <br />
                 <div className="container text-dark">
                     <div className="row gap-4">
