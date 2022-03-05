@@ -1,25 +1,16 @@
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
-import { Card } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './Deck.css'
+import TeamCard from '../TeamCard/TeamCard';
 
 export default function Deck(props) {
-    function isLinkedInIdPresent(item){
-        console.log(item.linkedIn);
-    if(item.linkedIn===""){
-       return false;
-    }
-    return true;
-  }
+
     const responsive = {
         largeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 3000, min: 1300 },
-            items: 4
+            items: 5
         },
         desktop: {
             breakpoint: { max: 1300, min: 1024 },
@@ -36,31 +27,22 @@ export default function Deck(props) {
     };
     return (
         <>
-            <div className="container">
+            <div className="">
 
                 {
                     <Carousel
+                        swipeable={false}
                         responsive={responsive}
                         autoPlaySpeed={3000}
                         autoPlay={true}
                         infinite={true}
+                        customTransition="all 0.5s linear"
+                        containerClass='carousel'
+                    // removeArrowOnDeviceType={['largeDesktop', 'desktop', 'tablet']}
 
                     >
                         {props.items.map((item) =>
-                            <Card data-aos={item.sno %2 ===0 ? 'flip-left': 'flip-right'} data-aos-duration="1000" key={item.sno} className='gradient-card' style={{ mixWidth: "18rem", maxWidth: '19rem', height: '380px', boxShadow: '0 2px 2px 0px rgba(0,0,0,0.5)', margin: '20px auto' }}  >
-                                <Card.Img className='image m-auto my-2' src={item.img} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
-                                <Card.Body className='py-1 bg-dark' >
-                                    <Card.Title className='text-center text-light' >{item.name.toUpperCase()}</Card.Title>
-                                    <Card.Text className='text-center text-secondary mb-0'>
-                                        {item.title}
-                                    </Card.Text>
-                                    <div className='text-center text-secondary mt-2' >
-                                        <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={`mailto:${item.emailId}`}><FontAwesomeIcon size='lg' icon={faEnvelope} /></a>
-                                        {isLinkedInIdPresent(item) ? <a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a> : null }
-                                        {/*<a target={'_blank'} rel='noreferrer' className="text-secondary  px-2" href={item.linkedIn}><FontAwesomeIcon icon={faLinkedin} size='lg' /></a>  */}
-                                    </div>
-                                </Card.Body>
-                            </Card>
+                            <TeamCard size='lg' item={item} text='text-light' />
                         )}
                     </Carousel>
                 }

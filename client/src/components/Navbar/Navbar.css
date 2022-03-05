@@ -1,10 +1,11 @@
-.nav {
-  background-color: #161616;
+.header {
   height: auto;
   width: 100% !important;
-  position: sticky !important;
   top: 0;
   z-index: 1001;
+  transition: 0.2s ease;
+  height: 90px;
+  position: fixed;
 }
 .nav-div {
   width: 95%;
@@ -15,10 +16,10 @@
 .menu-only {
   display: flex;
   align-items: center;
+  text-shadow: 1px 1px 3px #000000;
 }
 .button {
   color: white !important;
-  font-family: "Inconsolata", monospace !important;
   font-size: 1rem !important;
   outline: none;
   padding-right: 0px !important;
@@ -30,12 +31,13 @@
 .button:focus {
   box-shadow: none !important;
 }
-
 .logo {
-  height: 3.8rem;
+  height: 3.2rem;
   margin: 10px 0;
 }
-
+.navlink {
+  text-decoration: none;
+}
 .menu-drawer {
   display: none;
   align-items: center;
@@ -43,11 +45,10 @@
 .buy-btn {
   text-decoration: none;
   border: none;
-  font-family: inherit;
   color: rgb(71, 66, 66);
-  padding: 8px 15px;
+  padding: 5px 15px;
   line-height: 2em;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   background: linear-gradient(90deg, red, rgb(26, 24, 24), orange, grey);
   background-size: 300%;
@@ -63,8 +64,10 @@
   .menu-only {
     display: none;
   }
+  .header {
+    height: 70px;
+  }
   .logo {
-    height: 3rem;
-    margin: 7px 0;
+    margin: 0;
   }
 }

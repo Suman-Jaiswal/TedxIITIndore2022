@@ -1,28 +1,39 @@
 .gradient-card {
-	background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 600% 600%;
-	animation: gradient 10s linear infinite;
-	height: 100%;
+  background: linear-gradient(
+    45deg,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab,
+    #ee7752,
+    #e73c7e,
+    #23a6d5,
+    #23d5ab
+  );
+  background-size: 600% 600%;
+  animation: gradient 10s linear infinite;
+  height: 100%;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 50% 0%;
-	}
-    25%{
-        background-position: 50% 50%;
-    }
-	50% {
-		background-position: 50% 100%;
-	}
-	75% {
-		background-position: 50% 50%;
-	}
-    100% {
-		background-position: 50% 0%;
-	}
+  0% {
+    background-position: 50% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
-.image:hover {
-    transform: scaleX(2);
-    transform: scale(1.03, 1.03);
+.carousel {
+  width: 100%;
+  height: 460px;
+  background: #e62b1e;
 }

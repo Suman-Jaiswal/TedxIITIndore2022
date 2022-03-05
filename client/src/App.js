@@ -11,6 +11,7 @@ import 'aos/dist/aos.css'
 import { useEffect, useState } from "react";
 import NotFound from "./components/NotFound";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import GalleryPage from "./pages/GalleryPage/GalleryPage";
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
     useEffect(() => {
         Aos.init({
             once: true,
-            duration: '1000'
+            duration: '1000',
+            anchorPlacement: 'bottom-center'
         })
         setPage(location.pathname.substring(1, location.pathname.length).split('/')[0])
     }, [location.pathname])
@@ -35,6 +37,7 @@ function App() {
                 <Route path='/speakers' element={<SpeakersPage />} />
                 <Route path='/talks' element={<TalksPage />} />
                 <Route path='/team' element={<TeamPage />} />
+                <Route path='/gallery' element={<GalleryPage />} />
                 <Route path='/contact' element={<ContactPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>

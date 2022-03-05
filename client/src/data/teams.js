@@ -8,7 +8,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/niraj-kumar-4b5596195",
             emailId: "organizer.tedx@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 2,
@@ -18,7 +18,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/devendra-ahirwar",
             emailId: "me190003021@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 3,
@@ -28,7 +28,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/vasuagarwal182",
             emailId: "me190003068@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 4,
@@ -38,7 +38,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/skj9436/",
             emailId: "ee200002072@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 5,
@@ -48,7 +48,7 @@ export const teams =
             linkedIn: "",
             emailId: "ce200004025@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 6,
@@ -58,7 +58,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/sujal-patel-375660229",
             emailId: "mems200005047@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 7,
@@ -68,17 +68,17 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/aditi-thakur99",
             emailId: "me200003005@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 8,
             teamSno: 6,
-            name: "Bhavishya tiwari",
+            name: "Bhavishya Tiwari",
             title: "Designer",
             linkedIn: "https://www.linkedin.com/in/bhavishya-tiwari-0905bb205/",
             emailId: "me200003019@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 9,
@@ -88,7 +88,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/preetham-valsa-3b2502201/",
             emailId: "ee200002076@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 10,
@@ -98,7 +98,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/aryan-yadav-703112169/",
             emailId: "cse200001010@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 11,
@@ -108,7 +108,7 @@ export const teams =
             linkedIn: "https://www.linkedin.com/in/maniratnn-parakh-3b6a75205",
             emailId: "mems200005019@iiti.ac.in",
             head: true,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 12,
@@ -118,7 +118,7 @@ export const teams =
             linkedIn: "",
             emailId: "ce180004009@iiti.ac.in",
             head: false,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 13,
@@ -128,7 +128,7 @@ export const teams =
             linkedIn: "",
             emailId: "mems180005015@iiti.ac.in",
             head: false,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 14,
@@ -138,7 +138,7 @@ export const teams =
             linkedIn: "",
             emailId: "mems180005017@iiti.ac.in",
             head: false,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
         {
             sno: 15,
@@ -148,6 +148,6 @@ export const teams =
             linkedIn: "",
             emailId: "me180003063@iiti.ac.in",
             head: false,
-            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.jpg' }
+            get img() { return '/images/team/' + this.name.replace(' ', '-') + '.webp' }
         },
     ]

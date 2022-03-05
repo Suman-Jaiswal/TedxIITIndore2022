@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBarsStaggered, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
@@ -31,13 +31,13 @@ export default function MenuDrawer() {
 
     const list = (anchor) => (
         <Box
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200, bgcolor: '#161616', height: '100%' }}
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 200, bgcolor: '#202020', height: '100%' }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['', 'About', 'Speakers', 'Talks', 'Team'].map((text, index) => (
+                {['About', 'Speakers', 'Talks', 'Team'].map((text, index) => (
                     <ListItem button key={text} className='py-3'>
                         <ListItemIcon sx={{
                             minWidth: 30
@@ -55,7 +55,7 @@ export default function MenuDrawer() {
         <div>
             {['right'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}><FontAwesomeIcon className='fa-duotone' color='#fff' size='2x' icon={faBarsStaggered} /></Button>
+                    <Button onClick={toggleDrawer(anchor, true)} ><FontAwesomeIcon color='#e62b1e' size='2x' icon={faBars} /></Button>
                     <Drawer
                         anchor={anchor}
                         open={state[anchor]}
