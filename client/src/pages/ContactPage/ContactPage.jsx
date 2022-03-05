@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import "./ContactPage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faHandshake } from '@fortawesome/free-solid-svg-icons'

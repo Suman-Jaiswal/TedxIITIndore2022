@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import { talks } from '../../data/talks'
 import TalksCard from "../../components/TalksCard/TalksCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import AccordionItem from "../../components/Bulletin/AccordionItem";
 import AccordionWrapper from "../../components/Bulletin/AccordionWrapper";
-import { newsdata } from '../../data/news'
+import { updates } from '../../data/updates'
 
 function Home() {
 
@@ -23,7 +23,7 @@ function Home() {
 
     const [news, setNews] = useState([])
     useEffect(() => {
-        setNews(newsdata)
+        setNews(updates)
     }, [])
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -48,11 +48,11 @@ function Home() {
                 </div>
 
             </section>
-            <section className="bulletin bg-light py-5" data-aos="fade-up">
+            <section className="bulletin bg-light py-2" data-aos="fade-up">
                 <div className="container text-dark">
                     <br />
                     <br />
-                    <div className="h2 ps-2 mb-2" >Bulletin </div>
+                    <div className="h2 ps-2 mb-2" >Updates <FontAwesomeIcon icon={faAnglesRight} /> </div>
                     <br />
                     <AccordionWrapper>
                         {news.map((item, index) => (
