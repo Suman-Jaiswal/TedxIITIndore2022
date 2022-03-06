@@ -31,7 +31,6 @@ export default function GalleryPage() {
 
     return (
         <div className="gallery">
-            <Heading heading={'coming soon...'} />
             <div className="photos">
                 <Gallery photos={gallery} onClick={openLightbox} />
                 <ModalGateway>
