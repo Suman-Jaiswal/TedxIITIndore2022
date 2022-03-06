@@ -48,20 +48,7 @@ function Home() {
                 </div>
 
             </section>
-            <section className="bulletin bg-light py-2" data-aos="fade-up">
-                <div className="container text-dark">
-                    <br />
-                    <br />
-                    <div className="h2 ps-2 mb-2" >Updates <FontAwesomeIcon icon={faAnglesRight} /> </div>
-                    <br />
-                    <AccordionWrapper>
-                        {news.map((item, index) => (
-                            <AccordionItem key={index} index={index} title={item.title} description={item.description} />
-                        ))}
-                    </AccordionWrapper>
-                </div>
-            </section>
-            <section className='about bg-light py-5' data-aos="fade-up" >
+            <section className='about bg-light py-2' data-aos="fade-up" >
                 <br />
                 <div className="container text-dark">
                     <div className="row gap-4">
@@ -77,6 +64,18 @@ function Home() {
 
                     </div>
                 </div>
+            </section>
+            <section className="bulletin bg-light py-5" data-aos="fade-up">
+                <div className="container text-dark">
+                    <div className="h2 ps-2 mb-2" >Updates <FontAwesomeIcon icon={faAnglesRight} /> </div>
+                    <br />
+                    <AccordionWrapper>
+                        {news.map((item, index) => (
+                            <AccordionItem key={index} index={index} item={item} />
+                        ))}
+                    </AccordionWrapper>
+                </div>
+                <br />
             </section>
             <section className='tedx py-5 bg-dark' data-aos="fade-up">
                 <div className="container text-light">

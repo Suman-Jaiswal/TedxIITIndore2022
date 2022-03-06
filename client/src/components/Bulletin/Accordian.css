@@ -19,7 +19,9 @@
   margin-top: 0.5rem;
   padding: 1rem;
 }
-
+.accordion-item {
+  border: none;
+}
 .accordion-wrapper .accordion-item h3.accordion-title button.active {
   background-color: #e62b1e;
   color: #ffffff;
