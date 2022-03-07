@@ -41,7 +41,7 @@ const AccordionItem = (props) => {
                 <div id={'sect-' + indexCount(props.index)} className={active === props.index ? 'panel-open' : 'panel-close'}>
                     {props.item.description} {props.item.link ?
                         <span className='mt-2'>
-                            <a className='text-danger' href={props.item.link} target='_blank' rel='noreferrer'>Open<FontAwesomeIcon icon={faExternalLink} /></a>
+                            <a className='text-danger' href={props.item.link} target='_blank' rel='noreferrer'>Open <FontAwesomeIcon icon={faExternalLink} /></a>
                         </span> : null}
                     {props.item.images.length > 0 ? <div className='mt-4 d-flex flex-wrap justify-content-center'>
                         {
