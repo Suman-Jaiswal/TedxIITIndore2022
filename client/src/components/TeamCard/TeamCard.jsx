@@ -6,7 +6,6 @@ import { Card } from 'react-bootstrap';
 
 export default function TeamCard({ size, item, text }) {
     function isLinkedInIdPresent(item) {
-        console.log(item.linkedIn);
         if (item.linkedIn === "") {
             return false;
         }

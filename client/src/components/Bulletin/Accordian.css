@@ -7,7 +7,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: #e62b1e;
+  background: #555;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   border: none;
@@ -15,9 +15,12 @@
   width: 100%;
   text-align: left;
   color: #ffffff;
-  font-weight: bold;
-  margin-top: 0.5rem;
+  /* font-weight: bold; */
+  margin-top: 1.5rem;
   padding: 1rem;
+}
+.accordion-wrapper .accordion-item h3.accordion-title button:hover {
+  background: #333;
 }
 .accordion-item {
   border: none;

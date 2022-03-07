@@ -32,7 +32,7 @@ export default function SpeakersPage() {
         <section className='talks py-5 text-dark bg-light' style={{
             backgroundColor: '#161616'
         }}>
-            <div data-aos="fade-up" className="h1 text-center">Speakers ({key})</div>
+            <div className="h1 text-center">Speakers ({key})</div>
             <div className='container' >
                 <div className='d-flex mb-4' style={{
                     borderBottom: '1px solid rgba(0,0,0,0.3)'

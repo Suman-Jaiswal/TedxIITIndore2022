@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';

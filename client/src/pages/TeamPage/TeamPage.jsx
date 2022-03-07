@@ -17,7 +17,7 @@ export default function TeamPage() {
 
     return (
         <section className='team py-5 bg-light text-dark'>
-            <div data-aos="fade-up" className="h1 mb-3 text-center">Our Team</div>
+            <div className="h1 mb-3 text-center">Our Team</div>
 
 
             <div className="container">
