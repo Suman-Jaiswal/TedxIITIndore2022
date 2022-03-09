@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+
+export const authContext = React.createContext();
 
 function App() {
+  const [authHeader, setAuthHeader] = useState(null);
+
   return (
     <div className="App">
       <header className="App-header">
