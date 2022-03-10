@@ -7,6 +7,7 @@ const { authToken } = require('./config/jwtAuth')
 
 //connection-mongoDB
 mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log('database connected'))
     .catch(err => {
         console.log("MongoDB connection failure:")
         console.log(err.message)

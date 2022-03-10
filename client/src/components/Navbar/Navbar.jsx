@@ -2,13 +2,14 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faImages, faInfoCircle, faMicrophone, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle, faMicrophone, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import MenuDrawer from "../MenuDrawer"
 import { useEffect } from "react"
 
 function Navbar({ currentPage }) {
 
+    console.log(currentPage)
     useEffect(() => {
 
         var dot = '.'
@@ -25,7 +26,21 @@ function Navbar({ currentPage }) {
             }
         }
 
-        else dot += currentPage
+        else {
+            dot += currentPage
+            document.querySelector('.header').classList.remove('bg-transparent')
+            document.querySelector('.header').classList.add('bg-dark')
+            document.querySelector('.header').style.position = 'sticky'
+            document.querySelector('.logo').style.display = 'flex'
+
+            for (let index = 0; index < allEl.length; index++) {
+                const element = allEl[index];
+                element.classList.remove('bg-danger')
+            }
+            const el = document.querySelector(dot)
+            if (el)
+                el.classList.add('bg-danger')
+        }
         window.addEventListener('scroll', () => {
             if (currentPage === '') {
                 if (window.scrollY > 200) {
@@ -49,17 +64,17 @@ function Navbar({ currentPage }) {
         })
 
 
-        const el = document.querySelector(dot)
-        if (!el) return
-        document.querySelector('.header').classList.remove('bg-transparent')
-        document.querySelector('.header').classList.add('bg-dark')
-        document.querySelector('.header').style.position = 'sticky'
-        document.querySelector('.logo').style.display = 'flex'
-        for (let index = 0; index < allEl.length; index++) {
-            const element = allEl[index];
-            element.classList.remove('bg-danger')
-        }
-        el.classList.add('bg-danger')
+        // const el = document.querySelector(dot)
+        // if (!el) return
+        // document.querySelector('.header').classList.remove('bg-transparent')
+        // document.querySelector('.header').classList.add('bg-dark')
+        // document.querySelector('.header').style.position = 'sticky'
+        // document.querySelector('.logo').style.display = 'flex'
+        // for (let index = 0; index < allEl.length; index++) {
+        //     const element = allEl[index];
+        //     element.classList.remove('bg-danger')
+        // }
+        // el.classList.add('bg-danger')
 
     }, [currentPage])
 

@@ -31,6 +31,10 @@ export default function AboutPage() {
                             In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized (subject to certain rules and regulations).
                         </p>
                     </div>
+
+                </div>
+                <div className="row my-5">
+
                     <div className="col-12 p-3" data-aos="fade-up" data-aos-delay='300'>
                         <div className="h2 ps-2 mb-2">THEME: Phoenix in the making</div>
                         <p >
