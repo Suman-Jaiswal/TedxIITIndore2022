@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
-const schema = mongoose.Schema
 
 //Schema
-const talksSchema = new schema({
+const talksSchema = new mongoose.Schema({
     video: {
         type: String,
         required: true

@@ -17,9 +17,9 @@ mongoose.connect(process.env.MONGO_URI)
 app.use(express.json())
 
 //API
-app.use('/api', require('./routes.js'))
-app.use('/login', require('./routes_login.js'))
-app.use('/admin', authToken, require('./routes_auth.js'))
+// app.use('/api', require('./routes.js'))
+app.use('/api/login', require('./routes_login.js'))
+app.use('/api/auth', authToken, require('./routes_auth.js'))
 
 //Serving static files
 if (process.env.NODE_ENV === 'production') {
