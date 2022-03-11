@@ -1,5 +1,5 @@
 const route = require('express').Router()
-const Speakers = require('./models/speakerModel')
+const Speakers = require('../models/speakerModel')
 
 route.get('/speakers', (req, res, next) => {
     Speakers.find({})
