@@ -7,6 +7,7 @@ const { authToken } = require('./api/middleware/jwtAuth')
 
 //connection-mongoDB
 mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log('database connected'))
     .catch(err => {
         console.log("MongoDB connection failure:")
         console.log(err.message)
@@ -37,6 +38,4 @@ app.use((err, req, res, next) => {
 
 //Request listening
 const port = process.env.PORT || 5000
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`)
-});
+app.listen(port, () => console.log(`Listening on port ${port}`));
