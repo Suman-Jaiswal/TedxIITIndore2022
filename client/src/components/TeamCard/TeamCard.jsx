@@ -16,7 +16,7 @@ export default function TeamCard({ size, item, text }) {
             {
                 size === 'lg' ?
                     <Card className='border-0 bg-transparent' data-aos="fade-up" data-aos-duration="1000" key={item.sno} style={{ maxWidth: '18rem', height: '100%', }}  >
-                        <Card.Img className='m-auto my-2' src={item.img} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
+                        <Card.Img loading='lazy' className='m-auto my-2' src={item.img} alt="item-img" style={{ cursor: "pointer", width: '16rem', height: '16rem', borderRadius: '50%' }} />
                         <Card.Body className='py-1' >
                             <Card.Title className={`text-center ${text}`} >{item.name.toUpperCase()}</Card.Title>
                             <Card.Text className={`text-center mb-0 ${text}`}>
@@ -38,7 +38,7 @@ export default function TeamCard({ size, item, text }) {
                             margin: '20px auto',
                             textAlign: 'center'
                         }}  >
-                        <Card.Img className='image m-auto' src={item.img} alt="item-img"
+                        <Card.Img className='image m-auto' src={item.img} alt="item-img" loading='lazy'
                             style={{
                                 cursor: "pointer",
                                 width: 145,
