@@ -41,7 +41,7 @@ function Home() {
                             <img data-aos="fade-up" src="/images/logos/removed-black-bg.webp" width={500} alt="" />
                             <div data-aos="fade-up" data-aos-delay="200" style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 mx-auto my-3">PHOENI<sup className="text-danger fw-bold">X</sup> IN THE MAKING</div>
                             <div className="my-4">
-                                <button data-aos="fade-up" data-aos-delay="400" className="buy-btn mt-2">Buy Tickets</button>
+                                <a target={'_blank'} rel='noreferrer' href='https://docs.google.com/forms/d/1y3PHO9U_qjZ28F3XxWlf8xj4Q2GCadVtEoExbbY4BPo/edit?ts=62332514' data-aos="fade-up" data-aos-delay="400" className="buy-btn bg-danger mt-2">Buy Tickets</a>
                             </div>
                         </div>
                     </div>
