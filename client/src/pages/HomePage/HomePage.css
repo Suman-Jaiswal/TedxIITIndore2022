@@ -14,6 +14,12 @@
 .text img {
   width: 100%;
 }
+.theme-text {
+  font-size: 40px;
+}
+.theme-text > sup {
+  right: 15px;
+}
 .years {
   text-decoration: none;
 }
@@ -29,9 +35,21 @@
   .hero {
     height: 400px;
   }
+  .theme-text {
+    font-size: 30px;
+  }
+  .theme-text > sup {
+    right: 10px;
+  }
 }
 @media screen and (max-width: 480px) {
   .hero {
     height: 300px;
+  }
+  .theme-text {
+    font-size: 20px;
+  }
+  .theme-text > sup {
+    right: 7px;
   }
 }

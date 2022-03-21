@@ -64,16 +64,13 @@ function Footer() {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4 col-sm-6 col-xs-12">
+                    <div className="col-md-6 col-sm-12 ">
                         <p className="copyright-text"> &copy; 2022 TEDxIITIndore
                         </p>
                     </div>
-                    <div className="col-md-4 col-sm-6 col-xs-12">
-                        <p className="copyright-text">Site developed by - <span className="text-danger">Technical Team @TEDxIITIndore</span>
-                        </p>
-                    </div>
 
-                    <div className="col-md-4 col-sm-6 col-xs-12 m-auto">
+
+                    <div className="col-md-6 col-sm-12  m-auto mb-3">
                         <ul className="social-icons">
                             <li><a target={'_blank'} rel='noreferrer' className="youtube" href="https://www.youtube.com/user/TEDxTalks/videos"><i><FontAwesomeIcon icon={faYoutube} /></i></a></li>
                             <li><a target={'_blank'} rel='noreferrer' className="twitter" href="https://twitter.com/tedxiitindore"><i><FontAwesomeIcon icon={faTwitter} /></i></a></li>

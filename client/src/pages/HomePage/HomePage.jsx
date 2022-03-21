@@ -39,7 +39,7 @@ function Home() {
                         <div className="col-12 col-lg-7 text" >
                             <br />
                             <img data-aos="fade-up" src="/images/logos/removed-black-bg.webp" width={500} alt="" />
-                            <div data-aos="fade-up" data-aos-delay="200" style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 mx-auto my-3">PHOENI<sup className="text-danger fw-bold">X</sup> IN THE MAKING</div>
+                            <div data-aos="fade-up" data-aos-delay="200" style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 theme-text mx-auto my-3">PHOENI<span className="text-danger">X</span><sup className="text-danger fw-bold">x</sup> IN THE MAKING</div>
                             <div className="my-4">
                                 <a target={'_blank'} rel='noreferrer' href='https://docs.google.com/forms/d/e/1FAIpQLSdVGPdo6BgtMgkpzn-lWU-9LTwFAqvSYRJgfTQYTLQZmcuylg/viewform' data-aos="fade-up" data-aos-delay="400" className="buy-btn bg-danger mt-2">Buy Tickets</a>
                             </div>
