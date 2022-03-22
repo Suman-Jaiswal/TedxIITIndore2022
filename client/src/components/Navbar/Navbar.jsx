@@ -9,7 +9,6 @@ import { useEffect } from "react"
 
 function Navbar({ currentPage }) {
 
-    console.log(currentPage)
     useEffect(() => {
 
         var dot = '.'
