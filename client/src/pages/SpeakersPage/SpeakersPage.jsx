@@ -16,7 +16,7 @@ export default function SpeakersPage() {
     }, [])
 
     const Sonnet = () =>
-        key === 2022 ? <div className='h3 text-center my-5'> <br /> <br /> Stay Tuned ! <br /><br /></div> :
+        // key === 2022 ? <div className='h3 text-center my-5'> <br /> <br /> Stay Tuned ! <br /><br /></div> :
             <div className="row p-0">
                 {
                     speakers.map(speaker => <div
