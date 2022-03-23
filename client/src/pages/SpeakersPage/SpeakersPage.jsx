@@ -5,7 +5,7 @@ import Data from '../../data/Data'
 export default function SpeakersPage() {
 
     const [speakers, setSpeakers] = useState([])
-    const [key, setKey] = useState(2018);
+    const [key, setKey] = useState(2022);
 
     useEffect(() => {
         setSpeakers(Data().speakers.filter(x => x.date.includes(key)))
