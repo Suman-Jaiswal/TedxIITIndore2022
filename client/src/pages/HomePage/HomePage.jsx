@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import { talks } from '../../data/talks'
 import TalksCard from "../../components/TalksCard/TalksCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import AccordionItem from "../../components/Bulletin/AccordionItem";
 import AccordionWrapper from "../../components/Bulletin/AccordionWrapper";
-import { newsdata } from '../../data/news'
+import { updates } from '../../data/updates'
 
 function Home() {
 
@@ -23,7 +23,7 @@ function Home() {
 
     const [news, setNews] = useState([])
     useEffect(() => {
-        setNews(newsdata)
+        setNews(updates)
     }, [])
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -39,29 +39,16 @@ function Home() {
                         <div className="col-12 col-lg-7 text" >
                             <br />
                             <img data-aos="fade-up" src="/images/logos/removed-black-bg.webp" width={500} alt="" />
-                            <div data-aos="fade-up" data-aos-delay="200" style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 mx-auto my-3">PHOENI<sup className="text-danger fw-bold">X</sup> IN THE MAKING</div>
+                            <div data-aos="fade-up" data-aos-delay="200" style={{ width: 'fit-content' }} className="h2 text-light text-start ps-2 theme-text mx-auto my-3">PHOENI<span className="text-danger">X</span><sup className="text-danger fw-bold">x</sup> IN THE MAKING</div>
                             <div className="my-4">
-                                <button data-aos="fade-up" data-aos-delay="400" className="buy-btn mt-2">Buy Tickets</button>
+                                {/* <a target={'_blank'} rel='noreferrer' href='https://docs.google.com/forms/d/e/1FAIpQLSdVGPdo6BgtMgkpzn-lWU-9LTwFAqvSYRJgfTQYTLQZmcuylg/viewform' data-aos="fade-up" data-aos-delay="400" className="buy-btn bg-danger mt-2">Buy Tickets</a> */}
                             </div>
                         </div>
                     </div>
                 </div>
 
             </section>
-            <section className="bulletin bg-light py-5" data-aos="fade-up">
-                <div className="container text-dark">
-                    <br />
-                    <br />
-                    <div className="h2 ps-2 mb-2" >Bulletin </div>
-                    <br />
-                    <AccordionWrapper>
-                        {news.map((item, index) => (
-                            <AccordionItem key={index} index={index} title={item.title} description={item.description} />
-                        ))}
-                    </AccordionWrapper>
-                </div>
-            </section>
-            <section className='about bg-light py-5' data-aos="fade-up" >
+            <section className='about bg-light py-2' data-aos="fade-up" >
                 <br />
                 <div className="container text-dark">
                     <div className="row gap-4">
@@ -77,6 +64,18 @@ function Home() {
 
                     </div>
                 </div>
+            </section>
+            <section className="bulletin bg-light py-5" data-aos="fade-up">
+                <div className="container text-dark">
+                    <div className="h2 ps-2 mb-2" >Updates <FontAwesomeIcon icon={faAnglesRight} /> </div>
+                    <br />
+                    <AccordionWrapper>
+                        {news.map((item, index) => (
+                            <AccordionItem key={index} index={index} item={item} />
+                        ))}
+                    </AccordionWrapper>
+                </div>
+                <br />
             </section>
             <section className='tedx py-5 bg-dark' data-aos="fade-up">
                 <div className="container text-light">

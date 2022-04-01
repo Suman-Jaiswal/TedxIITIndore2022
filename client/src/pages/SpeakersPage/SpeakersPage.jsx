@@ -16,7 +16,7 @@ export default function SpeakersPage() {
     }, [])
 
     const Sonnet = () =>
-        key === 2022 ? <div className='h3 text-center my-5'> <br /> <br /> Stay Tuned ! <br /><br /></div> :
+        // key === 2022 ? <div className='h3 text-center my-5'> <br /> <br /> Stay Tuned ! <br /><br /></div> :
             <div className="row p-0">
                 {
                     speakers.map(speaker => <div
@@ -32,7 +32,7 @@ export default function SpeakersPage() {
         <section className='talks py-5 text-dark bg-light' style={{
             backgroundColor: '#161616'
         }}>
-            <div data-aos="fade-up" className="h1 text-center">Speakers ({key})</div>
+            <div className="h1 text-center">Speakers ({key})</div>
             <div className='container' >
                 <div className='d-flex mb-4' style={{
                     borderBottom: '1px solid rgba(0,0,0,0.3)'

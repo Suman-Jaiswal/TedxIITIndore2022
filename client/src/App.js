@@ -11,7 +11,6 @@ import 'aos/dist/aos.css'
 import { useEffect, useState } from "react";
 import NotFound from "./components/NotFound";
 import ContactPage from "./pages/ContactPage/ContactPage";
-import GalleryPage from "./pages/GalleryPage/GalleryPage";
 
 function App() {
 
@@ -37,7 +36,7 @@ function App() {
                 <Route path='/speakers' element={<SpeakersPage />} />
                 <Route path='/talks' element={<TalksPage />} />
                 <Route path='/team' element={<TeamPage />} />
-                <Route path='/gallery' element={<GalleryPage />} />
+                {/* <Route path='/gallery' element={<GalleryPage />} /> */}
                 <Route path='/contact' element={<ContactPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>

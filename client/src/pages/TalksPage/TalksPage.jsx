@@ -32,7 +32,7 @@ export default function TalksPage() {
         <section className='talks py-5 bg-light text-dark' style={{
             backgroundColor: '#161616'
         }}>
-            <div data-aos="fade-up" className="h1 text-center">Talks ({key === 0 ? 'All' : key})</div>
+            <div className="h1 text-center">Talks ({key === 0 ? 'All' : key})</div>
             <div className='container' >
                 <div className='d-flex mb-4' style={{
                     borderBottom: '1px solid rgba(0,0,0,0.3)'
