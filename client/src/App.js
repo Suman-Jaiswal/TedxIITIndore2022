@@ -11,6 +11,7 @@ import 'aos/dist/aos.css'
 import { useEffect, useState } from "react";
 import NotFound from "./components/NotFound";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import SponsorsPage from "./pages/SponsorsPage/SponsorsPage";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
                 <Route path='/team' element={<TeamPage />} />
                 {/* <Route path='/gallery' element={<GalleryPage />} /> */}
                 <Route path='/contact' element={<ContactPage />} />
+                <Route path='/sponsors' element={<SponsorsPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
