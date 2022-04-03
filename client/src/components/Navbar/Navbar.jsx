@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Navbar.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfoCircle, faMicrophone, faPhone, faUsers } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle, faMicrophone, faPhone, faUsers ,faHandshake} from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import MenuDrawer from "../MenuDrawer"
 import { useEffect } from "react"
@@ -93,7 +93,7 @@ function Navbar({ currentPage }) {
                     {/* <Link to='/gallery' className="text-decoration-none"><div className="navlink rounded-pill text-light px-3 py-2 mx-2 gallery"><FontAwesomeIcon icon={faImages} /> Gallery</div></Link> */}
                     <Link to='/team' className="text-decoration-none"><div className="navlink rounded-pill text-light px-3 py-2 ms-2 team"><FontAwesomeIcon icon={faUsers} /> TEAM</div></Link>
                     <Link to='/contact' className="text-decoration-none" ><div className="navlink rounded-pill text-light px-3 py-2 ms-2 contact"><FontAwesomeIcon icon={faPhone} /> CONTACT US</div></Link>
-
+                    <Link to='/sponsors' className="text-decoration-none" ><div className="navlink rounded-pill text-light px-3 py-2 ms-2 sponsors"><FontAwesomeIcon icon={faHandshake} /> SPONSORS</div></Link>
                 </div>
                 <div className="menu-drawer">
                     <MenuDrawer />
