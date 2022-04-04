@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHandshake, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInfoCircle, faMicrophone, faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faTeamspeak } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
@@ -19,7 +19,7 @@ export default function MenuDrawer() {
         right: false,
     });
 
-    const icons = [faInfoCircle, faTeamspeak, faMicrophone, faUsers, faPhone]
+    const icons = [faInfoCircle, faTeamspeak, faMicrophone, faUsers, faHandshake, faPhone]
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -37,7 +37,7 @@ export default function MenuDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['About', 'Speakers', 'Talks', 'Team', 'Contact'].map((text, index) => (
+                {['About', 'Speakers', 'Talks', 'Team', 'Sponsors', 'Contact'].map((text, index) => (
                     <ListItem button key={text} className='py-3'>
                         <ListItemIcon sx={{
                             minWidth: 30

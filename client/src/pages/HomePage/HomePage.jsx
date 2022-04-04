@@ -10,6 +10,7 @@ import { faAnglesRight, faArrowCircleRight } from "@fortawesome/free-solid-svg-i
 import AccordionItem from "../../components/Bulletin/AccordionItem";
 import AccordionWrapper from "../../components/Bulletin/AccordionWrapper";
 import { updates } from '../../data/updates'
+import { Card } from 'react-bootstrap';
 
 function Home() {
 
@@ -65,7 +66,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="bulletin bg-light py-5" data-aos="fade-up">
+            {/* <section className="bulletin bg-light py-5" data-aos="fade-up">
                 <div className="container text-dark">
                     <div className="h2 ps-2 mb-2" >Updates <FontAwesomeIcon icon={faAnglesRight} /> </div>
                     <br />
@@ -76,7 +77,7 @@ function Home() {
                     </AccordionWrapper>
                 </div>
                 <br />
-            </section>
+            </section> */}
             <section className='tedx py-5 bg-dark' data-aos="fade-up">
                 <div className="container text-light">
                     <div className="row justify-content-between" >
@@ -133,14 +134,65 @@ function Home() {
                     <div className="h5"><Link to={'/talks'} className='text-danger years' > See More <FontAwesomeIcon size="sm" icon={faArrowCircleRight} /></Link></div>
                 </div>
             </section>
-            {/* <section className="sponsors py-5 bg-light" >
+            <section className="sponsors py-5 bg-light" >
                 <div className="container text-dark">
-                    <div className="h2 ps-2 mb-2">Partnership </div>
-                    <div className="row my-3">
-                        <div className="h3 text-center">Coming Soon...</div>
+                    <div className="h2 ps-2 mb-2">Sponsors </div>
+                    <br />
+                    <div className="row cards" >
+                        <div className="col-12 col-md-2 cardbox" data-aos="fade-up">
+                            <Card style={{ width: '100%' }} className="text-center">
+                                <Card.Body>
+                                    <Card.Title>Banking Partner</Card.Title>
+                                    <Card.Img style={{ width: '80%' }} variant="bottom" src="/images/sponsors/canara.png" />
+
+                                </Card.Body>
+                            </Card>
+                        </div>
+
+                        <div className="col-12 col-md-2 cardbox" data-aos="fade-up">
+                            <Card style={{ width: '100%' }} className="text-center">
+                                <Card.Body>
+                                    <Card.Title>Software Partner</Card.Title>
+                                    <Card.Img style={{ width: '80%' }} variant="bottom" src="/images/sponsors/yash.png" />
+
+                                </Card.Body>
+                            </Card>
+                        </div>
+
+                        <div className="col-12 col-md-2 cardbox" data-aos="fade-up">
+                            <Card style={{ width: '100%' }} className="text-center">
+                                <Card.Body>
+                                    <Card.Title>Augumented Reality Partner</Card.Title>
+                                    <Card.Img style={{ width: '80%' }} variant="bottom" src="/images/sponsors/edscope.webp" />
+
+                                </Card.Body>
+                            </Card>
+                        </div>
+
+                        <div className="col-12 col-md-2 cardbox" data-aos="fade-up">
+                            <Card style={{ width: '100%' }} className="text-center">
+                                <Card.Body>
+                                    <Card.Title>Learning Resource Partner</Card.Title>
+                                    <Card.Img style={{ width: '80%' }} variant="bottom" src="/images/sponsors/ims.jpg" />
+
+                                </Card.Body>
+                            </Card>
+                        </div>
+
+                        <div className="col-12 col-md-2 cardbox" data-aos="fade-up">
+                            <Card style={{ width: '100%' }} className="text-center">
+                                <Card.Body>
+                                    <Card.Title>Merchandise Partner</Card.Title>
+                                    <Card.Img style={{ width: '80%' }} variant="bottom" src="/images/sponsors/fablab.png" />
+
+                                </Card.Body>
+                            </Card>
+                        </div>
+
                     </div>
                 </div>
-            </section> */}
+            </section>
+
             <section className="location py-5 bg-light" data-aos="fade-up" >
                 <div className="container text-dark">
                     <div className="row my-3">
