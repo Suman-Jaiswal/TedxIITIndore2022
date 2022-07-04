@@ -5,7 +5,7 @@ import Data from '../../data/Data'
 export default function TalksPage() {
 
     const [talks, setTalks] = useState([])
-    const [key, setKey] = useState(0);
+    const [key, setKey] = useState(2022);
 
     useEffect(() => {
         setTalks(Data().talks.filter(x => x.date.includes(key)))
@@ -16,16 +16,15 @@ export default function TalksPage() {
     }, [])
 
     const Sonnet = () =>
-        key === 2022 ? <div className='h3 text-center my-5'> <br /> Stay Tuned ! <br /><br /></div> :
-            <div className="row p-0 text-dark">
-                {
-                    talks.map(talk =>
-                        <div data-aos="fade-up" className='col-12 col-md-6 col-lg-4' key={talk.sno} >
-                            <TalksCard talk={talk} />
-                        </div>
-                    )
-                }
-            </div>
+        <div className="row p-0 text-dark">
+            {
+                talks.map(talk =>
+                    <div data-aos="fade-up" className='col-12 col-md-6 col-lg-4' key={talk.sno} >
+                        <TalksCard talk={talk} />
+                    </div>
+                )
+            }
+        </div>
 
 
     return (
@@ -37,11 +36,6 @@ export default function TalksPage() {
                 <div className='d-flex mb-4' style={{
                     borderBottom: '1px solid rgba(0,0,0,0.3)'
                 }}>
-                    <div className="p-2" style={{
-                        borderRight: '1px solid rgba(0,0,0,0.3)'
-                    }}>
-                        <div role={'button'} onClick={() => setKey(0)} className={`${key === 0 ? 'bg-danger text-light' : 'bg-transparent'} px-3 py-1 rounded-pill`}>All</div>
-                    </div>
                     <div className="p-2" style={{
                         borderRight: '1px solid rgba(0,0,0,0.3)'
                     }}>
