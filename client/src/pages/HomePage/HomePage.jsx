@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import TextMobileStepper from "../../components/Slide"
 import './HomePage.css'
 import { speakers } from '../../data/speakers';
@@ -6,10 +6,8 @@ import { Link } from "react-router-dom";
 import { talks } from '../../data/talks'
 import TalksCard from "../../components/TalksCard/TalksCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesRight, faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
-import AccordionItem from "../../components/Bulletin/AccordionItem";
-import AccordionWrapper from "../../components/Bulletin/AccordionWrapper";
-import { updates } from '../../data/updates'
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+// import { updates } from '../../data/updates'
 import { Card } from 'react-bootstrap';
 
 function Home() {
@@ -22,10 +20,10 @@ function Home() {
 
     let tempTalks = [...talks].splice(rand, 3)
 
-    const [news, setNews] = useState([])
-    useEffect(() => {
-        setNews(updates)
-    }, [])
+    // const [news, setNews] = useState([])
+    // useEffect(() => {
+    //     setNews(updates)
+    // }, [])
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
